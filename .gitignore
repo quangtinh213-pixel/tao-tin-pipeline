@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env.local
+.env
+
+# Python virtual envs
+.venv/
+.venv311/
+
+# Rendered output
+videos/*
+!videos/.gitkeep
+*.mp4
+
+# Generated assets (audio + transcription per video)
+public/*/voice.mp3
+public/*/words.json
+public/*/timeline.json
+public/*/demo.json
+public/*/.demo-recording/
+
+# Local music import staging
+tmp-music/*
+!tmp-music/.gitkeep
+
+# Local logo import staging
+tmp-logo/*
+!tmp-logo/.gitkeep
+
+# Local template import/export staging
+load-templates/*
+!load-templates/.gitkeep
+
+# Template sync state
+.template-sync-state.json
+
+# macOS
+.DS_Store
+
+# Build / cache
+.remotion/
+dist/
+
+# MCP config holds the tobyflow bearer token
+.mcp.json

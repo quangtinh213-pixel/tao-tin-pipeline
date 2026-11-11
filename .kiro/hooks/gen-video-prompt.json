@@ -1,0 +1,13 @@
+{
+  "name": "Generate Video",
+  "version": "1.0.0",
+  "description": "Auto-triggers when user types /gen-video with optional template and audio flags",
+  "when": {
+    "type": "promptSubmit",
+    "patterns": ["/gen-video*"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "The user has issued a /gen-video command. The video-gen skill (SKILL.md) is already loaded in context — execute all 8 pipeline steps defined there in order. Halt immediately on any failure and report which step failed. The full user prompt is: {{prompt}}"
+  }
+}

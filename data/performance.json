@@ -1,0 +1,2509 @@
+{
+  "generatedAt": "2026-11-09T04:06:50.622Z",
+  "startDate": "2026-10-26",
+  "endDate": "2026-11-09",
+  "daily": [
+    {
+      "day": "2026-10-26",
+      "views": 99,
+      "subscribersGained": 0,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-10-27",
+      "views": 45,
+      "subscribersGained": 0,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-10-28",
+      "views": 8235,
+      "subscribersGained": 9,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-10-29",
+      "views": 2320,
+      "subscribersGained": 4,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-10-30",
+      "views": 14152,
+      "subscribersGained": 14,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-10-31",
+      "views": 6783,
+      "subscribersGained": 8,
+      "subscribersLost": 2
+    },
+    {
+      "day": "2026-11-01",
+      "views": 7152,
+      "subscribersGained": 3,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-11-02",
+      "views": 8424,
+      "subscribersGained": 9,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-11-03",
+      "views": 11173,
+      "subscribersGained": 11,
+      "subscribersLost": 1
+    },
+    {
+      "day": "2026-11-04",
+      "views": 9908,
+      "subscribersGained": 13,
+      "subscribersLost": 2
+    },
+    {
+      "day": "2026-11-05",
+      "views": 10183,
+      "subscribersGained": 13,
+      "subscribersLost": 0
+    },
+    {
+      "day": "2026-11-06",
+      "views": 13954,
+      "subscribersGained": 9,
+      "subscribersLost": 0
+    }
+  ],
+  "videos": [
+    {
+      "slug": "2026-10-27-dantri-com-vn-thoi-su-hai-vu-chay-trong-mot-buoi-chieu-o-nghe-an-202",
+      "videoId": "ZeEDXl7Vq4c",
+      "title": "Hai vụ cháy cách nhau gần 3 giờ ở Nghệ An #Shorts",
+      "publishAt": "2026-10-28T10:36:12.984Z",
+      "seconds": 58.4,
+      "hookCardArm": null,
+      "views": 993,
+      "apv": 29.17,
+      "avd": 17,
+      "subs": 1,
+      "retention": [107,106,106,106,105,105,105,102,95,89,82,75,68,61,56,52,48,46,45,43,41,39,38,37,35,33,31,30,29,29,28,28,27,27,26,26,25,24,23,22,21,20,20,19,18,18,18,18,18,17,17,17,16,16,16,16,15,15,15,15,14,14,14,13,13,13,13,13,13,13,12,12,12,12,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,10,10,9,9,9,8,8,8,7,7,7],
+      "drop": {
+        "at": 6,
+        "ratio": 0.11,
+        "loss": 21,
+        "text": "Theo Phòng Cảnh sát phòng cháy chữa cháy và cứu nạn, cứu hộ Công an tỉnh Nghệ An,"
+      }
+    },
+    {
+      "slug": "2026-10-27-tuoitre-vn-tin-tuc-sang-27-10-tphcm-xu-ly-nha-dat-doi-du-sau-sap-xep",
+      "videoId": "NVfp6vCeC8A",
+      "title": "TP.HCM xử lý nhà đất dôi dư, Quốc hội bàn sửa Bộ luật Hình sự #Shorts",
+      "publishAt": "2026-10-28T10:35:00.401Z",
+      "seconds": 77,
+      "hookCardArm": null,
+      "views": 876,
+      "apv": 57.60000000000001,
+      "avd": 44,
+      "subs": 1,
+      "retention": [136,136,135,134,134,134,121,111,105,98,91,88,86,85,84,81,80,79,77,76,75,73,72,72,71,68,67,66,63,63,62,61,60,59,58,58,56,56,56,55,54,53,52,52,52,51,50,49,48,47,47,47,46,46,45,45,45,45,45,44,44,43,42,42,42,42,42,41,41,40,40,40,40,39,39,39,39,39,39,39,39,38,38,38,38,38,37,37,37,36,36,36,36,36,36,36,36,36,36,33],
+      "drop": {
+        "at": 5,
+        "ratio": 0.06,
+        "loss": 29,
+        "text": "TPHCM đang siết việc xử lý nhà đất dôi dư, còn Quốc hội hôm nay bàn một đề xuất lớn về bộ luật hình sự."
+      }
+    },
+    {
+      "slug": "2026-10-27-vnexpress-net-giam-doc-benh-vien-nhi-tu-them-co-hoi-cuu-nguoi-nhung-",
+      "videoId": "udCR6s-5yb0",
+      "title": "Giảm tuổi hiến mô, tạng: quyền lợi trẻ phải được đặt lên trước #Shorts",
+      "publishAt": "2026-10-28T10:36:24.271Z",
+      "seconds": 87,
+      "hookCardArm": null,
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-28-httpsbaoxaydungvn-xe-tai-chay-du-doi-tren-cao",
+      "videoId": "tFmTiIWSjio",
+      "title": "Xe tải bốc cháy dữ dội trên cao tốc TP.HCM – Trung Lương #Shorts",
+      "publishAt": "2026-10-28T14:32:10.860Z",
+      "seconds": 55.666666666666664,
+      "hookCardArm": null,
+      "views": 1052,
+      "apv": 49,
+      "avd": 27,
+      "subs": 0,
+      "retention": [121,120,118,117,116,116,116,115,110,104,99,94,88,83,80,76,74,70,67,64,62,60,59,58,56,54,53,52,52,49,48,47,47,46,45,44,43,43,43,43,42,42,42,41,41,40,40,40,40,40,39,39,39,39,38,38,37,37,36,36,35,35,35,35,35,34,34,34,34,34,33,33,33,33,33,32,32,32,32,32,32,32,31,30,30,30,30,30,30,29,29,29,28,28,26,26,25,24,24,24],
+      "drop": {
+        "at": 6,
+        "ratio": 0.11,
+        "loss": 16,
+        "text": "Đang chạy trên cao tốc TP.HCM Trung Lương, chiếc xe tải bất ngờ bốc cháy dữ dội, ngọn lửa bao trùm tạo cột khói cao hàng chục mét."
+      }
+    },
+    {
+      "slug": "2026-10-28-httpsdanvietvn-tau-dai-10m-boc-chay-trong-dem",
+      "videoId": "ZDLTVIONTxA",
+      "title": "Tàu cá dài 10m bốc cháy trong đêm trên biển sau khi xuất bến #Shorts",
+      "publishAt": "2026-10-28T07:37:16.674Z",
+      "seconds": 61.8,
+      "hookCardArm": null,
+      "views": 909,
+      "apv": 35.82,
+      "avd": 22,
+      "subs": 1,
+      "retention": [109,109,108,108,108,108,107,105,100,91,86,80,74,68,64,62,60,58,56,54,53,51,49,47,44,42,42,40,40,39,39,38,37,37,37,36,36,35,35,33,33,32,31,30,29,28,27,26,25,25,24,24,23,23,23,23,22,22,22,21,21,20,20,20,19,19,19,18,18,18,18,17,17,17,17,17,17,17,17,16,15,14,14,14,14,14,14,13,13,12,12,12,12,12,11,10,10,10,9,9],
+      "drop": {
+        "at": 6,
+        "ratio": 0.09,
+        "loss": 20,
+        "text": "Vụ việc xảy ra vào khoảng 23 giờ 10 phút đêm 27 tháng 10 tại khu vực biển gần cảng Phú Hải."
+      }
+    },
+    {
+      "slug": "2026-10-28-httpskenh14vn-chay-lon-tai-khu-o-chuot-o",
+      "videoId": "QeqgfVpihVQ",
+      "title": "Cháy lớn tại khu ổ chuột ở Gangnam, Seoul: Hơn 100 người phải sơ tán #Shorts",
+      "publishAt": "2026-10-28T14:35:38.967Z",
+      "seconds": 59.1,
+      "hookCardArm": null,
+      "views": 4,
+      "apv": 20.83,
+      "avd": 12,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-28-httpsvietnamnetvn-phu-huynh-ha-noi-nghi-bep-an",
+      "videoId": "YoTvSNUgIOM",
+      "title": "Phụ huynh nghi bếp ăn bán trú nhập thịt trâu Ấn Độ, hiệu trưởng lên tiếng #Shorts",
+      "publishAt": "2026-10-28T07:37:38.143Z",
+      "seconds": 56,
+      "hookCardArm": null,
+      "views": 859,
+      "apv": 42.93,
+      "avd": 24,
+      "subs": 2,
+      "retention": [116,114,113,111,110,109,108,107,102,99,95,92,86,81,78,72,68,63,57,55,53,51,50,49,48,47,47,46,45,44,43,43,43,42,42,41,41,41,40,40,39,39,39,38,37,36,35,35,34,33,33,33,32,32,31,31,30,30,30,30,30,29,29,29,29,29,28,28,28,27,27,27,27,27,27,27,27,27,26,26,26,26,26,25,25,25,25,25,25,25,25,25,25,25,25,24,22,21,18,16],
+      "drop": {
+        "at": 9,
+        "ratio": 0.16,
+        "loss": 15,
+        "text": "Sự việc diễn ra tại trường tiểu học Hoài Đức khi đại diện phụ huynh có mặt từ 4 giờ sáng ngày 27 tháng 10 để kiểm tra quy trình nấu ăn của công ty May Phương."
+      }
+    },
+    {
+      "slug": "2026-10-28-httpsvtcnewsvn-nu-cau-tac-va-dong-pham-dung",
+      "videoId": "1Pu2BC4wEgg",
+      "title": "Công an Hưng Yên tạm giữ nhóm dùng súng bắn điện trộm chó mèo #Shorts",
+      "publishAt": "2026-10-28T14:33:26.435Z",
+      "seconds": 66,
+      "hookCardArm": null,
+      "views": 1034,
+      "apv": 72.14,
+      "avd": 48,
+      "subs": 2,
+      "retention": [139,137,136,135,134,133,132,129,128,125,123,119,114,109,105,102,100,98,96,94,92,91,89,86,85,83,83,82,81,79,78,77,76,76,75,74,74,73,72,72,71,70,70,69,69,68,67,66,65,64,64,63,63,62,62,61,61,60,60,60,60,60,59,59,59,58,58,57,57,56,55,54,54,54,54,53,53,53,52,52,52,51,51,51,50,49,49,48,48,47,47,46,46,45,45,45,44,43,41,40],
+      "drop": {
+        "at": 8,
+        "ratio": 0.12,
+        "loss": 14,
+        "text": "Ba đối tượng bị tạm giữ gồm Hà Thị Hằng, Nguyễn Văn Mạnh và Nguyễn Văn Ngọc."
+      }
+    },
+    {
+      "slug": "2026-10-28-soha-vn-chem-vo-tu-vong-roi-den-cong-an-dau-thu-loi-khai-gay-phan-no",
+      "videoId": "m1bWTl-F_mQ",
+      "title": "Tạm giữ người đàn ông tấn công vợ tử vong rồi đầu thú tại Đồng Nai #Shorts",
+      "publishAt": "2026-10-28T14:35:19.863Z",
+      "seconds": 42,
+      "hookCardArm": null,
+      "views": 1089,
+      "apv": 50.529999999999994,
+      "avd": 30,
+      "subs": 1,
+      "retention": [128,128,127,127,126,125,125,123,113,104,98,94,88,82,76,71,69,67,65,64,62,62,60,59,58,56,55,54,54,53,52,51,50,49,49,48,47,47,45,45,44,44,44,44,43,43,43,42,41,40,40,40,40,40,39,39,38,38,37,37,37,37,36,36,36,36,36,35,35,35,35,35,34,34,33,33,33,33,33,32,32,32,32,32,32,32,32,32,32,31,31,31,30,30,30,29,29,28,28,27],
+      "drop": {
+        "at": 3,
+        "ratio": 0.08,
+        "loss": 25,
+        "text": "Cơ quan cảnh sát điều tra Công an Đồng Nai đang tạm giữ hình sự Huỳnh Minh Duy để điều tra về hành vi liên quan đến vụ án mạng nghiêm trọng khiến người vợ tử vong."
+      }
+    },
+    {
+      "slug": "2026-10-28-suckhoedoisong-vn-cua-hang-ban-gas-o-hai-phong-bat-ngo-boc-chay-1692",
+      "videoId": "bVeOEBB84io",
+      "title": "Cửa hàng bán gas ở Hải Phòng bất ngờ bốc cháy #Shorts",
+      "publishAt": "2026-10-28T07:37:56.072Z",
+      "seconds": 55,
+      "hookCardArm": null,
+      "views": 824,
+      "apv": 38.12,
+      "avd": 21,
+      "subs": 0,
+      "retention": [110,110,110,110,110,110,110,110,102,92,83,78,71,67,66,61,58,54,52,52,51,48,47,47,47,46,46,45,44,43,43,42,42,42,41,40,39,38,37,36,35,34,33,33,33,32,31,30,30,29,28,28,27,27,27,26,26,26,25,24,24,24,24,23,23,22,22,22,21,21,21,20,20,20,20,20,20,20,20,20,19,19,19,18,18,17,17,17,16,16,15,15,14,14,14,12,12,12,11,11],
+      "drop": {
+        "at": 4,
+        "ratio": 0.08,
+        "loss": 27,
+        "text": "Một cửa hàng kinh doanh gas tại Hải Phòng bất ngờ bốc cháy dữ dội, đặt ra tình huống nguy hiểm khẩn cấp giữa khu dân cư."
+      }
+    },
+    {
+      "slug": "2026-10-28-tuoitre-vn-cong-an-thanh-hoa-thong-tin-vu-2-thanh-nien",
+      "videoId": "fUY5tj95q2E",
+      "title": "Công an Thanh Hóa thông tin vụ 2 thanh niên cầm kiếm cố thủ trên mái nhà #Shorts",
+      "publishAt": "2026-10-28T07:38:21.441Z",
+      "seconds": 75.6,
+      "hookCardArm": null,
+      "views": 1067,
+      "apv": 70.61,
+      "avd": 53,
+      "subs": 1,
+      "retention": [135,133,131,130,128,127,123,118,115,110,107,105,101,100,96,93,92,89,86,84,82,81,79,77,77,76,76,75,75,75,74,74,73,72,72,72,71,70,69,69,68,68,67,67,66,65,65,65,65,65,65,64,63,63,63,62,62,62,62,61,61,61,60,60,59,59,59,59,58,58,58,58,57,57,57,57,56,56,56,56,56,55,54,54,53,53,53,53,53,53,52,52,52,50,48,47,46,44,41,38],
+      "drop": {
+        "at": 5,
+        "ratio": 0.07,
+        "loss": 13,
+        "text": "Sau hơn 9 giờ ôm kiếm cố thủ trên mái nhà giữa cánh đồng, hai đối tượng liên quan ma túy tại Thanh Hóa đã phải hạ vũ khí đầu hàng công an."
+      }
+    },
+    {
+      "slug": "2026-10-28-tuoitre-vn-vu-2-cha-con-chet-trong",
+      "videoId": "mZsES2ar3Jo",
+      "title": "Gia Lai: Khởi tố vụ án giết người vụ cháy nhà 2 cha con tử vong #Shorts",
+      "publishAt": "2026-10-28T14:38:07.342Z",
+      "seconds": 54,
+      "hookCardArm": null,
+      "views": 4,
+      "apv": 59.91,
+      "avd": 32,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-29-httpsthanhnienvn-cong-an-ca-mau-bat-nu-giam",
+      "videoId": "VrmuqQHVPAk",
+      "title": "Bắt nữ giám đốc tại Cà Mau lừa đảo chiếm đoạt gần 35 tỉ đồng #Shorts",
+      "publishAt": "2026-10-29T08:18:33.862Z",
+      "seconds": 59.6,
+      "hookCardArm": null,
+      "views": 1183,
+      "apv": 56.61000000000001,
+      "avd": 33,
+      "subs": 3,
+      "retention": [126,125,124,123,121,120,120,116,112,108,106,102,100,96,93,89,86,82,77,75,73,72,70,69,67,66,65,64,63,62,62,61,61,59,58,56,54,54,53,52,52,51,51,51,50,50,50,49,48,47,47,46,45,45,45,44,43,43,42,42,42,42,41,41,40,40,40,40,40,39,39,39,38,38,38,38,38,38,37,37,37,36,36,36,35,34,34,34,33,33,33,33,33,32,31,31,30,30,29,29],
+      "drop": {
+        "at": 10,
+        "ratio": 0.16,
+        "loss": 12,
+        "text": "Ngày 29 tháng 10, cơ quan cảnh sát điều tra công an tỉnh Cà Mau đã khởi tố bị can, bắt tạm giam bà Hồ Thị Kiểng, giám đốc Công ty Thủy hải sản Thiên Phú, để điều tra về hành vi lừa đảo chiếm đoạt tài sản."
+      }
+    },
+    {
+      "slug": "2026-10-29-httpstienphongvn-clip-xe-tai-boc-chay-tren-cao",
+      "videoId": "FJByCPDoTxI",
+      "title": "Xe tải bốc cháy trên cao tốc TPHCM - Trung Lương #Shorts",
+      "publishAt": "2026-10-29T08:21:35.958Z",
+      "seconds": 56,
+      "hookCardArm": null,
+      "views": 1056,
+      "apv": 54.03,
+      "avd": 30,
+      "subs": 1,
+      "retention": [118,117,115,113,112,111,110,110,105,102,100,98,96,94,93,90,88,88,86,82,78,75,72,69,68,65,63,62,60,59,58,57,56,55,54,54,54,54,54,53,52,52,51,51,50,50,50,50,49,49,49,48,48,47,47,46,46,46,46,45,43,41,40,39,39,38,38,37,37,36,36,36,35,35,35,34,34,34,33,32,32,32,31,31,31,31,31,30,29,28,28,27,26,26,26,25,25,24,20,19],
+      "drop": {
+        "at": 11,
+        "ratio": 0.19,
+        "loss": 11,
+        "text": "Sự việc xảy ra vào khoảng 15 giờ tại đoạn qua nút giao Bến Lức thuộc xã Bình Đức khi phương tiện đang lưu thông theo hướng từ thành phố Hồ Chí Minh về các tỉnh miền Tây."
+      }
+    },
+    {
+      "slug": "2026-10-29-tuoitre-vn-dong-nai-dieu-tra-vu-chong",
+      "videoId": "Sz3ALysuIQI",
+      "title": "Đồng Nai: Điều tra vụ chồng tấn công vợ tử vong rồi đến công an đầu thú #Shorts",
+      "publishAt": "2026-10-29T08:21:19.775Z",
+      "seconds": 65.5,
+      "hookCardArm": null,
+      "views": 23,
+      "apv": 51.239999999999995,
+      "avd": 33,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-30-dantri-buon-ma-thuot-thu-phu-ca-phe",
+      "videoId": "PdITLO86UBU",
+      "title": "Buôn Ma Thuột quy hoạch hơn 1 triệu dân, vươn tầm thủ phủ cà phê toàn cầu #Shorts",
+      "publishAt": "2026-10-30T15:32:02.107Z",
+      "seconds": 56,
+      "hookCardArm": null,
+      "views": 1008,
+      "apv": 44.74,
+      "avd": 25,
+      "subs": 1,
+      "retention": [117,117,117,116,115,115,114,114,109,106,96,90,85,79,74,67,64,62,60,59,58,55,54,53,52,51,50,50,49,49,48,48,46,46,45,45,44,44,43,42,41,41,40,40,40,39,38,38,37,37,35,35,34,33,33,33,32,32,31,31,31,31,30,29,29,28,28,27,27,27,27,26,26,26,26,26,26,26,26,25,25,25,24,24,24,24,23,23,23,23,22,22,22,22,22,21,20,19,18,18],
+      "drop": {
+        "at": 6,
+        "ratio": 0.1,
+        "loss": 21,
+        "text": "Buôn Ma Thuột sẽ có quy mô hơn 1 triệu dân và vươn mình trở thành thủ phủ cà phê toàn cầu vào năm 2050."
+      }
+    },
+    {
+      "slug": "2026-10-30-httpsbaoxaydungvn-bat-bang-nhom-dung-dao-de-doa",
+      "videoId": "78S3Y1fHHB0",
+      "title": "Bắt nhóm 5 thiếu niên dùng dao đe dọa cướp xe máy ở Bắc Ninh #Shorts",
+      "publishAt": "2026-10-30T10:28:32.052Z",
+      "seconds": 57.3,
+      "hookCardArm": null,
+      "views": 1160,
+      "apv": 52.1,
+      "avd": 30,
+      "subs": 1,
+      "retention": [115,114,114,112,112,111,110,110,107,104,100,98,95,91,85,79,76,73,72,70,70,69,68,66,64,63,61,61,60,59,58,58,57,56,56,55,54,54,53,52,52,52,51,51,50,50,50,49,49,48,48,47,47,46,46,45,45,45,44,43,42,41,40,40,39,38,37,37,36,36,36,35,35,34,34,34,33,33,32,31,31,30,29,28,27,27,26,25,24,22,22,21,20,20,19,19,19,18,16,16],
+      "drop": {
+        "at": 7,
+        "ratio": 0.13,
+        "loss": 16,
+        "text": "Tại Bắc Ninh, 5 thiếu niên chỉ từ 15 đến 17 tuổi vừa bị khởi tố vì dùng dao chặn đường cướp xe máy trong đêm."
+      }
+    },
+    {
+      "slug": "2026-10-30-httpskenh14vn-be-gai-10-tuoi-nhap-vien-vi",
+      "videoId": "yA9zHDrpZN0",
+      "title": "Bé gái 10 tuổi nhập viện vì đau bụng, bác sĩ phát hiện mang thai 6 tháng #Shorts",
+      "publishAt": "2026-10-30T13:23:37.768Z",
+      "seconds": 47.7,
+      "hookCardArm": null,
+      "views": 1179,
+      "apv": 62.66,
+      "avd": 30,
+      "subs": 1,
+      "retention": [127,125,123,121,121,120,119,118,117,113,108,105,101,96,93,92,90,87,84,81,79,77,75,75,74,73,73,72,72,71,71,71,70,70,69,68,67,67,67,66,65,65,64,64,62,62,62,62,61,60,59,59,58,58,57,56,56,55,53,52,52,52,51,49,48,47,46,45,45,44,44,44,44,43,43,43,43,42,42,42,42,41,41,40,40,39,38,37,36,35,35,34,34,33,33,31,31,30,30,30],
+      "drop": {
+        "at": 6,
+        "ratio": 0.12,
+        "loss": 12,
+        "text": "Bé gái 10 tuổi tại Argentina nhập viện vì đau bụng dữ dội, khiến các bác sĩ bàng hoàng khi phát hiện em đã mang thai 6 tháng."
+      }
+    },
+    {
+      "slug": "2026-10-30-httpskenh14vn-vu-giao-vien-tieng-anh-bao-hanh",
+      "videoId": "V5k4x2-JNL8",
+      "title": "Vụ giáo viên nước ngoài tại Cần Thơ: Sở GD&ĐT lên tiếng, trường tạm dừng chương trình #Shorts",
+      "publishAt": "2026-10-30T13:27:01.065Z",
+      "seconds": 53.86666666666667,
+      "hookCardArm": null,
+      "views": 1068,
+      "apv": 51.129999999999995,
+      "avd": 27,
+      "subs": 0,
+      "retention": [109,109,108,107,107,106,105,105,104,103,101,100,99,97,95,90,86,82,80,77,71,68,66,65,64,63,62,61,61,61,60,59,59,58,58,57,56,55,54,54,53,53,52,51,50,49,49,48,48,47,47,47,46,46,45,44,44,43,42,42,40,39,39,37,36,35,34,34,33,33,33,33,33,32,32,31,30,30,29,29,28,28,27,26,25,25,24,24,23,22,21,19,17,15,14,13,12,11,11,11],
+      "drop": {
+        "at": 8,
+        "ratio": 0.15,
+        "loss": 13,
+        "text": "một giáo viên tiếng Anh người nước ngoài có hành vi bạo lực với học sinh lớp 2."
+      }
+    },
+    {
+      "slug": "2026-10-30-httpstienphongvn-ha-noi-khoi-to-nguoi-phu-nu",
+      "videoId": "mdgDqD1KUUQ",
+      "title": "Hà Nội: Khởi tố người phụ nữ ném mắm tôm vào chủ tiệm bánh ngọt #Shorts",
+      "publishAt": "2026-10-30T13:32:25.971Z",
+      "seconds": 60.5,
+      "hookCardArm": null,
+      "views": 1154,
+      "apv": 68.89,
+      "avd": 42,
+      "subs": 0,
+      "retention": [137,136,136,136,135,135,135,131,126,121,117,114,110,105,101,98,93,89,86,83,81,81,79,78,77,77,76,76,75,74,74,73,72,72,72,71,70,69,68,68,66,66,66,65,65,64,63,63,63,62,61,61,61,61,61,60,60,60,59,59,59,59,59,59,59,58,58,58,58,58,57,57,56,56,55,55,55,54,54,54,54,53,52,52,51,50,50,49,48,47,45,44,42,40,40,39,38,38,37,37],
+      "drop": {
+        "at": 5,
+        "ratio": 0.08,
+        "loss": 14,
+        "text": "Hành vi ném mắm tôm vào chủ tiệm bánh ngọt khi đang livestream vừa khiến một phụ nữ tại Hà Nội bị cơ quan công an khởi tố, bắt tạm giam."
+      }
+    },
+    {
+      "slug": "2026-10-30-httpstienphongvn-mang-hung-khi-di-giai-quyet-mau",
+      "videoId": "AvIzRkB0PkA",
+      "title": "Mang hung khí giải quyết mâu thuẫn trong đêm, 20 đối tượng bị khởi tố #Shorts",
+      "publishAt": "2026-10-30T13:25:35.982Z",
+      "seconds": 55.4,
+      "hookCardArm": null,
+      "views": 1118,
+      "apv": 76.49,
+      "avd": 42,
+      "subs": 0,
+      "retention": [142,142,141,141,139,138,137,137,134,131,125,122,119,116,111,107,104,101,98,96,94,93,92,90,87,85,84,82,81,79,78,77,76,75,75,74,74,74,73,72,72,72,71,71,70,69,69,69,68,68,68,68,67,67,67,66,66,66,66,66,66,66,65,64,64,64,63,63,63,62,62,62,61,61,60,60,60,59,59,59,58,58,57,56,56,55,55,54,54,54,53,53,52,51,50,49,48,45,45,44],
+      "drop": {
+        "at": 8,
+        "ratio": 0.14,
+        "loss": 12,
+        "text": "Mang theo dao phóng lợn, mã tấu và tuýp sắt để giải quyết mâu thuẫn trong đêm, 20 đối tượng tại Đồng Nai vừa chính thức bị khởi tố."
+      }
+    },
+    {
+      "slug": "2026-10-30-httpsvietnamnetvn-binh-gas-phat-no-giua-hoa-hoan",
+      "videoId": "Up7Oaly7b3w",
+      "title": "Bình gas phát nổ giữa hỏa hoạn, 6 căn nhà bị cháy tại An Giang #Shorts",
+      "publishAt": "2026-10-30T13:24:09.843Z",
+      "seconds": 53.8,
+      "hookCardArm": null,
+      "views": 1056,
+      "apv": 42.31,
+      "avd": 22,
+      "subs": 0,
+      "retention": [115,115,114,114,113,113,112,112,108,103,99,93,89,86,81,73,71,65,61,56,54,53,52,51,49,48,47,45,44,43,41,41,40,39,37,36,36,36,36,35,35,34,34,33,33,33,32,32,32,32,31,31,30,30,29,29,29,29,29,29,28,28,27,27,27,27,27,27,26,26,26,26,25,25,25,25,24,23,23,23,23,23,23,23,22,21,21,22,21,21,20,19,19,19,18,17,17,16,15,15],
+      "drop": {
+        "at": 8,
+        "ratio": 0.15,
+        "loss": 16,
+        "text": "Vụ hỏa hoạn xảy ra vào khoảng 9 giờ sáng ngày 30 tháng 10 tại một con hẻm thuộc khóm Châu Long 7, phường Châu Đốc."
+      }
+    },
+    {
+      "slug": "2026-10-30-suckhoedoisong-vn-thay-giao-cau-cuu-giua-troi-mua-csgt",
+      "videoId": "AhwCmbDK35s",
+      "title": "Thầy giáo cầu cứu giữa trời mưa, CSGT mở đường đưa nam sinh đi cấp cứu #Shorts",
+      "publishAt": "2026-10-30T10:33:40.307Z",
+      "seconds": 63.36666666666667,
+      "hookCardArm": null,
+      "views": 1008,
+      "apv": 29.01,
+      "avd": 18,
+      "subs": 1,
+      "retention": [106,106,104,104,103,103,103,97,87,77,71,64,57,53,50,48,45,43,39,37,36,36,35,33,32,31,30,29,28,27,27,26,25,24,24,24,24,24,24,23,23,23,23,22,22,21,20,20,20,20,19,19,18,18,18,18,18,17,17,16,16,16,16,15,15,15,14,14,14,14,14,14,14,14,14,13,13,13,13,13,13,13,13,12,12,12,11,11,11,11,11,11,11,11,10,10,10,10,9,8],
+      "drop": {
+        "at": 5,
+        "ratio": 0.08,
+        "loss": 26,
+        "text": "một nam sinh sốt cao mê man, có tiền sử bệnh tim, vừa được CSGT Hà Nội mở đường lao tới viện cấp cứu kịp thời."
+      }
+    },
+    {
+      "slug": "2026-10-30-tienphong-vn-vu-nguoi-dan-ong-bi-chem",
+      "videoId": "amKNfG_fG_A",
+      "title": "Vụ người đàn ông bị chém tử vong ở Hà Nội: Nạn nhân và nghi phạm là bạn thân #Shorts",
+      "publishAt": "2026-10-30T10:33:57.691Z",
+      "seconds": 53.333333333333336,
+      "hookCardArm": null,
+      "views": 1117,
+      "apv": 38.78,
+      "avd": 24,
+      "subs": 1,
+      "retention": [117,115,114,112,111,111,111,104,95,88,82,76,69,63,61,58,53,50,47,45,44,43,41,41,39,38,38,37,37,36,35,34,34,33,33,33,33,32,32,32,32,32,31,31,30,30,30,30,30,30,30,30,29,29,29,28,28,28,28,28,28,27,27,27,26,26,26,26,26,26,26,26,25,25,25,25,25,25,24,24,24,24,24,24,24,24,23,23,23,22,22,22,22,21,21,21,21,20,20,18],
+      "drop": {
+        "at": 4,
+        "ratio": 0.07,
+        "loss": 23,
+        "text": "bất ngờ xảy ra vụ tấn công bằng hung khí"
+      }
+    },
+    {
+      "slug": "2026-10-30-tuoitre-phim-lau-thu-315-ti-mua-xe-sang",
+      "videoId": "wG5PgyffJaY",
+      "title": "Nhóm phát tán phim lậu thu hơn 315 tỉ đồng mua hàng loạt xe sang, nhà đất #Shorts",
+      "publishAt": "2026-10-30T15:46:57.129Z",
+      "seconds": 53.2,
+      "hookCardArm": null,
+      "views": 8,
+      "apv": 32.61,
+      "avd": 17,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-30-tuoitre-tu-nam-2027-tu-cong-bo-xuat-xu",
+      "videoId": "7zfdKuJnXQg",
+      "title": "Từ 2027: Doanh nghiệp tự công bố xuất xứ hàng Việt, không cần xin chứng nhận #Shorts",
+      "publishAt": "2026-10-30T15:39:30.668Z",
+      "seconds": 52.1,
+      "hookCardArm": null,
+      "views": 419,
+      "apv": 83.09,
+      "avd": 44,
+      "subs": 3,
+      "retention": [156,156,156,156,156,156,156,156,154,153,147,144,143,136,131,127,123,115,111,109,104,100,99,96,96,95,93,91,90,89,88,88,86,85,83,83,82,82,80,80,80,79,77,76,74,75,74,74,74,73,72,72,72,71,69,68,67,67,67,67,67,67,67,66,66,65,65,65,64,64,64,64,64,61,60,60,60,60,60,60,60,59,59,59,57,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56],
+      "drop": {
+        "at": 8,
+        "ratio": 0.16,
+        "loss": 16,
+        "text": "Bước ngoặt lớn cho hàng Việt, từ ngày mùng 1 tháng 1 năm 2027, doanh nghiệp sẽ được tự công bố xuất xứ mà không cần xin giấy chứng nhận."
+      }
+    },
+    {
+      "slug": "2026-10-30-vnexpress-san-bay-long-thanh-khai-thac-24-12",
+      "videoId": "X1foqgMcZRo",
+      "title": "Sân bay Long Thành dự kiến khai thác từ 0h ngày 24/12 #Shorts",
+      "publishAt": "2026-10-30T15:54:52.535Z",
+      "seconds": 85.5,
+      "hookCardArm": null,
+      "views": 5,
+      "apv": 19.77,
+      "avd": 17,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-30-vnexpress-tphcm-tra-luong-chuyen-gia-265-trieu",
+      "videoId": "tr6Bmqdii38",
+      "title": "TP.HCM mở cơ chế tiến cử, trả lương chuyên gia đến 265 triệu đồng/tháng #Shorts",
+      "publishAt": "2026-10-30T15:53:52.032Z",
+      "seconds": 55.4,
+      "hookCardArm": null,
+      "views": 4,
+      "apv": 18.51,
+      "avd": 10,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-31-dantri-phat-3-thanh-nien-cuong-thi-bmw",
+      "videoId": "MMk_PwknDxE",
+      "title": "Xử phạt 3 thanh niên giả làm cương thi trên xe BMW mui trần #Shorts",
+      "publishAt": "2026-10-31T09:21:13.458Z",
+      "seconds": 58.9,
+      "hookCardArm": null,
+      "views": 3,
+      "apv": 42.03,
+      "avd": 24,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-31-dantri-thanh-tra-dhqg-ha-noi-lua-doi",
+      "videoId": "flSEKpPQJks",
+      "title": "Thanh tra ĐHQG Hà Nội: Phát hiện 2 đề tài có dấu hiệu lừa dối khoa học #Shorts",
+      "publishAt": "2026-10-31T07:53:11.863Z",
+      "seconds": 56.4,
+      "hookCardArm": null,
+      "views": 1199,
+      "apv": 51.47999999999999,
+      "avd": 29,
+      "subs": 0,
+      "retention": [115,115,114,113,113,112,112,112,108,103,100,97,92,89,87,84,81,80,76,73,72,70,69,68,68,67,65,65,63,62,60,59,57,57,56,56,55,55,53,52,52,51,50,49,49,48,48,47,46,45,45,44,44,43,42,41,41,40,40,39,39,39,38,37,37,36,36,36,34,34,33,33,32,31,31,31,30,30,29,29,28,28,28,27,27,26,26,25,25,25,25,24,24,23,23,21,20,18,17,17],
+      "drop": {
+        "at": 5,
+        "ratio": 0.08,
+        "loss": 12,
+        "text": "Thông tin nóng về giáo dục, thanh tra chính phủ vừa phát hiện hai đề tài nghiên cứu khoa học có dấu hiệu lừa dối tại Đại học Quốc gia Hà Nội."
+      }
+    },
+    {
+      "slug": "2026-10-31-dantri-tim-thay-nam-sinh-lop-11-tphcm",
+      "videoId": "UxFdTKtWB_o",
+      "title": "Tìm thấy nam sinh lớp 11 mất liên lạc nhiều ngày ở TPHCM #Shorts",
+      "publishAt": "2026-10-31T09:26:30.065Z",
+      "seconds": 60.2,
+      "hookCardArm": null,
+      "views": 3,
+      "apv": 48.69,
+      "avd": 29,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-31-dantri-vang-sjc-giam-sau-lo-6-trieu",
+      "videoId": "tV8-VsGtZDI",
+      "title": "Vàng SJC giảm sâu, người mua lỗ 6 triệu đồng chỉ sau một tuần #Shorts",
+      "publishAt": "2026-10-31T06:02:42.690Z",
+      "seconds": 48.7,
+      "hookCardArm": null,
+      "views": 1248,
+      "apv": 60.53999999999999,
+      "avd": 29,
+      "subs": 3,
+      "retention": [126,125,123,122,120,119,118,117,117,115,112,109,106,104,100,97,95,93,93,92,90,90,89,88,86,85,84,82,80,78,77,75,73,71,70,68,67,65,63,62,60,58,58,56,55,54,53,52,51,51,49,48,48,48,47,46,46,45,45,44,44,44,43,42,42,41,40,40,39,38,38,37,36,36,36,35,35,35,34,34,33,33,32,32,31,31,31,31,31,31,31,30,30,29,29,29,28,28,28,28],
+      "drop": {
+        "at": 7,
+        "ratio": 0.14,
+        "loss": 9,
+        "text": "Sáng ngày 31 tháng 10, giá vàng miếng SJC đồng loạt giảm mạnh xuống mức 136 đến 139 triệu đồng một lượng."
+      }
+    },
+    {
+      "slug": "2026-10-31-tuoitre-hue-ra-mat-ai-huong-dan-vien",
+      "videoId": "ccdMtMxK9LE",
+      "title": "Huế ra mắt AI làm hướng dẫn viên, tự lên lịch trình cho du khách #Shorts",
+      "publishAt": "2026-10-31T11:27:27.977Z",
+      "seconds": 45.5,
+      "hookCardArm": null,
+      "views": 8,
+      "apv": 45.09,
+      "avd": 20,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-31-tuoitre-phuong-an-giam-gia-dien",
+      "videoId": "6TmIOb61r2E",
+      "title": "Chính phủ chỉ đạo phương án giảm giá điện khoảng 2% đến năm 2027 #Shorts",
+      "publishAt": "2026-10-31T07:30:35.787Z",
+      "seconds": 60.13333333333333,
+      "hookCardArm": null,
+      "views": 1008,
+      "apv": 47.87,
+      "avd": 29,
+      "subs": 0,
+      "retention": [115,115,114,114,114,114,113,112,110,106,98,91,87,83,79,75,73,71,67,65,64,62,60,60,58,58,57,57,56,55,54,53,51,51,50,48,47,47,46,45,45,43,43,43,43,43,43,42,42,41,41,41,40,39,39,38,38,37,37,36,36,35,35,34,34,33,32,31,31,31,30,30,29,29,29,29,28,28,28,28,27,26,26,26,25,25,24,23,23,23,22,21,20,20,20,19,19,18,17,17],
+      "drop": {
+        "at": 6,
+        "ratio": 0.1,
+        "loss": 19,
+        "text": "Tin vui kinh tế dân sinh, Chính phủ đang chỉ đạo phương án giảm giá bán lẻ điện khoảng 2% cho người dân và doanh nghiệp."
+      }
+    },
+    {
+      "slug": "2026-10-31-tuoitre-tim-thay-hai-cot-nu-liet-si",
+      "videoId": "HDRqGWxBdhw",
+      "title": "Tìm thấy hài cốt nữ liệt sĩ được bọc trong 2 lớp võng dù #Shorts",
+      "publishAt": "2026-10-31T05:51:10.716Z",
+      "seconds": 50,
+      "hookCardArm": null,
+      "views": 1142,
+      "apv": 52.42,
+      "avd": 26,
+      "subs": 3,
+      "retention": [123,123,122,120,118,116,115,115,114,110,104,102,98,95,92,88,84,79,76,73,69,66,64,63,62,60,58,56,53,52,50,50,49,49,48,48,47,47,47,46,46,46,46,45,45,45,45,44,44,44,43,43,43,43,43,42,42,41,41,41,40,40,41,40,40,40,39,39,38,38,38,37,37,36,36,35,35,34,34,34,34,34,33,33,33,32,32,31,31,30,29,28,28,27,26,25,25,24,22,22],
+      "drop": {
+        "at": 8,
+        "ratio": 0.15,
+        "loss": 13,
+        "text": "Ngày 31 tháng 10, Đội K51 thuộc Bộ Chỉ huy Quân sự tỉnh Đắk Lắk cho biết đã phối hợp quy tập hài cốt tại xã Hòa Mỹ."
+      }
+    },
+    {
+      "slug": "2026-10-31-tuoitre-tphcm-tich-hop-113-114-115",
+      "videoId": "8HSmdmbkXh4",
+      "title": "TP.HCM sẽ tích hợp 113, 114, 115 thành một tổng đài khẩn cấp #Shorts",
+      "publishAt": "2026-10-31T05:44:34.079Z",
+      "seconds": 55.46666666666667,
+      "hookCardArm": null,
+      "views": 1212,
+      "apv": 38.7,
+      "avd": 21,
+      "subs": 0,
+      "retention": [110,109,108,108,107,107,107,106,102,98,93,89,85,82,77,73,69,66,64,62,60,58,57,56,55,54,54,53,52,50,48,47,46,45,43,40,38,38,37,36,35,35,34,34,32,31,31,30,29,28,27,27,26,26,25,25,24,24,23,23,22,21,21,21,20,19,19,17,17,17,16,16,16,15,15,15,14,14,14,14,14,13,13,13,13,13,13,12,12,12,12,12,11,11,10,10,10,10,10,10],
+      "drop": {
+        "at": 8,
+        "ratio": 0.14,
+        "loss": 13,
+        "text": "Ủy ban Nhân dân thành phố Hồ Chí Minh vừa ban hành kế hoạch tích hợp ba số khẩn cấp 113, 114 và 115 thành đầu số chung là 113."
+      }
+    },
+    {
+      "slug": "2026-10-31-tuoitre-vingroup-bao-lai-ky-luc-43700",
+      "videoId": "dBNq0Oaq360",
+      "title": "Vingroup báo lãi kỷ lục hơn 43.700 tỉ đồng sau 9 tháng năm 2026 #Shorts",
+      "publishAt": "2026-10-31T07:36:33.037Z",
+      "seconds": 64.5,
+      "hookCardArm": null,
+      "views": 4,
+      "apv": 0,
+      "avd": 0,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-31-vnexpress-92-rua-con-no-ve-bien-hon-cau",
+      "videoId": "DKf_8OdHJtU",
+      "title": "92 rùa con nở, trở về biển ở Hòn Cau #Shorts",
+      "publishAt": "2026-10-31T11:19:24.201Z",
+      "seconds": 59.7,
+      "hookCardArm": null,
+      "views": 4,
+      "apv": 103.32999999999998,
+      "avd": 62,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-31-vnexpress-ca-tay-chan-mieng-tang-tp-hcm",
+      "videoId": "7Aj9QrE25s0",
+      "title": "TP.HCM báo động ca tay chân miệng tăng hơn 65%, nguy cơ lan rộng trường học #Shorts",
+      "publishAt": "2026-10-31T07:42:14.704Z",
+      "seconds": 58.5,
+      "hookCardArm": null,
+      "views": 910,
+      "apv": 23.91,
+      "avd": 14,
+      "subs": 2,
+      "retention": [102,102,102,102,102,102,102,101,94,80,69,62,58,55,49,45,41,40,37,34,33,32,31,29,28,27,26,26,25,24,22,22,21,20,19,18,18,17,17,16,15,15,14,14,14,13,13,13,13,12,12,11,11,11,11,11,11,10,10,10,10,10,10,9,9,9,9,9,8,8,8,7,7,7,7,7,7,7,7,7,7,7,7,6,6,6,5,5,5,4,4,4,4,3,3,3,3,3,3,3],
+      "drop": {
+        "at": 5,
+        "ratio": 0.09,
+        "loss": 32,
+        "text": "Cảnh báo y tế khẩn, Thành phố Hồ Chí Minh vừa báo động số ca mắc tay chân miệng tăng vọt hơn sáu mươi lăm phần trăm, nguy cơ lây lan diện rộng trong trường học."
+      }
+    },
+    {
+      "slug": "2026-10-31-vnexpress-dau-gia-cang-tin-day-gia-suat-an",
+      "videoId": "BQRnI_UoZkk",
+      "title": "Đại biểu: Đấu giá căng tin đẩy giá suất ăn học sinh #Shorts",
+      "publishAt": "2026-10-31T05:33:54.675Z",
+      "seconds": 53.5,
+      "hookCardArm": null,
+      "views": 1179,
+      "apv": 59.46,
+      "avd": 32,
+      "subs": 1,
+      "retention": [129,128,126,124,122,120,119,119,116,113,105,99,95,90,87,83,80,78,76,74,73,71,70,69,68,67,65,65,65,63,62,61,61,60,59,59,58,58,57,56,56,56,56,55,54,54,54,53,53,53,53,52,52,52,51,50,50,50,50,50,49,49,48,48,48,47,47,47,46,46,46,45,45,45,45,44,44,44,44,43,43,43,42,40,39,39,38,38,37,37,37,36,35,34,34,33,32,31,30,30],
+      "drop": {
+        "at": 5,
+        "ratio": 0.1,
+        "loss": 18,
+        "text": "Vì sao một đĩa cơm hay chai nước bán trong trường học lại có giá đắt hơn hẳn bên ngoài?"
+      }
+    },
+    {
+      "slug": "2026-10-31-vnexpress-dien-tap-chua-chay-5-ty-usd",
+      "videoId": "Sa83Ne2zD5w",
+      "title": "2.500 người diễn tập chữa cháy tại tổ hợp hóa dầu 5 tỷ USD #Shorts",
+      "publishAt": "2026-10-31T09:16:00.794Z",
+      "seconds": 56.8,
+      "hookCardArm": null,
+      "views": 3,
+      "apv": 9.12,
+      "avd": 5,
+      "subs": 0
+    },
+    {
+      "slug": "2026-10-31-vnexpress-tphcm-10-dau-moi-logistics",
+      "videoId": "_BVjFFYT0Rk",
+      "title": "TP.HCM định hình mạng lưới 10 trung tâm logistics hạt nhân lớn #Shorts",
+      "publishAt": "2026-10-31T07:47:46.187Z",
+      "seconds": 55.266666666666666,
+      "hookCardArm": null,
+      "views": 252,
+      "apv": 30.37,
+      "avd": 17,
+      "subs": 1,
+      "retention": [107,105,104,103,103,103,101,101,96,87,80,77,66,60,58,52,46,44,42,39,37,37,36,36,36,35,35,35,34,34,34,33,32,32,32,32,32,32,32,31,31,30,29,29,26,26,22,21,21,20,19,18,18,18,18,17,17,17,17,16,16,16,15,13,13,13,13,12,12,12,12,12,12,11,11,11,10,10,9,9,9,9,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,7,7,7],
+      "drop": {
+        "at": 6,
+        "ratio": 0.1,
+        "loss": 21,
+        "text": "Bước đi đột phá, thành phố Hồ Chí Minh vừa chính thức thông qua nghị quyết định hình mạng lưới 10 trung tâm logistics hạt nhân quy mô lớn."
+      }
+    },
+    {
+      "slug": "2026-10-31-vnexpress-vietnam-airlines-doi-4360-ty-nhien-lieu",
+      "videoId": "2DYXgImXNa4",
+      "title": "Vietnam Airlines 'đội' thêm 4.360 tỷ đồng chi phí nhiên liệu #Shorts",
+      "publishAt": "2026-10-31T05:57:03.195Z",
+      "seconds": 49.5,
+      "hookCardArm": null,
+      "views": 916,
+      "apv": 41.77,
+      "avd": 20,
+      "subs": 0,
+      "retention": [114,113,112,111,110,110,109,109,109,106,102,97,89,82,78,74,69,65,63,62,59,57,56,55,54,53,52,51,49,49,46,45,44,42,42,40,38,38,37,36,36,35,34,33,33,33,33,32,32,32,32,31,31,30,30,30,29,29,28,28,28,27,26,26,26,24,24,23,22,22,22,22,21,21,21,20,20,20,19,19,19,19,18,19,19,18,18,17,17,17,16,16,16,16,16,16,16,15,15,15],
+      "drop": {
+        "at": 5,
+        "ratio": 0.11,
+        "loss": 20,
+        "text": "Dù doanh thu bay quốc tế tăng trưởng mạnh, Vietnam Airlines vẫn bất ngờ chuyển từ lãi sang lỗ trong quý 3."
+      }
+    },
+    {
+      "slug": "2026-11-01-dantri-2-5-trieu-nguoi-nop-thue-chua-dong-mst",
+      "videoId": "U8ZLEJm-fRc",
+      "title": "Nghỉ kinh doanh mà chưa đóng mã số thuế? Đề xuất giảm tới 70% tiền phạt #Shorts",
+      "publishAt": "2026-11-02T04:30:00.000Z",
+      "seconds": 56,
+      "hookCardArm": null,
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-dantri-acv-san-bay-long-thanh",
+      "videoId": "7SSS6zAMA_Q",
+      "title": "Chủ đầu tư sân bay Long Thành giảm gần 3.700 nhân sự, lãi quý 3 sụt giảm #Shorts",
+      "publishAt": "2026-11-01T06:07:16.010Z",
+      "seconds": 80.5,
+      "hookCardArm": null,
+      "views": 549,
+      "apv": 38.71,
+      "avd": 31,
+      "subs": 0,
+      "retention": [113,113,112,112,112,112,108,102,96,91,85,81,76,74,69,67,65,65,61,60,59,58,56,55,54,53,51,50,49,47,44,41,39,37,35,34,33,33,32,32,32,31,31,31,30,28,28,28,27,26,25,25,25,24,23,23,23,23,23,22,22,22,22,22,22,22,22,22,22,21,21,21,21,20,20,20,20,19,19,19,19,19,19,19,19,19,19,19,18,18,18,17,17,17,16,16,16,16,15,14],
+      "drop": {
+        "at": 6,
+        "ratio": 0.08,
+        "loss": 17,
+        "text": "Chủ đầu tư sân bay Long Thành vừa bất ngờ ghi nhận mức giảm gần 3700 nhân sự chỉ sau 9 tháng, cùng lợi nhuận quý 3 sụt giảm mạnh."
+      }
+    },
+    {
+      "slug": "2026-11-01-dantri-chuoi-gym-california",
+      "videoId": "VQhAjSETL-k",
+      "title": "Đòi hội viên cũ đóng thêm 599.000 đồng/tháng, chuỗi gym California giờ ra sao? #Shorts",
+      "publishAt": "2026-11-01T08:38:55.252Z",
+      "seconds": 51.1,
+      "hookCardArm": null,
+      "views": 339,
+      "apv": 24.08,
+      "avd": 12,
+      "subs": 0,
+      "retention": [104,104,104,104,104,104,103,103,100,94,87,82,74,63,60,53,49,46,44,43,31,26,26,24,21,19,18,16,16,15,13,13,13,13,13,13,13,15,13,13,13,12,12,10,10,10,10,10,10,10,10,10,10,10,10,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6,4,4],
+      "drop": {
+        "at": 6,
+        "ratio": 0.11,
+        "loss": 24,
+        "text": "Chuỗi phòng tập California Fitness & Yoga vừa phát đi thông báo chính thức về kế hoạch mở cửa trở lại hai câu lạc bộ tại Vũng Tàu và Biên Hòa từ ngày mùng 5 tháng 11 tới."
+      }
+    },
+    {
+      "slug": "2026-11-01-dantri-dung-den-do-van-bi-phat-20-trieu",
+      "videoId": "Ib38YHxeA0E",
+      "title": "Đã dừng đèn đỏ vẫn bị phạt 18-20 triệu đồng, tài xế mắc lỗi gì? #Shorts",
+      "publishAt": "2026-11-01T11:22:00.185Z",
+      "seconds": 47.733333333333334,
+      "hookCardArm": null,
+      "views": 1,
+      "apv": 0,
+      "avd": 0,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-dantri-tai-nan-xe-dau-keo-ha-tinh",
+      "videoId": "VeUP3QdCF18",
+      "title": "Xe đầu kéo lao vào đám đông xem vụ lật xe trên QL8A Hà Tĩnh #Shorts",
+      "publishAt": "2026-11-01T06:27:43.048Z",
+      "seconds": 74.63333333333334,
+      "hookCardArm": null,
+      "views": 1292,
+      "apv": 39.51,
+      "avd": 29,
+      "subs": 0,
+      "retention": [110,110,110,109,108,108,105,103,102,101,100,99,94,85,74,67,62,60,57,55,53,51,49,48,47,45,43,42,42,41,39,39,38,38,37,36,35,35,35,34,34,34,34,33,33,33,33,33,33,33,33,33,32,32,32,32,31,30,29,29,29,28,28,27,27,26,25,24,24,23,23,22,21,20,20,19,18,18,18,17,17,17,17,16,16,15,15,15,15,14,14,13,13,13,13,12,12,11,11,11],
+      "drop": {
+        "at": 10,
+        "ratio": 0.13,
+        "loss": 27,
+        "text": "Vụ việc xảy ra tại ki-lô-mét 71 trên quốc lộ 8A đoạn dẫn lên cửa khẩu quốc tế Cầu Treo, tỉnh Hà Tĩnh."
+      }
+    },
+    {
+      "slug": "2026-11-01-tuoitre-anh-duc-vo-dich-olympia-2026",
+      "videoId": "DWptfaWcQQg",
+      "title": "240 điểm và khoảnh khắc cả điểm cầu Hà Nội vỡ òa khi Anh Đức vô địch Olympia #Shorts",
+      "publishAt": "2026-11-01T11:07:34.096Z",
+      "seconds": 50.833333333333336,
+      "hookCardArm": null,
+      "views": 138,
+      "apv": 44.45,
+      "avd": 22,
+      "subs": 0,
+      "retention": [123,118,111,107,107,105,100,100,98,91,86,84,84,82,82,73,68,66,66,64,64,64,64,64,59,57,57,55,52,50,48,43,43,41,41,41,41,43,43,43,41,39,39,39,41,39,39,39,39,39,39,39,39,39,39,36,34,34,32,30,30,30,30,30,30,30,30,30,30,32,36,34,32,30,30,30,30,27,27,30,30,30,30,30,30,30,30,27,27,27,27,27,27,27,27,27,27,27,25,25],
+      "drop": {
+        "at": 8,
+        "ratio": 0.15,
+        "loss": 16,
+        "text": "Chung kết Đường lên đỉnh Olympia năm thứ 26 vừa chính thức khép lại với chiến thắng đầy cảm xúc của nhà leo núi Đoàn Lê Anh Đức đến từ thủ đô Hà Nội."
+      }
+    },
+    {
+      "slug": "2026-11-01-tuoitre-co-gai-bi-bat-coc-online-2-ty",
+      "videoId": "oCdzPwx39u4",
+      "title": "Cô gái 18 tuổi cạy két sắt nhà, chuyển gần 2 tỉ vì cuộc gọi 'bắt cóc online' #Shorts",
+      "publishAt": "2026-11-01T11:16:47.786Z",
+      "seconds": 52.93333333333333,
+      "hookCardArm": null,
+      "views": 5,
+      "apv": 10.78,
+      "avd": 5,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-tuoitre-du-bao-thoi-tiet-1-11",
+      "videoId": "EcSmxNcYUxc",
+      "title": "Dự báo thời tiết từ 1-11 đến 7-11: Bắc Bộ nắng sương mù, Trung Bộ mưa lớn #Shorts",
+      "publishAt": "2026-11-01T05:49:30.208Z",
+      "seconds": 75.86666666666666,
+      "hookCardArm": null,
+      "views": 933,
+      "apv": 94.77,
+      "avd": 72,
+      "subs": 2,
+      "retention": [157,156,154,153,152,152,145,142,138,137,134,131,130,129,127,126,124,124,124,123,122,120,119,117,115,115,115,113,112,111,110,110,109,108,107,106,106,105,105,104,103,102,102,101,97,96,95,92,91,90,90,89,89,88,86,85,84,83,81,81,79,79,78,78,77,76,75,73,73,72,72,71,70,70,69,69,69,69,68,68,68,68,68,67,67,67,67,65,65,65,65,65,65,64,64,63,62,61,60,59],
+      "drop": {
+        "at": 5,
+        "ratio": 0.06,
+        "loss": 14,
+        "text": "Bắc bộ sắp đón nắng hanh kèm sương mù sáng sớm trong khi miền Trung và Nam Bộ liên tục có mưa rào đến mưa to."
+      }
+    },
+    {
+      "slug": "2026-11-01-tuoitre-sieu-cang-an-thoi-phu-quoc",
+      "videoId": "b2UH3CAOs0g",
+      "title": "Phú Quốc vận hành siêu cảng mới đón tàu 3.000 DWT, chuẩn bị cho APEC 2027 #Shorts",
+      "publishAt": "2026-11-01T08:27:04.545Z",
+      "seconds": 49.03333333333333,
+      "hookCardArm": null,
+      "views": 937,
+      "apv": 40.78,
+      "avd": 20,
+      "subs": 0,
+      "retention": [115,115,115,115,114,114,113,113,112,103,95,88,83,78,74,70,66,62,59,58,55,54,52,50,49,49,47,45,45,44,43,42,41,41,40,40,39,39,37,36,35,35,35,34,33,32,32,31,31,30,29,29,28,28,28,27,27,27,25,25,25,25,25,24,24,24,23,23,22,22,22,22,22,22,21,21,21,21,20,20,20,20,19,19,19,19,19,19,19,19,18,18,18,17,17,17,17,16,16,16],
+      "drop": {
+        "at": 4,
+        "ratio": 0.09,
+        "loss": 24,
+        "text": "với tên thương mại Cảng Mặt Trời Phú Quốc"
+      }
+    },
+    {
+      "slug": "2026-11-01-tuoitre-tam-dinh-chi-giao-vien-vu-danh-nam-sinh",
+      "videoId": "nDWKHHOQ_FU",
+      "title": "Nam sinh bị bạn đánh thủng màng nhĩ ngay trong giờ học, cô giáo bị tạm đình chỉ #Shorts",
+      "publishAt": "2026-11-01T15:16:33.550Z",
+      "seconds": 55.333333333333336,
+      "hookCardArm": null,
+      "views": 6,
+      "apv": 66.88,
+      "avd": 37,
+      "subs": 1
+    },
+    {
+      "slug": "2026-11-01-tuoitre-tau-tuan-duyen-my-tham-tphcm",
+      "videoId": "KTID6vYDm2s",
+      "title": "Lần đầu sau 20 năm, tàu tuần duyên Mỹ mang trực thăng và drone AI đến TP.HCM #Shorts",
+      "publishAt": "2026-11-01T15:01:50.722Z",
+      "seconds": 61,
+      "hookCardArm": null,
+      "views": 5,
+      "apv": 41.03,
+      "avd": 25,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-tuoitre-thao-do-bien-30kmh-cao-toc",
+      "videoId": "nzss1vYcvBg",
+      "title": "Trên 30km/h lo không kịp thắng: biển tốc độ tối thiểu ở cao tốc này vừa bị tháo #Shorts",
+      "publishAt": "2026-11-01T08:32:28.037Z",
+      "seconds": 50.63333333333333,
+      "hookCardArm": null,
+      "views": 1282,
+      "apv": 45.58,
+      "avd": 23,
+      "subs": 1,
+      "retention": [106,106,106,105,105,105,104,104,103,98,94,91,89,86,83,78,75,70,67,66,63,62,60,57,55,54,53,53,52,51,51,51,51,51,50,50,49,49,49,49,49,48,48,47,47,46,45,44,43,42,42,41,40,39,38,38,37,37,36,36,35,35,34,33,33,32,31,30,29,29,29,28,28,28,27,26,26,26,25,25,24,24,23,22,21,20,19,19,18,16,14,14,13,12,11,9,9,8,7,7],
+      "drop": {
+        "at": 8,
+        "ratio": 0.15,
+        "loss": 13,
+        "text": "Cơ quan chức năng vừa chính thức tháo dỡ biển quy định tốc độ tối thiểu 30 km/h đặt trước trạm thu phí cao tốc Phan Thiết – Dầu Giây sau phản ánh gay gắt từ giới tài xế."
+      }
+    },
+    {
+      "slug": "2026-11-01-vnexpress-700-con-dau-giay-to-gia",
+      "videoId": "EYAfjvLk9Oc",
+      "title": "Gần 700 con dấu giả: đường dây làm cả bằng tốt nghiệp lẫn giấy phép lái xe #Shorts",
+      "publishAt": "2026-11-01T11:31:55.064Z",
+      "seconds": 56.13333333333333,
+      "hookCardArm": null,
+      "views": 1,
+      "apv": 10.35,
+      "avd": 5,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-vnexpress-bo-y-te-rut-de-xuat-hien-mo",
+      "videoId": "oDj-AxF04Mw",
+      "title": "Bộ Y tế rút đề xuất cho trẻ dưới 18 tuổi hiến mô cho cha mẹ, vì sao? #Shorts",
+      "publishAt": "2026-11-01T15:09:51.385Z",
+      "seconds": 54,
+      "hookCardArm": null,
+      "views": 2,
+      "apv": 35.76,
+      "avd": 19,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-vnexpress-ha-noi-do-luong-chi-so-hanh-phuc",
+      "videoId": "WZWZSJUM6y8",
+      "title": "Hà Nội sẽ chấm điểm hạnh phúc của người dân, bạn tự chấm mấy điểm? #Shorts",
+      "publishAt": "2026-11-01T11:26:55.164Z",
+      "seconds": 48.7,
+      "hookCardArm": null,
+      "views": 1,
+      "apv": 20,
+      "avd": 9,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-vnexpress-khong-de-loi-du-lieu-dat-dai",
+      "videoId": "_adIMRKBGl0",
+      "title": "Hệ thống dữ liệu đất đai bị lỗi, giao dịch nhà đất của dân có bị đình trệ? #Shorts",
+      "publishAt": "2026-11-01T08:17:33.837Z",
+      "seconds": 71.6,
+      "hookCardArm": null,
+      "views": 634,
+      "apv": 36.94,
+      "avd": 26,
+      "subs": 0,
+      "retention": [112,112,111,110,110,110,105,97,91,85,76,70,65,63,60,55,52,51,48,48,46,46,44,43,41,40,40,38,37,37,37,36,36,35,35,35,35,35,34,34,33,33,33,32,31,31,30,30,28,27,27,27,27,27,27,27,27,27,26,26,25,25,24,23,23,23,23,22,22,21,21,21,21,21,21,20,20,20,20,20,20,20,20,20,20,19,19,19,18,18,18,18,17,16,16,15,14,13,12,12],
+      "drop": {
+        "at": 6,
+        "ratio": 0.09,
+        "loss": 21,
+        "text": "hay lỗi cơ sở dữ liệu đất đai làm đình trệ các giao dịch nhà đất chính đáng của người dân."
+      }
+    },
+    {
+      "slug": "2026-11-01-vnexpress-ky-su-viet-ra-mat-vietnam-office",
+      "videoId": "vlJdCjsOoBE",
+      "title": "Kỹ sư Việt mất 17 năm làm bộ phần mềm văn phòng riêng, giá bao nhiêu? #Shorts",
+      "publishAt": "2026-11-02T06:00:00.000Z",
+      "seconds": 54.4,
+      "hookCardArm": null,
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-01-vnexpress-may-bay-ha-canh-pakistan",
+      "videoId": "8rWxtKjt39Q",
+      "title": "Máy bay Vietnam Airlines hạ cánh Pakistan cấp cứu khách Đức #Shorts",
+      "publishAt": "2026-11-01T05:58:53.338Z",
+      "seconds": 73,
+      "hookCardArm": null,
+      "views": 1091,
+      "apv": 69.89,
+      "avd": 51,
+      "subs": 4,
+      "retention": [131,130,129,128,128,127,125,119,115,111,108,105,101,98,95,93,92,91,89,87,85,85,84,83,83,82,80,79,78,77,76,76,75,75,74,73,73,72,72,71,71,71,70,70,70,69,68,67,66,66,66,66,65,65,65,64,64,63,63,63,62,61,61,61,61,61,60,60,60,59,59,59,58,58,57,56,55,54,53,53,52,51,51,51,51,49,48,46,45,44,43,42,41,39,39,37,36,34,32,31],
+      "drop": {
+        "at": 5,
+        "ratio": 0.07,
+        "loss": 14,
+        "text": "Chuyến bay từ thành phố Hồ Chí Minh đi Munich của Vietnam Airlines bất ngờ phải chuyển hướng hạ cánh khẩn cấp tại Pakistan để cứu tính mạng hành khách."
+      }
+    },
+    {
+      "slug": "2026-11-01-vnexpress-thuong-tet-2027-hai-phong",
+      "videoId": "349AlgcRC1o",
+      "title": "Hơn 230 doanh nghiệp Hải Phòng công bố thưởng Tết 2027, bình quân bao nhiêu? #Shorts",
+      "publishAt": "2026-11-01T08:10:29.747Z",
+      "seconds": 83.4,
+      "hookCardArm": null,
+      "views": 255,
+      "apv": 22.85,
+      "avd": 19,
+      "subs": 1,
+      "retention": [106,105,104,104,104,101,85,75,61,56,52,52,51,48,44,40,37,34,33,33,33,29,28,27,26,21,20,19,19,19,19,19,19,19,17,17,16,16,16,16,16,16,16,16,16,16,15,14,14,14,13,13,13,13,13,12,12,12,12,11,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,9,9,9,8,8,8,8,8,7,7,7,6,6,6,6,6,6,6,6,6],
+      "drop": {
+        "at": 5,
+        "ratio": 0.06,
+        "loss": 40,
+        "text": "Hơn 230 doanh nghiệp tại Hải Phòng vừa sớm công bố phương án thưởng Tết Nguyên Đán 2027 với mức bình quân 7,7 triệu đồng mỗi lao động."
+      }
+    },
+    {
+      "slug": "2026-11-01-vnexpress-vng-lai-hon-1000-ty",
+      "videoId": "_dm7rZI6oC8",
+      "title": "VNG lần đầu báo lãi kỷ lục hơn 1.000 tỷ đồng sau 9 tháng #Shorts",
+      "publishAt": "2026-11-01T06:16:49.586Z",
+      "seconds": 80.8,
+      "hookCardArm": null,
+      "views": 7,
+      "apv": 11.23,
+      "avd": 9,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-02-dantri-giao-xe-cho-con-gay-tai-nan-me-bi-khoi-to",
+      "videoId": "5Kr9spDtbxM",
+      "title": "Biết con chưa có bằng lái vẫn giao xe máy gây tai nạn, người mẹ bị khởi tố #Shorts",
+      "publishAt": "2026-11-02T15:00:00.000Z",
+      "seconds": 63.1,
+      "hookCardArm": null,
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-02-dantri-mang-va-li-nhan-tien-boi-thuong-quoc-lo",
+      "videoId": "gIEaCnzPP74",
+      "title": "Dân Hà Nội xách vali nhận hàng chục tỷ đồng tiền đền bù mở rộng quốc lộ #Shorts",
+      "publishAt": "2026-11-03T05:00:00.000Z",
+      "seconds": 56.5,
+      "hookCardArm": null,
+      "views": 1266,
+      "apv": 54.339999999999996,
+      "avd": 30,
+      "subs": 0,
+      "retention": [120,119,118,117,116,115,115,114,110,106,103,101,98,94,91,85,81,78,73,71,68,68,66,64,63,62,61,60,59,58,57,56,55,55,55,54,53,52,52,51,51,51,51,50,50,50,49,49,49,48,48,48,47,47,46,46,45,44,44,43,42,42,41,41,41,40,39,39,39,39,38,37,37,37,37,36,36,36,35,35,35,34,33,33,33,32,32,31,31,30,30,29,29,29,28,26,25,24,23,22],
+      "drop": {
+        "at": 8,
+        "ratio": 0.15,
+        "loss": 13,
+        "text": "Chiều 2 tháng 11, 32 hộ dân thôn 591 tại Hà Nội đã hoàn tất thủ tục nhận tiền giải phóng mặt bằng dự án mở rộng Quốc lộ 1A."
+      }
+    },
+    {
+      "slug": "2026-11-02-dantri-me-kien-doi-con-dau-hut-trang-suc",
+      "videoId": "dZPOTxXMqac",
+      "title": "Con hủy hôn, mẹ kiện đòi lại trang sức 171 triệu: tòa xử thế nào? #Shorts",
+      "publishAt": "2026-11-02T12:00:00.000Z",
+      "seconds": 53,
+      "hookCardArm": null,
+      "views": 1209,
+      "apv": 68.28,
+      "avd": 36,
+      "subs": 0,
+      "retention": [133,131,129,126,124,123,122,120,115,109,105,101,98,94,93,90,88,86,84,82,81,79,78,77,76,75,74,73,72,72,72,71,70,70,69,69,68,68,67,66,66,65,64,64,64,64,63,63,63,63,63,63,62,62,62,62,61,61,61,60,59,59,59,58,58,57,57,57,57,57,57,56,56,56,56,56,56,56,56,55,55,55,55,54,54,53,53,53,53,52,52,50,49,46,45,43,41,39,37,36],
+      "drop": {
+        "at": 4,
+        "ratio": 0.08,
+        "loss": 15,
+        "text": "Con trai hủy hôn, người mẹ kiện đòi con dâu hụt trả lại số trang sức hơn 171 triệu đồng, nhưng phán quyết cuối cùng lại khiến nhiều người bất ngờ."
+      }
+    },
+    {
+      "slug": "2026-11-02-tuoitre-bat-trom-tien-du-khach-ben-bach-dang",
+      "videoId": "Xm6JFL0Q-4k",
+      "title": "Bắt kẻ trộm tiền du khách Thụy Sĩ ở bến Bạch Đằng, minh oan cho thanh niên bị ngờ oan #Shorts",
+      "publishAt": "2026-11-03T04:30:00.000Z",
+      "seconds": 56.5,
+      "hookCardArm": null,
+      "views": 1142,
+      "apv": 66.85,
+      "avd": 38,
+      "subs": 0,
+      "retention": [127,127,126,126,125,124,124,123,118,113,108,103,99,96,93,91,90,88,84,83,81,79,77,76,75,75,73,73,73,72,71,71,71,70,70,69,69,69,68,68,67,67,66,66,65,65,64,64,64,64,64,63,63,63,62,62,61,60,59,59,59,58,58,57,57,56,56,56,56,56,55,55,55,55,54,54,53,52,52,50,50,48,47,47,46,46,44,43,41,39,38,37,36,34,33,31,31,31,29,29],
+      "drop": {
+        "at": 5,
+        "ratio": 0.09,
+        "loss": 15,
+        "text": "Bắt giữ kẻ trộm tiền của du khách Thụy Sĩ tại bến Bạch Đằng, công an thành phố Hồ Chí Minh đồng thời vạch trần tin đồn sai sự thật về nam thanh niên bị bắt oan."
+      }
+    },
+    {
+      "slug": "2026-11-02-tuoitre-de-xuat-phat-banh-mi-ba-duoc-100-trieu",
+      "videoId": "3cQjx_WU2Bg",
+      "title": "175 người ngộ độc bánh mì, chủ quán có thể bị phạt bao nhiêu? #Shorts",
+      "publishAt": "2026-11-02T05:00:00.000Z",
+      "seconds": 60.1,
+      "hookCardArm": null,
+      "views": 1265,
+      "apv": 37.78,
+      "avd": 23,
+      "subs": 1,
+      "retention": [108,107,106,106,105,105,105,102,95,89,86,83,78,77,74,70,66,62,59,58,55,53,51,50,48,47,46,44,43,41,40,40,38,37,37,36,35,35,35,34,34,33,32,32,31,31,31,31,30,30,30,29,29,28,28,28,28,27,26,25,24,23,23,22,22,22,21,21,21,20,20,20,20,19,19,19,18,18,18,17,17,17,16,16,16,16,15,15,15,14,14,14,14,13,12,11,10,9,8,7],
+      "drop": {
+        "at": 5,
+        "ratio": 0.08,
+        "loss": 16,
+        "text": "175 người ngộ độc sau khi ăn bánh mì, chủ quán có thể bị phạt 100 triệu đồng nhưng tiền bồi thường đến giờ vẫn chưa trả xong."
+      }
+    },
+    {
+      "slug": "2026-11-02-tuoitre-rut-ruot-94-ti-xang-dau",
+      "videoId": "6XW4ojMeNSk",
+      "title": "Rút ruột 94 tỉ tiền xăng dầu chơi cờ bạc, kế toán phải bán cả đất tổ tiên #Shorts",
+      "publishAt": "2026-11-02T14:30:00.000Z",
+      "seconds": 56.7,
+      "hookCardArm": null,
+      "views": 1103,
+      "apv": 59.089999999999996,
+      "avd": 33,
+      "subs": 1,
+      "retention": [126,125,125,124,124,124,123,123,120,116,112,107,104,102,101,97,93,90,87,81,77,74,73,72,71,70,69,68,67,66,64,63,62,61,61,60,59,58,57,56,55,54,54,53,52,52,52,52,51,50,49,48,48,47,46,45,45,45,45,45,45,44,43,43,42,42,42,42,41,41,41,41,40,40,40,40,40,40,40,39,39,39,39,38,38,38,37,36,35,34,33,32,31,30,30,29,28,28,27,27],
+      "drop": {
+        "at": 11,
+        "ratio": 0.19,
+        "loss": 13,
+        "text": "Chiều nay 2 tháng 11, tại phiên tòa xét xử vụ án liên quan nữ đại gia Chu Thị Thành, bị cáo Hà Ngọc Vinh, cựu tổ trưởng kế toán kho PVOIL Vũng Áng đã thừa nhận hành vi chiếm đoạt số tiền khổng lồ."
+      }
+    },
+    {
+      "slug": "2026-11-02-tuoitre-vet-sang-bau-troi-mien-bac",
+      "videoId": "wSvYqHtDqQw",
+      "title": "Vệt sáng lạ vụt qua bầu trời miền Bắc, chuyên gia nói gì? #Shorts",
+      "publishAt": "2026-11-02T11:30:00.000Z",
+      "seconds": 55,
+      "hookCardArm": null,
+      "views": 1062,
+      "apv": 44.83,
+      "avd": 25,
+      "subs": 4,
+      "retention": [109,109,108,108,108,108,107,107,101,94,90,88,83,78,73,70,69,67,66,65,64,62,60,59,57,57,56,55,54,53,53,53,52,51,51,51,50,50,49,48,47,46,46,45,45,44,44,43,43,43,42,41,41,40,40,39,39,38,37,37,37,37,36,36,35,34,33,32,31,30,29,27,26,26,25,23,22,22,20,20,20,20,19,18,17,17,15,15,14,13,12,11,11,10,10,9,9,9,8,8],
+      "drop": {
+        "at": 4,
+        "ratio": 0.08,
+        "loss": 17,
+        "text": "Một vệt sáng rực rỡ lao vụt qua bầu trời nhiều tỉnh miền Bắc rồi tắt ngấm chỉ trong tích tắc."
+      }
+    },
+    {
+      "slug": "2026-11-02-vnexpress-hai-nguoi-tu-vong-ham-xang-dau",
+      "videoId": "9bfWgXMHeow",
+      "title": "Xuống hầm xăng nhặt một chiếc ống, hai công nhân không trở lên #Shorts",
+      "publishAt": "2026-11-02T11:00:00.000Z",
+      "seconds": 49.06666666666667,
+      "hookCardArm": null,
+      "views": 947,
+      "apv": 44.62,
+      "avd": 22,
+      "subs": 0,
+      "retention": [102,102,102,102,102,102,101,101,100,97,93,90,87,84,79,74,71,67,65,63,62,60,59,59,58,57,54,54,52,51,50,49,49,48,47,47,47,46,45,44,44,44,44,43,43,43,42,41,40,40,40,40,39,39,38,37,37,37,37,37,37,36,36,36,36,36,35,34,33,33,33,32,32,32,32,31,31,30,29,29,29,26,23,22,19,18,17,14,11,10,9,9,7,6,6,5,4,4,3,3],
+      "drop": {
+        "at": 7,
+        "ratio": 0.14,
+        "loss": 13,
+        "text": "Theo Ủy ban nhân dân phường Thuận Hòa, khoảng 9:50 ngày 1 tháng 11, ba công nhân đang tháo lắp ống hút hơi trong hầm dầu tại cửa hàng xăng dầu số 9, đường Lê Ngô Cát, nơi đang được sửa chữa."
+      }
+    },
+    {
+      "slug": "2026-11-02-vnexpress-tim-thay-cu-ba-78-tuoi-sau-6-ngay-mat-tich",
+      "videoId": "hRNqHKjRPqg",
+      "title": "Tìm thấy cụ bà 78 tuổi sau 6 ngày mất tích giữa núi đá #Shorts",
+      "publishAt": "2026-11-02T15:30:00.000Z",
+      "seconds": 50,
+      "hookCardArm": null,
+      "views": 2862,
+      "apv": 80.54,
+      "avd": 41,
+      "subs": 8,
+      "retention": [140,138,136,135,133,132,131,130,130,127,124,122,120,118,116,114,111,109,106,102,98,96,95,94,93,92,91,91,90,89,89,88,87,87,86,85,85,85,84,84,83,83,82,82,81,80,80,79,78,78,77,77,76,76,75,75,74,73,73,72,70,69,68,68,67,66,66,65,65,65,65,64,64,64,63,63,63,62,62,62,62,61,61,61,60,60,60,59,59,58,58,56,54,52,50,49,47,45,41,41],
+      "drop": {
+        "at": 9,
+        "ratio": 0.18,
+        "loss": 11,
+        "text": "Khoảng 10 giờ 30 phút sáng 2/11, lực lượng tìm kiếm phát hiện cụ Hoàng Thị Trợ nằm kiệt sức trên đồi, thuộc xã Hùng Lợi, cách nhà khoảng 30 phút đi bộ."
+      }
+    },
+    {
+      "slug": "2026-11-02-vnexpress-xe-ben-tai-nan-lien-hoan-cau-nhat-tan",
+      "videoId": "p2B09Pv1wrI",
+      "title": "Đang ùn ứ trên cầu Nhật Tân, xe ben bất ngờ lao tới từ phía sau #Shorts",
+      "publishAt": "2026-11-02T05:30:00.000Z",
+      "seconds": 51.5,
+      "hookCardArm": null,
+      "views": 1007,
+      "apv": 46.52,
+      "avd": 24,
+      "subs": 1,
+      "retention": [108,108,108,107,106,106,105,105,104,99,95,93,89,87,85,83,81,78,74,72,69,68,66,64,63,61,60,59,59,58,57,56,56,55,55,54,54,54,53,53,52,51,51,50,50,50,49,48,48,46,46,45,44,44,43,42,41,40,39,38,37,36,35,33,31,30,28,27,26,25,25,25,24,23,22,22,21,20,19,19,17,16,15,14,14,14,13,13,13,12,13,12,12,12,11,10,10,10,9,9],
+      "drop": {
+        "at": 5,
+        "ratio": 0.09,
+        "loss": 11,
+        "text": "Dòng xe đang nhích từng chút vì ùn ứ trên cầu Nhật Tân thì một chiếc xe ben từ phía sau lao tới gây tai nạn liên hoàn."
+      }
+    },
+    {
+      "slug": "2026-11-03-dantri-be-trai-3-tuoi-bi-nuoc-cuon-lam-dong",
+      "videoId": "-arDa4Mzy14",
+      "title": "Ra suối chơi cùng bà, bé trai 3 tuổi ở Lâm Đồng gặp nạn thương tâm #Shorts",
+      "publishAt": "2026-11-04T05:30:00.000Z",
+      "seconds": 35.96666666666667,
+      "hookCardArm": null,
+      "views": 1054,
+      "apv": 48.79,
+      "avd": 18,
+      "subs": 2,
+      "retention": [109,109,108,108,108,108,108,108,108,108,108,107,102,98,94,92,88,85,82,79,78,76,75,73,72,70,68,67,67,65,64,63,62,62,61,59,58,56,54,53,53,51,49,48,47,45,44,43,42,42,41,40,39,38,38,37,37,37,37,36,35,35,35,34,34,34,32,32,30,30,27,27,26,26,25,22,21,20,19,19,18,17,17,17,16,14,13,13,13,13,12,11,11,10,10,10,10,9,9,9],
+      "drop": {
+        "at": 4,
+        "ratio": 0.12,
+        "loss": 13,
+        "text": "Chiều ngày mùng 3 tháng 11, một sự cố đuối nước thương tâm đã xảy ra tại suối Đạ Hoai, tỉnh Lâm Đồng."
+      }
+    },
+    {
+      "slug": "2026-11-03-dantri-chay-nha-chu-nha-tu-vong-lam-dong",
+      "videoId": "W_YRcBFJGK8",
+      "title": "Cháy nhà ở Lâm Đồng, người đàn ông 47 tuổi tử vong #Shorts",
+      "publishAt": "2026-11-03T12:00:00.000Z",
+      "seconds": 30,
+      "hookCardArm": null,
+      "views": 1008,
+      "apv": 46.27,
+      "avd": 14,
+      "subs": 1,
+      "retention": [112,112,111,111,110,110,110,110,109,109,108,108,108,107,101,99,95,92,89,86,81,78,73,68,64,60,57,55,54,52,49,47,45,43,43,42,42,41,40,39,38,37,37,36,36,35,35,34,34,34,34,33,33,33,32,31,31,30,30,30,29,29,28,28,28,28,27,27,27,27,27,26,26,26,25,25,24,23,23,23,22,21,21,21,21,21,21,21,19,19,18,17,16,16,16,15,14,12,12,12],
+      "drop": {
+        "at": 7,
+        "ratio": 0.22,
+        "loss": 14,
+        "text": "Vụ việc xảy ra tại xã Hòa Bắc, tỉnh Lâm Đồng."
+      }
+    },
+    {
+      "slug": "2026-11-03-dantri-nu-dai-gia-xang-dau-chu-thi-thanh",
+      "videoId": "px6h9uCrbBQ",
+      "title": "Bật khóc tại tòa, nữ đại gia Chu Thị Thành xin giảm án cho ai? #Shorts",
+      "publishAt": "2026-11-04T04:30:00.000Z",
+      "seconds": 31.5,
+      "hookCardArm": null,
+      "views": 1087,
+      "apv": 67.05,
+      "avd": 21,
+      "subs": 1,
+      "retention": [127,126,125,124,123,121,120,118,118,116,116,116,116,114,112,108,105,100,98,96,94,93,91,90,89,86,86,84,83,81,79,77,75,74,73,72,70,69,68,67,67,65,64,63,63,62,61,60,59,59,59,59,58,58,57,57,57,56,55,54,54,54,54,54,53,52,52,51,51,50,49,49,48,48,48,47,46,46,45,45,45,44,44,43,42,41,41,39,38,38,37,36,35,35,34,32,31,31,31,30],
+      "drop": {
+        "at": 5,
+        "ratio": 0.15,
+        "loss": 12,
+        "text": "Nói lời sau cùng trước khi nghị án, Chủ tịch Tập đoàn Thiên Minh Đức thừa nhận sai phạm, nghẹn ngào xin tòa giảm nhẹ hình phạt cho các cựu cấp dưới."
+      }
+    },
+    {
+      "slug": "2026-11-03-tuoitre-cam-nhap-dien-thoai-may-tinh-cu-2027",
+      "videoId": "TmHlqygB76Q",
+      "title": "Cấm nhập khẩu điện thoại, máy tính cũ từ năm 2027 #Shorts",
+      "publishAt": "2026-11-04T11:00:00.000Z",
+      "seconds": 52,
+      "hookCardArm": null,
+      "views": 296,
+      "apv": 29.7,
+      "avd": 15,
+      "subs": 0,
+      "retention": [101,101,101,101,101,101,101,101,99,93,86,82,76,74,73,70,67,64,64,63,61,57,53,52,47,41,39,39,39,36,33,30,28,27,27,27,26,24,24,24,24,24,23,22,21,21,21,21,19,19,19,18,18,17,17,17,17,17,16,16,14,14,13,13,11,11,10,8,7,6,6,6,4,3,3,3,2,2,2,2,2,2,2,2,3,3,3,3,3,3,2,2,2,2,2,2,2,2,1,1],
+      "drop": {
+        "at": 5,
+        "ratio": 0.1,
+        "loss": 17,
+        "text": "Từ ngày 1 tháng 1 năm 2027, hàng loạt thiết bị công nghệ số đã qua sử dụng như điện thoại, máy tính và linh kiện điện tử sẽ chính thức bị cấm nhập khẩu vào Việt Nam."
+      }
+    },
+    {
+      "slug": "2026-11-03-tuoitre-tro-ly-truong-my-lan-scb-bmc-4000-ty",
+      "videoId": "QVBbrfvCOGw",
+      "title": "Trợ lý Trương Mỹ Lan bị truy tố vì vụ vay khống 4.000 tỉ #Shorts",
+      "publishAt": "2026-11-03T11:00:00.000Z",
+      "seconds": 37,
+      "hookCardArm": null,
+      "views": 1148,
+      "apv": 59.08,
+      "avd": 22,
+      "subs": 0,
+      "retention": [124,123,122,122,121,120,120,120,119,119,119,118,114,111,108,105,100,94,90,85,83,81,80,76,74,72,71,70,69,67,67,66,65,65,64,63,63,61,61,60,59,58,56,56,55,54,53,52,51,50,48,48,47,47,47,46,46,44,43,43,43,43,42,41,41,41,41,41,40,40,39,39,38,38,38,38,37,37,36,36,35,35,35,34,34,34,34,33,32,31,30,29,29,29,27,26,26,24,24,24],
+      "drop": {
+        "at": 6,
+        "ratio": 0.17,
+        "loss": 15,
+        "text": "Dù đang trốn nã, cựu trợ lý của bà Trương Mỹ Lan vừa tiếp tục bị đề nghị truy tố trong đại án nghìn tỷ mới."
+      }
+    },
+    {
+      "slug": "2026-11-03-tuoitre-truong-hoc-don-ha-19-cay-xanh-quang-ngai",
+      "videoId": "nu6g3R4uKbg",
+      "title": "Hai trường học tự ý cưa sát gốc 19 cây cổ thụ hơn 20 năm #Shorts",
+      "publishAt": "2026-11-03T12:30:00.000Z",
+      "seconds": 40,
+      "hookCardArm": null,
+      "views": 936,
+      "apv": 46.98,
+      "avd": 19,
+      "subs": 0,
+      "retention": [107,106,106,105,105,105,105,105,104,105,103,101,100,98,97,95,93,91,89,88,85,82,78,73,69,64,61,59,54,51,49,49,48,48,48,47,47,46,45,45,44,44,43,43,42,41,41,40,39,39,38,37,36,35,35,35,35,35,35,35,35,35,34,34,34,34,34,33,32,31,31,30,29,28,26,25,25,24,23,22,22,21,21,20,19,17,16,13,12,11,11,11,10,9,9,8,8,7,7,7],
+      "drop": {
+        "at": 9,
+        "ratio": 0.23,
+        "loss": 14,
+        "text": "Vụ việc xảy ra tại xã Đắk Sao, tỉnh Quảng Ngãi."
+      }
+    },
+    {
+      "slug": "2026-11-03-vnexpress-chinh-phu-tang-luong-toi-thieu-vung-2027",
+      "videoId": "NSST5L17A-c",
+      "title": "Chính phủ tăng lương tối thiểu vùng từ năm 2027 #Shorts",
+      "publishAt": "2026-11-03T14:00:00.000Z",
+      "seconds": 36,
+      "hookCardArm": null,
+      "views": 1129,
+      "apv": 60.150000000000006,
+      "avd": 22,
+      "subs": 1,
+      "retention": [119,119,118,117,116,116,115,114,114,114,113,113,110,108,106,102,98,95,92,89,87,85,83,81,81,79,78,77,77,75,74,73,70,68,66,65,64,62,61,60,59,59,58,57,56,55,54,54,54,53,52,52,51,51,51,50,50,50,50,50,49,48,47,46,46,45,45,44,43,43,42,41,41,40,40,39,38,38,37,36,36,35,34,34,33,33,32,31,31,30,29,29,28,27,26,25,22,21,20,20],
+      "drop": {
+        "at": 5,
+        "ratio": 0.15,
+        "loss": 11,
+        "text": "Theo nghị định mới, lương tối thiểu vùng sẽ tăng thêm từ 310.000 đến 390.000 đồng mỗi tháng tùy theo từng địa bàn."
+      }
+    },
+    {
+      "slug": "2026-11-03-vnexpress-dai-phan-cach-dai-lo-thanh-ruong-dua",
+      "videoId": "Ws8Oy0TkWro",
+      "title": "Dải phân cách đại lộ lớn nhất Ninh Bình biến thành ruộng dứa #Shorts",
+      "publishAt": "2026-11-04T06:00:00.000Z",
+      "seconds": 32.5,
+      "hookCardArm": null,
+      "views": 1306,
+      "apv": 72.3,
+      "avd": 23,
+      "subs": 0,
+      "retention": [125,124,122,122,120,119,118,117,116,115,114,113,112,110,106,102,99,96,95,95,92,91,90,89,88,87,85,84,82,81,80,78,77,77,75,75,74,73,73,73,72,72,72,71,71,71,71,71,71,70,69,69,69,69,68,67,67,67,67,66,65,65,65,64,63,63,62,61,61,60,60,59,59,59,59,59,59,58,58,57,56,56,55,55,54,53,53,53,52,50,45,43,41,39,36,34,33,30,30,30],
+      "drop": {
+        "at": 5,
+        "ratio": 0.14,
+        "loss": 11,
+        "text": "Đại lộ Hoa Lư nghìn tỷ ở Ninh Bình, bất ngờ xuất hiện những luống dứa xanh mướt ngay trên dải phân cách và hành lang đường."
+      }
+    },
+    {
+      "slug": "2026-11-03-vnexpress-nuot-thuoc-ca-vi-thung-ruot-tu-vong",
+      "videoId": "8sOmGNgGiPc",
+      "title": "Nuốt thuốc cả vỉ, cụ bà 80 tuổi thủng ruột tử vong #Shorts",
+      "publishAt": "2026-11-03T11:30:00.000Z",
+      "seconds": 26.533333333333335,
+      "hookCardArm": null,
+      "views": 1059,
+      "apv": 52.239999999999995,
+      "avd": 14,
+      "subs": 1,
+      "retention": [116,116,115,115,112,110,110,110,109,109,108,108,107,107,107,106,103,102,100,98,96,94,90,86,83,79,75,72,67,64,61,59,56,53,52,50,50,49,48,47,47,46,46,45,44,43,42,41,41,40,38,37,37,35,35,35,34,34,34,34,33,33,33,33,33,33,33,33,32,31,31,31,30,29,28,27,27,27,25,25,25,24,24,24,24,24,23,23,23,22,22,22,21,20,20,20,19,19,19,19],
+      "drop": {
+        "at": 7,
+        "ratio": 0.26,
+        "loss": 12,
+        "text": "Bệnh viện Đại học Y Dược Thành phố Hồ Chí Minh cho biết, bệnh nhân nhập viện trong tình trạng đau bụng dữ dội, sốt cao và khó thở."
+      }
+    },
+    {
+      "slug": "2026-11-03-vnexpress-tai-nan-lien-hoan-duong-ho-chi-minh",
+      "videoId": "WfNNFuMsSfI",
+      "title": "Xe tải đè bẹp xe máy trong tai nạn liên hoàn ở Huế: 2 nạn nhân là ai? #Shorts",
+      "publishAt": "2026-11-04T05:00:00.000Z",
+      "seconds": 27.4,
+      "hookCardArm": null,
+      "views": 1200,
+      "apv": 66.27,
+      "avd": 18,
+      "subs": 0,
+      "retention": [124,124,123,121,119,117,117,117,116,115,115,114,114,113,113,108,107,104,102,99,97,95,94,92,90,88,86,85,84,83,82,81,78,77,76,74,73,73,72,71,70,68,67,66,65,64,63,62,61,60,59,59,58,58,58,57,57,56,56,55,54,53,53,53,53,53,52,51,50,50,49,48,48,47,46,46,46,46,45,43,42,41,40,38,37,36,36,34,33,33,32,31,30,30,30,29,28,28,28,28],
+      "drop": {
+        "at": 4,
+        "ratio": 0.15,
+        "loss": 9,
+        "text": "Trưa ngày 3 tháng 11, một vụ tai nạn nghiêm trọng xảy ra trên đường Hồ Chí Minh, qua thành phố Huế."
+      }
+    },
+    {
+      "slug": "2026-11-04-dantri-chay-nha-tro-ha-noi-30-nguoi-thoat-nan",
+      "videoId": "jmgp8dC45Kw",
+      "title": "Cháy nhà trọ lúc rạng sáng ở Hà Nội: 30 người thoát nạn nhờ điều gì? #Shorts",
+      "publishAt": "2026-11-05T05:00:00.000Z",
+      "seconds": 36.96666666666667,
+      "hookCardArm": null,
+      "views": 984,
+      "apv": 44.55,
+      "avd": 16,
+      "subs": 1,
+      "retention": [110,110,109,109,109,108,108,107,107,107,107,104,98,94,89,85,76,70,66,62,60,59,58,56,54,53,52,51,50,49,49,48,48,47,46,46,45,44,43,42,41,39,39,38,38,37,37,37,37,35,35,34,34,33,33,32,33,32,32,31,31,30,30,30,29,29,29,29,28,28,28,28,28,27,27,27,26,26,26,25,24,24,24,23,23,22,21,21,21,20,19,18,17,16,14,13,12,11,9,9],
+      "drop": {
+        "at": 6,
+        "ratio": 0.16,
+        "loss": 19,
+        "text": "Khoảng 3 giờ 53 sáng 4 tháng 11, người dân phát hiện khói từ bếp phòng 204, một nhà trọ trên phố Trần Bình, Hà Nội."
+      }
+    },
+    {
+      "slug": "2026-11-04-dantri-lan-sau-4m-cuu-nam-sinh-duoi-song",
+      "videoId": "grTgWTP1X2o",
+      "title": "Khoảnh khắc lặn sâu 4 mét cứu sống nam sinh chìm dưới đáy sông? #Shorts",
+      "publishAt": "2026-11-04T14:00:00.000Z",
+      "seconds": 38,
+      "hookCardArm": null,
+      "views": 1159,
+      "apv": 36.33,
+      "avd": 14,
+      "subs": 1,
+      "retention": [108,107,107,107,106,105,105,105,105,105,104,97,85,76,66,60,56,53,51,47,46,45,43,43,41,39,38,38,37,37,36,35,35,34,33,33,32,31,30,30,30,30,30,30,29,29,29,28,28,28,27,27,27,27,26,26,26,25,25,25,25,25,25,25,24,24,24,23,23,23,23,23,23,23,22,21,21,20,18,17,16,16,15,15,14,14,14,14,13,13,13,12,10,9,9,8,8,7,7,7],
+      "drop": {
+        "at": 5,
+        "ratio": 0.12,
+        "loss": 31,
+        "text": "Khoảng 5 giờ 50 phút sáng ngày 4 tháng 11, tại cầu Rào Trổ, tỉnh Hà Tĩnh, anh Nguyễn Xuân Hải phát hiện chiếc xe đạp điện bỏ lại trên cầu và thấy một nam sinh 13 tuổi đang chới với dưới nước."
+      }
+    },
+    {
+      "slug": "2026-11-04-dantri-mua-lon-may-bay-khong-dap-tan-son-nhat",
+      "videoId": "EDJcq4mFY-U",
+      "title": "Vì sao cơn mưa tối 4/11 ở TPHCM khiến có chuyến bay phải hạ cánh ở Cam Ranh? #Shorts",
+      "publishAt": "2026-11-05T05:30:00.000Z",
+      "seconds": 35.8,
+      "hookCardArm": null,
+      "views": 1054,
+      "apv": 63.4,
+      "avd": 22,
+      "subs": 2,
+      "retention": [125,125,123,122,121,121,120,119,119,118,118,117,112,107,103,100,96,91,89,87,85,83,81,80,79,77,76,75,73,72,71,69,69,67,66,65,65,64,63,61,61,60,59,59,58,57,57,57,56,56,55,54,53,53,52,51,50,50,50,49,49,48,48,48,47,47,47,47,46,46,46,46,45,45,45,45,44,44,44,43,42,42,40,40,39,39,39,39,38,38,37,36,35,34,33,31,30,29,29,29],
+      "drop": {
+        "at": 4,
+        "ratio": 0.12,
+        "loss": 14,
+        "text": "Chỉ một cơn mưa khoảng 15 phút, hàng loạt máy bay phải bay vòng chờ cả giờ."
+      }
+    },
+    {
+      "slug": "2026-11-04-dantri-shark-binh-bi-de-nghi-9-10-nam-tu",
+      "videoId": "g1tDKBjHQXY",
+      "title": "Shark Bình bị đề nghị 9-10 năm tù vì cáo buộc gì? #Shorts",
+      "publishAt": "2026-11-04T11:30:00.000Z",
+      "seconds": 41,
+      "hookCardArm": null,
+      "views": 1170,
+      "apv": 82.72,
+      "avd": 34,
+      "subs": 0,
+      "retention": [143,143,143,142,142,142,142,142,141,141,138,134,130,123,119,114,111,108,107,107,104,102,99,98,96,94,93,92,92,91,91,90,89,89,89,88,87,85,85,84,84,84,83,82,81,80,80,79,79,78,78,78,77,77,77,76,76,76,76,76,75,75,74,74,74,73,73,72,72,71,71,70,70,70,70,69,68,68,67,65,62,61,58,57,55,54,53,53,52,52,51,50,49,48,47,47,46,45,43,42],
+      "drop": {
+        "at": 5,
+        "ratio": 0.13,
+        "loss": 16,
+        "text": "Sáng ngày 4 tháng 11, tại phiên tòa xét xử đường dây lừa đảo của Mr. Pips Phó Đức Nam,"
+      }
+    },
+    {
+      "slug": "2026-11-04-tuoitre-chu-tich-o-cap-qua-doi-bi-khoi-to",
+      "videoId": "rdsapPAjoOs",
+      "title": "Chủ tịch đã mất, hai cổ đông bị bắt: chuyện gì xảy ra ở dự án đất nền Long Điền? #Shorts",
+      "publishAt": "2026-11-04T15:30:00.000Z",
+      "seconds": 40.7,
+      "hookCardArm": null,
+      "views": 6,
+      "apv": 192.2,
+      "avd": 78,
+      "subs": 1
+    },
+    {
+      "slug": "2026-11-04-tuoitre-csgt-son-la-bi-nghi-pham-hiv-can",
+      "videoId": "AIJLcbA6tF0",
+      "title": "Hai người bỏ chạy khi bị yêu cầu test ma túy, hai CSGT Sơn La phải vào viện #Shorts",
+      "publishAt": "2026-11-05T04:30:00.000Z",
+      "seconds": 32.9,
+      "hookCardArm": null,
+      "views": 1140,
+      "apv": 88.86,
+      "avd": 29,
+      "subs": 0,
+      "retention": [142,140,139,138,137,136,136,135,134,133,132,132,132,131,127,126,124,120,117,116,114,112,111,110,107,106,104,103,101,100,98,97,96,96,95,94,93,92,91,90,89,88,87,87,86,85,84,82,81,81,80,80,80,79,79,78,77,77,77,76,76,76,76,76,75,75,75,74,74,74,74,74,74,74,74,74,73,73,73,73,72,72,72,71,71,69,67,64,62,61,60,58,58,56,54,52,50,49,49,49],
+      "drop": {
+        "at": 5,
+        "ratio": 0.16,
+        "loss": 9,
+        "text": "Ngày 15 tháng 10, tổ cảnh sát giao thông ở Sơn La yêu cầu hai người đàn ông test nhanh ma túy."
+      }
+    },
+    {
+      "slug": "2026-11-04-tuoitre-de-doa-danh-bom-hang-khong-chau-au",
+      "videoId": "7qoHwa427XQ",
+      "title": "Vì sao chiến đấu cơ Ý phải khẩn cấp hộ tống máy bay chở khách? #Shorts",
+      "publishAt": "2026-11-04T12:00:00.000Z",
+      "seconds": 31.066666666666666,
+      "hookCardArm": null,
+      "views": 1057,
+      "apv": 67.69,
+      "avd": 21,
+      "subs": 0,
+      "retention": [142,142,141,141,141,141,141,140,140,140,140,140,139,135,126,116,108,103,100,96,92,91,88,85,83,80,77,75,73,69,67,66,64,63,62,61,60,60,58,57,57,57,57,57,56,55,55,55,54,54,53,53,53,52,52,52,51,51,51,51,50,50,50,49,48,47,47,47,47,47,47,47,47,47,46,46,46,46,46,46,46,45,45,45,45,45,45,44,44,44,44,44,44,44,44,43,42,40,40,40],
+      "drop": {
+        "at": 4,
+        "ratio": 0.14,
+        "loss": 27,
+        "text": "Ngày 3 tháng 11, một làn sóng đe dọa bom giả nhắm vào ít nhất 7 chuyến bay tại Ý, Ba Lan, Tây Ban Nha và Bulgaria, gây náo loạn toàn bộ hệ thống hàng không châu Âu."
+      }
+    },
+    {
+      "slug": "2026-11-04-tuoitre-gia-vang-nhan-tang-gan-1-trieu",
+      "videoId": "WliKiSYShnI",
+      "title": "Vàng nhẫn tăng gần 1 triệu, vàng miếng SJC hôm nay chạm mốc nào? #Shorts",
+      "publishAt": "2026-11-04T14:30:00.000Z",
+      "seconds": 29.566666666666666,
+      "hookCardArm": null,
+      "views": 1053,
+      "apv": 63.470000000000006,
+      "avd": 19,
+      "subs": 2,
+      "retention": [126,126,125,123,122,122,120,118,117,117,115,113,112,112,110,107,104,101,100,98,96,95,94,94,92,91,90,88,87,86,83,82,79,76,74,73,71,69,68,66,64,63,61,59,57,57,56,55,54,53,52,51,50,49,48,48,48,47,47,47,46,46,45,44,44,43,43,42,42,41,41,40,40,40,39,37,36,36,35,35,34,34,33,33,33,32,32,32,31,31,31,30,30,30,29,29,29,28,28,28],
+      "drop": {
+        "at": 4,
+        "ratio": 0.15,
+        "loss": 9,
+        "text": "Sáng ngày 4 tháng 11, vàng nhẫn SJC tiếp tục tăng mạnh 900.000 đồng một lượng, chạm mốc 137,7 triệu đồng."
+      }
+    },
+    {
+      "slug": "2026-11-04-vnexpress-6-voi-rung-pha-lan-trai-nghe-an",
+      "videoId": "424LwGCzIa0",
+      "title": "Vì sao đàn voi rừng 6 con liên tục tràn vào bản làng ở Nghệ An? #Shorts",
+      "publishAt": "2026-11-04T12:30:00.000Z",
+      "seconds": 31.866666666666667,
+      "hookCardArm": null,
+      "views": 1001,
+      "apv": 43.39,
+      "avd": 13,
+      "subs": 4,
+      "retention": [110,110,110,109,108,107,106,106,106,106,105,105,105,103,100,96,88,79,73,69,66,63,62,60,58,56,54,53,51,49,47,46,45,44,44,43,42,42,41,41,39,38,38,37,36,35,34,34,33,32,32,32,32,31,30,29,29,28,28,27,26,26,26,24,24,24,23,23,23,22,22,22,21,20,20,20,20,19,19,19,19,19,18,18,18,18,18,17,17,17,17,16,15,15,14,12,12,12,12,12],
+      "drop": {
+        "at": 5,
+        "ratio": 0.16,
+        "loss": 23,
+        "text": "Từ ngày một tháng mười một, người dân bản Cao Vều hai, xã Anh Sơn liên tục phát hiện đàn voi gồm một voi đực và năm voi cái xuất hiện vào ban đêm, làm sập lán trại chăn nuôi và hư hại nhiều diện tích chè."
+      }
+    },
+    {
+      "slug": "2026-11-04-vnexpress-bo-cong-an-94-nguoi-nuoc-ngoai-bi-bat",
+      "videoId": "L8k-OrTxGBc",
+      "title": "113 người nước ngoài lập đường dây lừa đảo ở Thanh Hóa: đã bắt giam bao nhiêu người? #Shorts",
+      "publishAt": "2026-11-05T06:00:00.000Z",
+      "seconds": 35.06666666666667,
+      "hookCardArm": null,
+      "views": 1036,
+      "apv": 44.88,
+      "avd": 16,
+      "subs": 3,
+      "retention": [113,112,112,111,111,111,111,111,110,110,110,110,105,101,94,86,84,81,79,74,70,67,65,64,63,62,60,58,56,54,52,50,49,48,47,45,44,44,43,42,41,40,39,39,38,35,34,33,32,31,31,31,31,30,30,29,29,29,28,27,27,27,26,26,26,25,25,25,24,23,23,22,22,22,22,21,21,21,21,20,20,19,19,19,19,19,18,17,17,17,17,17,16,16,15,15,15,14,14,14],
+      "drop": {
+        "at": 5,
+        "ratio": 0.13,
+        "loss": 19,
+        "text": "Giả làm doanh nhân hoặc phụ nữ trẻ đẹp, nhóm này dụ nạn nhân nạp tiền đầu tư."
+      }
+    },
+    {
+      "slug": "2026-11-05-dantri-dau-gia-chung-cu-cuu-chu-tich-aic",
+      "videoId": "HZzKMtbxT0Y",
+      "title": "6 căn hộ hạng sang của cựu Chủ tịch AIC đang bị truy nã được bán bao nhiêu? #Shorts",
+      "publishAt": "2026-11-05T12:30:00.000Z",
+      "seconds": 32.733333333333334,
+      "hookCardArm": null,
+      "views": 1015,
+      "apv": 69.59,
+      "avd": 22,
+      "subs": 0,
+      "retention": [122,121,120,118,117,117,116,115,114,114,113,113,113,110,108,106,104,101,100,98,96,95,94,92,90,89,86,85,83,81,80,78,78,78,76,76,76,74,74,74,72,70,69,68,67,67,66,65,65,65,63,63,62,62,62,61,61,60,60,60,58,58,58,57,57,56,56,56,56,55,54,54,54,53,53,53,52,52,52,51,50,50,49,48,48,47,47,45,44,43,41,39,37,36,33,31,28,27,27,27],
+      "drop": {
+        "at": 31,
+        "ratio": 0.94,
+        "loss": 8,
+        "text": "Theo bạn, thu hồi tài sản như vậy có đủ bù đắp thiệt hại không?"
+      }
+    },
+    {
+      "slug": "2026-11-05-dantri-mien-bac-mua-to-khong-khi-lanh",
+      "videoId": "u44UgcrqVWw",
+      "title": "Đợt rét đầu tiên của mùa đông sắp về, miền Bắc lạnh đến mức nào? #Shorts",
+      "publishAt": "2026-11-06T08:30:00.000Z",
+      "seconds": 35.266666666666666,
+      "hookCardArm": "card",
+      "views": 2819,
+      "apv": 103.92000000000002,
+      "avd": 37,
+      "subs": 1,
+      "retention": [162,161,159,157,156,154,152,151,150,149,148,148,145,143,140,137,135,133,132,130,129,128,128,127,125,124,123,122,120,119,118,116,114,113,111,110,109,108,107,107,106,106,106,106,105,105,104,103,103,102,101,101,100,100,99,98,98,97,96,95,95,94,93,92,91,90,90,89,88,88,87,87,86,86,85,84,84,83,83,82,81,81,81,81,80,79,78,77,77,76,75,74,73,73,71,70,69,67,66,66],
+      "drop": {
+        "at": 5,
+        "ratio": 0.14,
+        "loss": 8,
+        "text": "Theo Trung tâm Dự báo khí tượng thủy văn quốc gia, đêm 5 và ngày 6 tháng 11, Bắc Bộ có mưa rào rải rác, Tây Bắc và Việt Bắc cục bộ có nơi mưa to."
+      }
+    },
+    {
+      "slug": "2026-11-05-dantri-tang-luong-toi-thieu-tro-cap-that-nghiep",
+      "videoId": "N3ivI4z19Qc",
+      "title": "Lương tối thiểu tăng từ 2027: trợ cấp thất nghiệp cao nhất được bao nhiêu? #Shorts",
+      "publishAt": "2026-11-05T14:00:00.000Z",
+      "seconds": 35.166666666666664,
+      "hookCardArm": null,
+      "views": 1097,
+      "apv": 56.58,
+      "avd": 20,
+      "subs": 0,
+      "retention": [117,117,117,116,116,115,115,114,114,114,114,114,109,105,100,93,90,86,82,80,77,76,75,73,71,71,70,69,69,67,67,65,64,64,63,62,62,61,60,60,59,58,57,56,56,55,54,53,52,52,52,51,50,49,49,48,46,45,44,43,41,41,41,40,39,39,38,37,37,37,36,36,35,34,34,33,33,32,32,31,31,30,30,30,30,29,29,29,28,28,27,27,26,26,25,23,21,20,19,19],
+      "drop": {
+        "at": 5,
+        "ratio": 0.13,
+        "loss": 16,
+        "text": "Theo Nghị định 399, từ 1/1/2027, lương tối thiểu vùng I là 5,7 triệu đồng mỗi tháng, vùng II 5,08 triệu, vùng III 4,45 triệu và vùng IV 4,04 triệu."
+      }
+    },
+    {
+      "slug": "2026-11-05-dantri-taxi-khach-tho-nguoi-ra-cua-xe",
+      "videoId": "zsTLU84HVog",
+      "title": "Khách thò người ra cửa taxi giữa phố Hà Nội, tài xế bị phạt bao nhiêu? #Shorts",
+      "publishAt": "2026-11-06T05:30:00.000Z",
+      "seconds": 37,
+      "hookCardArm": "card",
+      "views": 1188,
+      "apv": 36.17,
+      "avd": 13,
+      "subs": 1,
+      "retention": [103,103,103,103,103,103,103,103,103,103,103,102,99,96,92,89,86,82,77,72,69,63,59,56,50,45,43,41,41,39,37,37,37,36,36,35,35,34,33,33,31,29,28,27,26,26,25,25,23,23,23,23,22,22,21,21,20,20,19,19,18,18,18,18,17,17,17,17,17,17,17,16,16,15,15,14,14,13,13,12,12,12,11,11,11,10,10,9,9,8,8,7,6,6,6,5,5,5,4,4],
+      "drop": {
+        "at": 9,
+        "ratio": 0.23,
+        "loss": 14,
+        "text": "Phòng CSGT Hà Nội nhận phản ánh qua ứng dụng Hanoi Smart Police."
+      }
+    },
+    {
+      "slug": "2026-11-05-tuoitre-banh-mi-ba-duoc-bi-phat",
+      "videoId": "6sljSpLR_zw",
+      "title": "175 người nhập viện vì một tiệm bánh mì: chủ cơ sở bị xử lý ra sao? #Shorts",
+      "publishAt": "2026-11-05T11:30:00.000Z",
+      "seconds": 36.1,
+      "hookCardArm": null,
+      "views": 1151,
+      "apv": 49.23,
+      "avd": 18,
+      "subs": 2,
+      "retention": [116,116,115,114,114,114,113,113,113,112,112,111,105,101,95,87,82,75,69,65,63,61,61,58,57,56,54,53,53,52,52,51,50,49,48,48,47,47,46,45,45,44,43,42,42,41,41,41,41,41,41,41,40,40,39,39,39,38,38,37,37,36,36,35,35,34,34,33,33,33,32,32,32,32,32,32,31,31,30,30,30,30,29,28,28,27,27,27,27,26,25,24,23,22,20,19,18,17,17,17],
+      "drop": {
+        "at": 5,
+        "ratio": 0.15,
+        "loss": 20,
+        "text": "175 người phải nhập viện sau khi ăn bánh mì ở cùng một điểm bán tại Quảng Ngãi."
+      }
+    },
+    {
+      "slug": "2026-11-05-tuoitre-hieu-truong-xuong-giao-vien-kiem-diem",
+      "videoId": "bC8FE9kZJ1M",
+      "title": "5 hiệu trưởng bị đưa xuống làm giáo viên sai hướng dẫn: ai phải chịu trách nhiệm? #Shorts",
+      "publishAt": "2026-11-05T12:00:00.000Z",
+      "seconds": 33,
+      "hookCardArm": null,
+      "views": 1097,
+      "apv": 72,
+      "avd": 24,
+      "subs": 2,
+      "retention": [133,132,132,131,129,129,128,127,127,126,126,126,125,119,118,116,113,110,106,104,101,97,95,92,89,87,86,84,81,79,78,77,77,76,75,74,73,72,71,70,68,67,67,66,66,65,65,64,64,64,63,62,62,62,62,61,61,60,60,60,60,60,59,59,59,58,58,57,57,56,56,56,56,56,55,55,54,54,54,53,52,51,51,50,50,50,50,49,48,48,47,45,43,41,40,39,37,34,33,33],
+      "drop": {
+        "at": 5,
+        "ratio": 0.16,
+        "loss": 10,
+        "text": "Sở Giáo dục và Đào tạo Gia Lai xác minh việc này sai hướng dẫn của tỉnh"
+      }
+    },
+    {
+      "slug": "2026-11-05-tuoitre-tphcm-ho-tro-tai-dinh-cu-1-6-ti",
+      "videoId": "gcbI-eeGpsg",
+      "title": "Bị thu hồi đất ở TP.HCM, tự lo chỗ ở được hỗ trợ bao nhiêu? #Shorts",
+      "publishAt": "2026-11-06T06:00:00.000Z",
+      "seconds": 42,
+      "hookCardArm": "card",
+      "views": 876,
+      "apv": 53.14,
+      "avd": 22,
+      "subs": 0,
+      "retention": [119,118,118,117,116,115,115,115,114,114,109,103,97,93,87,80,77,73,70,69,68,66,65,62,60,59,59,56,53,52,52,51,51,51,50,49,49,49,49,49,48,48,48,48,47,47,47,47,46,46,46,45,45,45,44,44,44,44,43,43,43,43,43,42,42,41,41,41,41,41,40,40,40,40,39,39,38,38,38,38,38,37,37,36,35,34,32,32,30,30,28,26,25,24,24,23,22,21,20,20],
+      "drop": {
+        "at": 5,
+        "ratio": 0.13,
+        "loss": 17,
+        "text": "Bị thu hồi đất ở thành phố Hồ Chí Minh mà tự lo chỗ ở, bạn có thể được hỗ trợ tới 6 tỷ đồng."
+      }
+    },
+    {
+      "slug": "2026-11-05-vnexpress-be-trai-5-tuoi-bi-bo-lai",
+      "videoId": "zxHEHdvVDxs",
+      "title": "Bé 5 tuổi bị bỏ lại bên đường kèm mảnh giấy, vì sao không ai đón về? #Shorts",
+      "publishAt": "2026-11-05T11:00:00.000Z",
+      "seconds": 38,
+      "hookCardArm": null,
+      "views": 1164,
+      "apv": 57.57,
+      "avd": 22,
+      "subs": 1,
+      "retention": [116,115,114,114,113,113,112,111,110,110,110,106,103,99,95,94,92,90,87,83,80,77,74,72,69,68,66,66,65,64,61,60,60,59,58,58,58,58,58,57,57,57,57,57,57,56,56,56,55,55,54,54,53,53,52,52,51,51,51,49,49,48,47,47,47,47,46,44,43,42,41,41,41,40,40,40,40,39,39,39,38,38,38,37,36,35,34,34,33,31,29,28,27,24,22,21,19,14,13,13],
+      "drop": {
+        "at": 5,
+        "ratio": 0.12,
+        "loss": 11,
+        "text": "Một bé trai 5 tuổi bị bỏ lại bên vệ đường, bên cạnh chỉ có một mảnh giấy viết tay."
+      }
+    },
+    {
+      "slug": "2026-11-05-vnexpress-chay-truong-thcs-kim-lien",
+      "videoId": "EvaLiLHV0pU",
+      "title": "Cháy phòng học tạm trường Kim Liên, hàng trăm học sinh tháo chạy giữa trưa #Shorts",
+      "publishAt": "2026-11-06T00:00:00.000Z",
+      "seconds": 36.1,
+      "hookCardArm": "card",
+      "views": 923,
+      "apv": 50.63999999999999,
+      "avd": 18,
+      "subs": 1,
+      "retention": [113,112,111,110,109,109,108,108,108,108,108,107,103,99,94,92,87,85,78,74,70,68,68,66,64,63,61,60,59,57,55,54,53,52,52,50,50,49,48,48,47,45,45,44,44,43,43,42,42,41,41,41,41,41,41,41,40,40,40,40,40,40,40,39,39,39,39,39,39,39,37,36,34,34,34,33,33,32,32,32,31,31,31,30,30,28,28,27,26,25,23,21,19,17,15,15,14,11,11,11],
+      "drop": {
+        "at": 6,
+        "ratio": 0.18,
+        "loss": 15,
+        "text": "Trưa 5 tháng 11, lửa bùng phát từ dãy phòng lớp 6 của trường THCS Kim Liên, Hà Nội."
+      }
+    },
+    {
+      "slug": "2026-11-05-vnexpress-thu-truong-y-te-buoc-thoi-viec",
+      "videoId": "pRmIcLOq7WE",
+      "title": "Giáo sư ung thư đầu ngành, Thứ trưởng Y tế bị buộc thôi việc: vì sao? #Shorts",
+      "publishAt": "2026-11-06T05:00:00.000Z",
+      "seconds": 36,
+      "hookCardArm": "control",
+      "views": 1986,
+      "apv": 80.03,
+      "avd": 29,
+      "subs": 3,
+      "retention": [130,129,128,126,125,124,123,122,122,122,121,121,118,116,115,112,110,109,105,103,102,100,99,98,97,96,95,95,93,93,92,92,91,90,88,86,85,85,84,83,82,82,81,79,79,78,77,77,76,75,74,74,74,74,73,73,72,72,72,72,72,71,71,71,71,71,70,70,70,69,69,69,69,68,68,67,67,67,66,65,64,63,63,62,61,60,59,58,57,55,53,52,49,47,46,43,40,38,35,35],
+      "drop": {
+        "at": 35,
+        "ratio": 0.96,
+        "loss": 8,
+        "text": "Theo bạn, cần làm gì để ngăn tiêu cực trong ngành y?"
+      }
+    },
+    {
+      "slug": "2026-11-06-dantri-21-bo-hai-cot-liet-si-le-thi-rieng",
+      "videoId": "Kl2wxoeLxhY",
+      "title": "Một công viên ở TPHCM đã tìm thấy bao nhiêu hài cốt liệt sĩ? Con số lên tới 980 bộ #Shorts",
+      "publishAt": "2026-11-07T11:30:00.000Z",
+      "seconds": 37.86666666666667,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-dantri-be-gai-1-tuoi-tu-vong-nha-tre-khong-phep",
+      "videoId": "JERbCZ8pafA",
+      "title": "Bé 1 tuổi gửi giữ trẻ rồi tử vong, cơ sở từng bị yêu cầu dừng từ năm 2024 #Shorts",
+      "publishAt": "2026-11-07T08:30:00.000Z",
+      "seconds": 46.9,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-dantri-cu-ong-bi-thao-tung-qua-zalo",
+      "videoId": "L2VeWdJaLEM",
+      "title": "Cụ ông 82 tuổi ra ngân hàng rút 240 triệu chỉ sau một cuộc gọi Zalo lạ #Shorts",
+      "publishAt": "2026-11-06T12:30:00.000Z",
+      "seconds": 41.5,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-dantri-du-an-70-ty-bo-hoang-nuoi-ga",
+      "videoId": "X-tzfmQYrnM",
+      "title": "Dự án 70 tỷ bỏ dở gần 9 năm: bao giờ người dân mới có chợ? #Shorts",
+      "publishAt": "2026-11-07T05:00:00.000Z",
+      "seconds": 49.6,
+      "hookCardArm": "card",
+      "views": 634,
+      "apv": 37.65,
+      "avd": 18,
+      "subs": 0,
+      "retention": [109,109,109,108,108,108,108,108,104,93,86,78,73,69,65,63,58,58,55,54,52,50,48,48,46,45,43,42,41,40,40,39,37,36,35,35,35,35,35,35,33,32,32,32,31,30,29,29,29,27,27,26,25,25,24,24,24,24,24,24,24,22,22,22,22,22,22,22,22,22,22,21,21,21,20,20,20,20,20,20,20,19,18,19,19,18,17,17,17,17,16,16,14,12,12,12,10,10,10,10],
+      "drop": {
+        "at": 4,
+        "ratio": 0.09,
+        "loss": 26,
+        "text": "Đáng lẽ là khu chợ 60 ki ốt, nơi này bỏ dở gần 9 năm và giờ thành chỗ nuôi gà."
+      }
+    },
+    {
+      "slug": "2026-11-06-dantri-gia-vang-sjc-giam-2-trieu",
+      "videoId": "YUBobB6i22g",
+      "title": "Giá vàng hôm nay: SJC vừa chạm đỉnh một tháng đã quay đầu giảm 2 triệu #Shorts",
+      "publishAt": "2026-11-06T15:00:00.000Z",
+      "seconds": 33.5,
+      "hookCardArm": "control",
+      "views": 8,
+      "apv": 50.81,
+      "avd": 17,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-dantri-khu-do-thi-my-le-binh-phuoc",
+      "videoId": "q8vw-6dLN3s",
+      "title": "Khu đô thị 46ha bỏ hoang, vì sao 3 cựu lãnh đạo Bình Phước bị bắt? #Shorts",
+      "publishAt": "2026-11-06T04:30:00.000Z",
+      "seconds": 40,
+      "hookCardArm": "control",
+      "views": 281,
+      "apv": 59.52,
+      "avd": 24,
+      "subs": 0,
+      "retention": [116,115,115,113,112,112,110,109,109,109,107,103,101,97,93,93,89,89,87,86,82,80,78,76,76,76,75,75,74,74,72,71,68,68,68,67,64,62,61,59,58,58,58,55,55,55,54,53,53,53,52,51,51,48,48,48,48,47,47,47,47,47,47,47,47,47,47,47,47,46,46,46,46,44,44,44,42,41,41,40,40,40,40,38,37,37,36,36,35,34,34,33,31,28,25,22,22,18,17,17],
+      "drop": {
+        "at": 5,
+        "ratio": 0.12,
+        "loss": 10,
+        "text": "giờ cỏ mọc um tùm, chỉ hai hộ dân sống bên trong."
+      }
+    },
+    {
+      "slug": "2026-11-06-dantri-may-xet-nghiem-nhap-23-ty-bao-gia-7-ty",
+      "videoId": "9x8HDhs_KDQ",
+      "title": "Máy nhập 2,3 tỷ, báo giá 7 tỷ: lỗ hổng nào khiến giá thầu bị đội lên? #Shorts",
+      "publishAt": "2026-11-07T04:30:00.000Z",
+      "seconds": 38.8,
+      "hookCardArm": "control",
+      "views": 1092,
+      "apv": 66.11,
+      "avd": 25,
+      "subs": 0,
+      "retention": [119,119,118,118,117,117,116,116,115,115,115,113,112,109,106,104,102,101,99,98,97,96,94,92,90,89,88,87,86,85,85,82,81,80,79,78,77,76,75,73,72,72,70,69,68,66,64,63,62,62,61,60,60,59,59,58,58,57,56,55,54,53,52,51,49,48,48,47,46,45,45,44,44,43,43,42,41,41,40,40,39,39,38,37,36,35,34,34,33,31,30,29,28,26,25,24,23,22,22,22],
+      "drop": {
+        "at": 5,
+        "ratio": 0.13,
+        "loss": 8,
+        "text": "Đại biểu Quốc hội Nguyễn Khánh Vũ dẫn vụ việc tại CDC Hà Nội sáng 6 tháng 11."
+      }
+    },
+    {
+      "slug": "2026-11-06-dantri-xe-tai-leo-via-he-bi-phat",
+      "videoId": "DMAWkq5QMic",
+      "title": "Leo vỉa hè né kẹt xe ở TPHCM, tài xế xe tải nhận mức phạt bao nhiêu? #Shorts",
+      "publishAt": "2026-11-06T09:30:00.000Z",
+      "seconds": 37.7,
+      "hookCardArm": "card",
+      "views": 704,
+      "apv": 51.41,
+      "avd": 19,
+      "subs": 0,
+      "retention": [111,111,111,110,110,109,109,108,108,108,108,106,103,99,96,94,90,87,83,78,75,74,72,69,68,67,66,64,63,62,61,59,59,58,56,54,54,52,51,50,48,48,48,47,46,44,44,44,43,42,41,41,40,40,39,39,39,38,38,38,38,38,38,37,37,37,36,36,34,34,33,33,33,33,33,31,30,30,30,30,30,30,28,27,27,26,26,25,23,21,21,20,19,18,18,17,15,14,14,13],
+      "drop": {
+        "at": 7,
+        "ratio": 0.18,
+        "loss": 12,
+        "text": "Clip ghi lại cảnh chiếc xe tải biển số 50E leo vỉa hè trên đường Lê Đức Anh, khoảng 13:30 ngày 31 tháng 10, nhanh chóng lan truyền trên mạng xã hội."
+      }
+    },
+    {
+      "slug": "2026-11-06-tuoitre-ban-gai-mr-pips-xin-tra-114-tai-san",
+      "videoId": "QXxUo3_iMfg",
+      "title": "Bị cáo buộc rửa 384 tỉ, bạn gái Mr Pips vẫn xin lại 114 món tài sản #Shorts",
+      "publishAt": "2026-11-07T00:00:00.000Z",
+      "seconds": 42,
+      "hookCardArm": "control",
+      "views": 1102,
+      "apv": 54.26,
+      "avd": 23,
+      "subs": 1,
+      "retention": [116,115,114,113,113,112,111,111,111,110,106,102,98,96,92,89,86,83,81,77,74,72,71,69,69,68,67,65,64,62,61,61,60,59,58,57,57,57,56,55,54,53,52,51,51,50,50,49,48,48,48,47,46,45,45,44,43,42,42,41,41,40,40,40,39,39,39,38,37,37,37,36,36,36,36,35,35,35,34,34,34,33,33,33,32,32,31,31,30,29,28,27,26,24,22,21,19,18,15,15],
+      "drop": {
+        "at": 4,
+        "ratio": 0.1,
+        "loss": 12,
+        "text": "Từng giữ 44,8 tỷ tiền mặt cho Mr. Pips, phía bạn gái anh ta giờ xin trả lại 114 món tài sản."
+      }
+    },
+    {
+      "slug": "2026-11-06-tuoitre-chung-cu-50-nam-tuoi-nghe-an",
+      "videoId": "l0gijXC9Ghs",
+      "title": "Chung cư 50 năm tuổi ở Nghệ An: 514 hộ đã đồng thuận, 15 hộ còn lại muốn gì? #Shorts",
+      "publishAt": "2026-11-07T00:30:00.000Z",
+      "seconds": 39.166666666666664,
+      "hookCardArm": "card",
+      "views": 896,
+      "apv": 45.94,
+      "avd": 18,
+      "subs": 0,
+      "retention": [110,109,109,108,107,106,106,106,106,106,105,101,98,95,92,89,84,80,78,75,71,66,64,63,62,60,59,57,56,54,52,50,49,48,48,47,46,46,45,44,43,43,43,40,40,39,39,39,38,38,37,36,36,35,34,34,33,32,31,31,30,30,30,29,28,28,28,28,27,27,26,26,26,25,24,24,24,24,23,23,22,22,22,22,22,21,21,20,20,20,19,19,16,15,13,12,11,10,10,10],
+      "drop": {
+        "at": 7,
+        "ratio": 0.19,
+        "loss": 12,
+        "text": "Đó là chung cư Quang Trung, phường Thành Vinh."
+      }
+    },
+    {
+      "slug": "2026-11-06-tuoitre-lay-mau-adn-than-nhan-liet-si",
+      "videoId": "IGI7crDzSiU",
+      "title": "81 tuổi gần như không đi lại được, ông vẫn chờ từng giờ để tìm anh trai liệt sĩ #Shorts",
+      "publishAt": "2026-11-06T14:30:00.000Z",
+      "seconds": 35,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-tuoitre-nu-sinh-marie-curie-huan-chuong",
+      "videoId": "4FNUb0ro0a0",
+      "title": "18 tuổi đã nhận Huân chương Lao động hạng nhất, nữ sinh này làm được gì? #Shorts",
+      "publishAt": "2026-11-06T12:00:00.000Z",
+      "seconds": 40.2,
+      "hookCardArm": "card",
+      "views": 41,
+      "apv": 51.29,
+      "avd": 21,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-tuoitre-pha-do-tap-the-truong-dinh-xay-30-tang",
+      "videoId": "Q1oEn4uzqAc",
+      "title": "Tập thể 2 tầng ở Trương Định sắp thành tòa 30 tầng, khi nào xây? #Shorts",
+      "publishAt": "2026-11-07T05:30:00.000Z",
+      "seconds": 39.96666666666667,
+      "hookCardArm": "control",
+      "views": 423,
+      "apv": 42.72,
+      "avd": 17,
+      "subs": 0,
+      "retention": [116,115,110,110,109,108,108,108,108,108,106,103,95,90,86,83,80,77,77,72,68,63,60,59,56,55,53,51,49,44,43,41,41,39,37,36,36,36,35,35,35,33,32,32,32,31,31,31,30,30,30,29,28,28,28,28,28,28,28,28,27,27,27,27,26,25,25,25,25,25,24,24,24,24,24,23,22,22,22,22,22,21,21,20,20,20,20,19,19,19,18,18,18,18,18,16,16,16,13,13],
+      "drop": {
+        "at": 5,
+        "ratio": 0.12,
+        "loss": 17,
+        "text": "Đó là khu tập thể Trương Định, phường Tương Mai."
+      }
+    },
+    {
+      "slug": "2026-11-06-tuoitre-shark-thuy-xet-xu-lua-dao-8400-ti",
+      "videoId": "wj-xQvgMWSM",
+      "title": "Cổ phần 38.000 đồng hứa mua lại 42.000 đồng: vụ Shark Thủy sắp ra tòa #Shorts",
+      "publishAt": "2026-11-07T09:30:00.000Z",
+      "seconds": 43.7,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-tuoitre-thit-lon-nhun-truong-mam-non",
+      "videoId": "MKmw7v5VtCo",
+      "title": "Thịt lợn nhũn, bở vào bếp trường mầm non, nhà cung cấp giải thích thế nào? #Shorts",
+      "publishAt": "2026-11-06T14:00:00.000Z",
+      "seconds": 36.5,
+      "hookCardArm": "control",
+      "views": 1,
+      "apv": 2.81,
+      "avd": 1,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-vnexpress-ba-bau-uong-nuoc-dua-da-con-trang",
+      "videoId": "je6E8OQpAFY",
+      "title": "Bà bầu uống nhiều nước dừa, con sinh ra có trắng hồng thật không? #Shorts",
+      "publishAt": "2026-11-07T06:00:00.000Z",
+      "seconds": 43.4,
+      "hookCardArm": null,
+      "views": 813,
+      "apv": 42.89,
+      "avd": 18,
+      "subs": 0,
+      "retention": [105,104,104,104,104,104,104,104,104,104,101,100,96,92,86,83,81,80,79,77,74,73,72,70,69,67,66,64,63,62,61,60,59,58,57,55,53,51,50,49,47,47,45,45,43,42,41,40,40,38,36,33,32,30,28,27,26,24,24,22,22,21,21,20,20,20,19,19,19,18,18,17,17,17,16,16,14,14,14,13,11,11,10,9,9,9,8,7,7,7,7,7,7,7,7,7,6,6,5,5],
+      "drop": {
+        "at": 5,
+        "ratio": 0.12,
+        "loss": 14,
+        "text": "Một thai phụ ở Phú Thọ còn được nghe rằng nước dừa giúp nước ối trong hơn."
+      }
+    },
+    {
+      "slug": "2026-11-06-vnexpress-di-doi-246-can-ho-kim-van-kim-lu",
+      "videoId": "g5HSuhoSDG8",
+      "title": "Mua nhà rồi vẫn có thể phải dọn đi: chuyện gì ở 246 căn hộ Kim Văn - Kim Lũ? #Shorts",
+      "publishAt": "2026-11-06T11:30:00.000Z",
+      "seconds": 44,
+      "hookCardArm": "card",
+      "views": 955,
+      "apv": 70.01,
+      "avd": 31,
+      "subs": 1,
+      "retention": [129,127,126,125,125,124,124,123,123,123,119,116,111,110,108,106,103,101,98,97,95,93,92,91,89,89,88,87,87,86,85,84,83,83,81,80,79,78,77,76,76,75,75,73,72,70,69,68,67,66,65,65,63,62,61,59,57,56,56,56,55,55,54,54,53,53,52,52,52,51,50,50,50,49,49,49,48,47,46,45,45,44,44,44,43,42,42,42,41,41,40,39,38,38,36,35,34,32,27,27],
+      "drop": {
+        "at": 4,
+        "ratio": 0.1,
+        "loss": 12,
+        "text": "246 căn hộ ở Hà Nội lẽ ra là nhà trẻ, khu thương mại, giờ cư dân có thể phải dọn đi."
+      }
+    },
+    {
+      "slug": "2026-11-06-vnexpress-mien-trung-mua-lon-tu-8-11",
+      "videoId": "V99NwhVhitg",
+      "title": "Miền Trung sắp có nơi mưa hơn 700 mm: khu vực nào nằm trong vùng nguy cơ? #Shorts",
+      "publishAt": "2026-11-07T15:00:00.000Z",
+      "seconds": 37.6,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-vnexpress-nuoi-1000-dan-ong-that-son",
+      "videoId": "TkdUWIhfYG8",
+      "title": "Từ 10 đàn ong không ngòi đốt, chàng trai An Giang giờ có 1.000 đàn và dùng cả AI #Shorts",
+      "publishAt": "2026-11-06T15:30:00.000Z",
+      "seconds": 37,
+      "hookCardArm": "control",
+      "views": 2,
+      "apv": 0,
+      "avd": 0,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-06-vnexpress-oto-tong-xe-bom-betong-nha-trang",
+      "videoId": "nJGogCZHtdA",
+      "title": "Ôtô chở 4 người tông xe bơm bêtông ở Nha Trang, người trên xe ra sao? #Shorts",
+      "publishAt": "2026-11-06T11:00:00.000Z",
+      "seconds": 37.43333333333333,
+      "hookCardArm": "control",
+      "views": 2039,
+      "apv": 59.69,
+      "avd": 22,
+      "subs": 1,
+      "retention": [118,118,117,117,116,116,115,115,115,115,115,113,109,106,103,99,95,92,90,86,82,79,77,74,72,70,69,68,66,65,65,64,64,63,62,60,60,59,58,58,57,56,55,55,54,54,54,53,53,53,52,52,52,51,51,50,49,49,48,48,47,47,47,46,46,45,45,45,45,45,45,45,45,44,44,44,44,44,43,42,42,40,40,39,39,38,37,35,32,31,30,29,27,26,25,23,22,21,21,21],
+      "drop": {
+        "at": 7,
+        "ratio": 0.19,
+        "loss": 11,
+        "text": "Khoảng 19 giờ tối 5/11, chiếc ô tô năm chỗ biển số Thái Nguyên chở hai nam hai nữ chạy trên đường Nguyễn Xiển, phường Bắc Nha Trang."
+      }
+    },
+    {
+      "slug": "2026-11-07-dantri-bo-me-nuoi-phap-con-gai-tim-gia-dinh-viet",
+      "videoId": "JFC6nYyYl6o",
+      "title": "Sang Pháp làm con nuôi từ 2 tháng tuổi, 28 năm sau cô gái tìm ra họ hàng chỉ sau vài giờ #Shorts",
+      "publishAt": "2026-11-07T12:00:00.000Z",
+      "seconds": 35.6,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-dantri-phat-bao-chot-csgt-facebook",
+      "videoId": "GiMYm3hmVus",
+      "title": "Báo chốt CSGT trên nhóm Facebook, người đàn ông Phú Thọ bị phạt bao nhiêu? #Shorts",
+      "publishAt": "2026-11-07T14:00:00.000Z",
+      "seconds": 33,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-dantri-sinh-vien-tphcm-trung-iphone-17-xe-buyt",
+      "videoId": "GmvIJH_zUxg",
+      "title": "Sinh viên TP HCM nhận iPhone chỉ nhờ đi xe buýt: tiêu chí nhận thưởng là gì? #Shorts",
+      "publishAt": "2026-11-07T14:30:00.000Z",
+      "seconds": 33,
+      "hookCardArm": null,
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-dantri-voi-rung-nghe-an",
+      "videoId": "pv_bapgoMLU",
+      "title": "Đốt lửa, gõ xoong chảo đuổi voi rừng: dân bản Vều ở Nghệ An đang lo gì? #Shorts",
+      "publishAt": "2026-11-08T04:30:00.000Z",
+      "seconds": 48.2,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-httpsdantricomvnthe-gioicuu-hoa-hau-thai-lan-bi-bat",
+      "videoId": "pskxOYWONXw",
+      "title": "Cựu hoa hậu Thái Lan bị bắt: tiền từ thiện nghi chảy về đâu? #Shorts",
+      "publishAt": "2026-11-07T15:30:00.000Z",
+      "seconds": 37,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-tuoitre-nuoc-am-nuoc-lanh",
+      "videoId": "0MHg3ZEqo5U",
+      "title": "Nước ấm hay nước lạnh tốt hơn? Còn tùy lúc bạn uống #Shorts",
+      "publishAt": "2026-11-08T05:30:00.000Z",
+      "seconds": 35.5,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-tuoitre-thoi-tiet-7-11-bac-bo-mua-to",
+      "videoId": "e6BI10iAZPw",
+      "title": "Thời tiết 7/11: mưa to ở Bắc Bộ, còn nơi nào có thể có lốc, sét, mưa đá? #Shorts",
+      "publishAt": "2026-11-07T11:00:00.000Z",
+      "seconds": 33,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-tuoitre-tien-tieu-duong-duong-huyet",
+      "videoId": "lEB_SI9yRLA",
+      "title": "Dáng bình thường vẫn có thể bị tiền tiểu đường: ai nên thử đường huyết? #Shorts",
+      "publishAt": "2026-11-08T00:00:00.000Z",
+      "seconds": 30,
+      "hookCardArm": null,
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-vnexpress-bac-ha-ngap-lut",
+      "videoId": "po-_IlmXKdU",
+      "title": "Bắc Hà ngập gần một mét: nước từ núi đổ về nhanh cỡ nào? #Shorts",
+      "publishAt": "2026-11-08T00:30:00.000Z",
+      "seconds": 29.8,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-vnexpress-duong-trung-ten-tp-hcm",
+      "videoId": "aTz7wp3nyTI",
+      "title": "TP HCM có 782 đường trùng tên, gọi xe nhầm địa chỉ cách nhau gần 2 km #Shorts",
+      "publishAt": "2026-11-07T12:30:00.000Z",
+      "seconds": 37.5,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-vnexpress-giong-loc-dong-thap",
+      "videoId": "o9d5IEbFmFg",
+      "title": "Chỉ 10 phút, giông lốc khiến 15 căn nhà ở Đồng Tháp sập, tốc mái #Shorts",
+      "publishAt": "2026-11-08T05:00:00.000Z",
+      "seconds": 39,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-07-vnexpress-luong-toi-thieu-vung-phat-150-trieu",
+      "videoId": "CwB2W083_dQ",
+      "title": "Lương tối thiểu tăng từ 1/1/2027: vùng bạn đang ở lên bao nhiêu? #Shorts",
+      "publishAt": "2026-11-07T01:15:23.580Z",
+      "seconds": 37,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-dantri-cha-gia-roi-50-trieu-nghe-an",
+      "videoId": "SFvuKbaD3oA",
+      "title": "Rút gần 50 triệu từ ngân hàng, cụ ông 69 tuổi ở Nghệ An mất tiền trên đường về #Shorts",
+      "publishAt": "2026-11-08T06:00:00.000Z",
+      "seconds": 36,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-dantri-cho-dai-can-9-nguoi-vinh-long",
+      "videoId": "vj0BlfJToug",
+      "title": "9 người bị một con chó vô chủ tấn công ở Vĩnh Long, xét nghiệm con chó ra kết quả gì? #Shorts",
+      "publishAt": "2026-11-08T12:00:00.000Z",
+      "seconds": 36,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-dantri-du-thuyen-truong-my-lan-con-nua-gia",
+      "videoId": "nn_WfZAx0xQ",
+      "title": "Du thuyền 52 tỷ của bà Trương Mỹ Lan giảm giá 8 lần vẫn chưa ai mua #Shorts",
+      "publishAt": "2026-11-08T15:00:00.000Z",
+      "seconds": 47.8,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-tuoitre-ban-ca-tay-ninh-bat-20-nguoi",
+      "videoId": "rG9F2sL8oSo",
+      "title": "Công an ập vào căn nhà ở Tây Ninh, bắt quả tang 18 người 'bắn cá' ăn tiền #Shorts",
+      "publishAt": "2026-11-08T12:30:00.000Z",
+      "seconds": 36.8,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-tuoitre-dong-nai-pha-duong-day-ma-tuy-hiep-nhoc",
+      "videoId": "M17Xic02e4o",
+      "title": "Đồng Nai triệt phá đường dây ma túy của Hiệp 'nhóc', bắt hơn 100 người #Shorts",
+      "publishAt": "2026-11-08T14:00:00.000Z",
+      "seconds": 35.13333333333333,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-tuoitre-khong-khi-lanh-8-11",
+      "videoId": "33IcyVKwOWA",
+      "title": "Không khí lạnh tràn về từ chiều nay: nơi nào rét, nơi nào mưa rất to? #Shorts",
+      "publishAt": "2026-11-08T11:00:00.000Z",
+      "seconds": 48,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-tuoitre-treo-co-vuon-mit",
+      "videoId": "YDJL3Gy2Sm8",
+      "title": "Vào vườn mua mít, khách phát hiện con trai chủ vườn tử vong, công an đang điều tra #Shorts",
+      "publishAt": "2026-11-08T11:30:00.000Z",
+      "seconds": 33.4,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-vnexpress-19-trau-chet-bat-thuong",
+      "videoId": "EliLRancF-s",
+      "title": "Hơn nửa đàn trâu 33 con của một hộ ở Nghệ An chết trong 5 ngày, nguyên nhân chưa rõ #Shorts",
+      "publishAt": "2026-11-08T08:30:00.000Z",
+      "seconds": 31,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-vnexpress-hai-cong-nhan-roi-mo-da",
+      "videoId": "yYDSFmcOdbw",
+      "title": "Hai công nhân mỏ đá ở Nghệ An trượt chân rơi từ độ cao hàng chục mét, đều tử vong #Shorts",
+      "publishAt": "2026-11-08T09:30:00.000Z",
+      "seconds": 33.5,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-08-vnexpress-mien-trung-mua-lon-lu-dang-cao",
+      "videoId": "jYmIOEaCtPg",
+      "title": "Miền Trung đêm nay mưa lớn, lũ từ Quảng Trị đến Đắk Lắk dâng cao #Shorts",
+      "publishAt": "2026-11-08T14:30:00.000Z",
+      "seconds": 37,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-09-dantri-mr-pips-nu-bi-cao-bat-khoc",
+      "videoId": "5d1Q0tqWpZI",
+      "title": "Con mới 12 tháng tuổi, nữ bị cáo vụ Mr Pips bật khóc trước tòa #Shorts",
+      "publishAt": "2026-11-09T05:00:00.000Z",
+      "seconds": 42.86666666666667,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-09-dantri-xe-dien-tong-container-tphcm",
+      "videoId": "-WA-suOIA0E",
+      "title": "Xe điện tông đuôi container đang đỗ sát vỉa hè lúc 1h30 sáng ở TPHCM #Shorts",
+      "publishAt": "2026-11-09T05:30:00.000Z",
+      "seconds": 47,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-09-tuoitre-benh-vien-tam-than-25000-luot",
+      "videoId": "WPjkO8Jv8FM",
+      "title": "Trên 90% người đến khám tâm thần ở TP.HCM có chung một triệu chứng ban đầu #Shorts",
+      "publishAt": "2026-11-09T08:30:00.000Z",
+      "seconds": 42.46666666666667,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-09-tuoitre-hiep-den-son-mat-quy-bi-bat",
+      "videoId": "h-IRuR3AZ24",
+      "title": "'Hiệp đen' và ê kíp giang hồ mạng khai gì sau khi bị bắt? #Shorts",
+      "publishAt": "2026-11-09T04:30:00.000Z",
+      "seconds": 36,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-09-vnexpress-chung-cu-ct6-kien-hung-di-doi",
+      "videoId": "POZj9xNhP8Q",
+      "title": "126 căn hộ ở chung cư CT6 Kiến Hưng có thể phải di dời, vì sao? #Shorts",
+      "publishAt": "2026-11-09T09:30:00.000Z",
+      "seconds": 42.8,
+      "hookCardArm": "control",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    },
+    {
+      "slug": "2026-11-09-vnexpress-gia-lai-di-doi-dan-nui-mot",
+      "videoId": "76koMf3_YNU",
+      "title": "30 hộ dân dưới chân núi Một phải rời nhà trong đêm vì mưa lớn #Shorts",
+      "publishAt": "2026-11-09T06:00:00.000Z",
+      "seconds": 43.5,
+      "hookCardArm": "card",
+      "views": 0,
+      "apv": null,
+      "avd": null,
+      "subs": 0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "templateCategory": "commerce",
+  "note": "Music manifest for commerce and product storytelling templates. Gentle, warm, and trustworthy background beds that keep narration clear.",
+  "music": [
+    {
+      "id": "miromaxmusic-music-promotion",
+      "path": "assets/news/music/miromaxmusic-music-promotion.mp3",
+      "volume": 0.08,
+      "desc": "Gentle, polished editorial bed for lifestyle, beauty, and product storytelling",
+      "mood": ["gentle", "uplifting", "lifestyle", "commerce", "storytelling", "promotion"]
+    },
+    {
+      "id": "nastelbom-soft-music",
+      "path": "assets/news/music/nastelbom-soft-music.mp3",
+      "volume": 0.085,
+      "desc": "Soft, calm background for authentic reviews and emotional storytelling",
+      "mood": ["soft", "calm", "honest-review", "lifestyle", "commerce"]
+    },
+    {
+      "id": "news-ambient-01",
+      "path": "assets/news/music/news-ambient-01.mp3",
+      "volume": 0.09,
+      "desc": "Subtle, neutral ambient bed for tech specs and gadget showcases",
+      "mood": ["neutral", "tech", "informative"]
+    }
+  ],
+  "assets": []
+}

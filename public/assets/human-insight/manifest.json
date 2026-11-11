@@ -1,0 +1,347 @@
+{
+  "templateCategory": "human-insight",
+  "note": "Image selection: match 'tags'+'mood' against scene content. Never reuse same id in consecutive scenes. Fallback: use 'mood' when tags do not match. Music selection: read full script → determine overall mood → pick track with most mood[] matches. Each music track owns its render volume.",
+  "music": [
+    {
+      "id": "cinematic-strings-01",
+      "path": "assets/human-insight/music/music-bg-1.mp3",
+      "volume": 0.3,
+      "desc": "Warm strings, deep emotion",
+      "mood": ["melancholic", "determined", "introspective"]
+    },
+    {
+      "id": "cinematic-strings-02",
+      "path": "assets/human-insight/music/music-bg-2.mp3",
+      "volume": 0.282,
+      "desc": "Warm strings, deep emotion, future",
+      "mood": ["melancholic", "adventure", "introspective"]
+    },
+    {
+      "id": "epic-action-01",
+      "path": "assets/human-insight/music/bombinsound-epic-action.mp3",
+      "volume": 0.2,
+      "desc": "Epic cinematic action, heroic momentum and powerful motivation",
+      "mood": ["epic", "heroic", "determined", "motivational", "inspiring"]
+    },
+    {
+      "id": "victory-01",
+      "path": "assets/human-insight/music/nastelbom-victory.mp3",
+      "volume": 0.2,
+      "desc": "Triumphant victory anthem, uplifting and inspirational",
+      "mood": [
+        "victorious",
+        "triumphant",
+        "uplifting",
+        "motivational",
+        "inspiring"
+      ]
+    },
+    {
+      "id": "kinetic-revo-main",
+      "path": "assets/human-insight/music/kinetic-revo-main.mp3",
+      "volume": 0.25,
+      "desc": "Kinetic long-form podcast bed for narrative storytelling and steady conversation",
+      "mood": [
+        "podcast",
+        "storytelling",
+        "narrative",
+        "conversational",
+        "long-form",
+        "introspective"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "office-conflict-01",
+      "path": "assets/human-insight/images/office-conflict-01.png",
+      "desc": "Boss angry, pointing at stressed employee holding head at desk",
+      "tags": ["stress", "office", "pressure", "workplace", "conflict"],
+      "mood": "stressed"
+    },
+    {
+      "id": "business-presentation-01",
+      "path": "assets/human-insight/images/business-presentation-01.png",
+      "desc": "Leader presenting growth chart to attentive team in meeting room",
+      "tags": ["meeting", "presentation", "success", "teamwork", "growth"],
+      "mood": "positive"
+    },
+    {
+      "id": "formal-meeting-01",
+      "path": "assets/human-insight/images/formal-meeting-01.png",
+      "desc": "Two people in serious face-to-face discussion at round table by city window",
+      "tags": ["interview", "discussion", "serious", "meeting", "professional"],
+      "mood": "serious"
+    },
+    {
+      "id": "city-stroll-01",
+      "path": "assets/human-insight/images/city-stroll-01.png",
+      "desc": "Happy coworkers with backpacks strolling outdoors past a street cafe",
+      "tags": ["outdoor", "walking", "friends", "relaxed", "break"],
+      "mood": "happy"
+    },
+    {
+      "id": "mountain-hiking-01",
+      "path": "assets/human-insight/images/mountain-hiking-01.png",
+      "desc": "Two hikers with backpacks climbing mountain trail, one pointing toward distant peaks in sunlight",
+      "tags": ["hiking", "mountain", "adventure", "nature", "exploration"],
+      "mood": "adventurous"
+    },
+    {
+      "id": "art-studio-02",
+      "path": "assets/human-insight/images/art-studio-02.png",
+      "desc": "Inside a creative studio, one person painting on an easel while another sculpts a bust",
+      "tags": ["art", "studio", "painting", "sculpture", "creativity"],
+      "mood": "creative"
+    },
+    {
+      "id": "science-lab-03",
+      "path": "assets/human-insight/images/science-lab-03.png",
+      "desc": "Researcher looking through microscope while colleague mixes chemicals with test tubes and flasks",
+      "tags": ["science", "laboratory", "research", "experiment", "chemistry"],
+      "mood": "focused"
+    },
+    {
+      "id": "train-journey-04",
+      "path": "assets/human-insight/images/train-journey-04.png",
+      "desc": "Passenger relaxing with a book on a luxury train while others watch mountain scenery through the window",
+      "tags": ["travel", "train", "journey", "relax", "scenery"],
+      "mood": "peaceful"
+    },
+    {
+      "id": "classroom-math-01",
+      "path": "assets/human-insight/images/classroom-math-01.png",
+      "desc": "Teacher at blackboard pointing to math equation while students take notes at their desks",
+      "tags": [
+        "education",
+        "classroom",
+        "math",
+        "learning",
+        "teacher",
+        "students"
+      ],
+      "mood": "focused"
+    },
+    {
+      "id": "office-working-02",
+      "path": "assets/human-insight/images/office-working-02.png",
+      "desc": "Modern open-plan office with employees focused on laptops and tablets",
+      "tags": ["office", "working", "laptop", "productivity", "corporate"],
+      "mood": "productive"
+    },
+    {
+      "id": "travel-journey-03",
+      "path": "assets/human-insight/images/travel-journey-03.png",
+      "desc": "Person with backpack and luggage walking along a sunny path toward a large bridge in the distance",
+      "tags": ["travel", "journey", "luggage", "bridge", "summer", "vacation"],
+      "mood": "optimistic"
+    },
+    {
+      "id": "home-investment-04",
+      "path": "assets/human-insight/images/home-investment-04.png",
+      "desc": "Outside a cozy house, one person pushing a cart of money while another waters a money tree",
+      "tags": ["home", "investment", "wealth", "finance", "savings", "growth"],
+      "mood": "prosperous"
+    },
+    {
+      "id": "night-study-01",
+      "path": "assets/human-insight/images/night-study-01.png",
+      "desc": "An exhausted and anxious person studies coding on a laptop under a desk lamp late at night, surrounded by coffee mugs and tall stacks of books labeled 'AI BASICS' and 'LEARNING PYTHON'.",
+      "tags": [
+        "overtime",
+        "studying",
+        "coding",
+        "ai-learning",
+        "fatigue",
+        "night"
+      ],
+      "mood": "exhausted"
+    },
+    {
+      "id": "ai-replacement-02",
+      "path": "assets/human-insight/images/ai-replacement-02.png",
+      "desc": "A cheerful manager praises a small robot with 'EXCELLENT AI!' and awards it a 'WELL DONE' medal next to a surging 'PERFORMANCE RESULTS' chart, while a sad employee looks on saying 'MY WORK...'.",
+      "tags": [
+        "ai-replacement",
+        "workplace",
+        "sadness",
+        "disappointment",
+        "automation"
+      ],
+      "mood": "dejected"
+    },
+    {
+      "id": "new-workload-03",
+      "path": "assets/human-insight/images/new-workload-03.png",
+      "desc": "A stressed person sitting at a cafe table looks at free colleagues while being handed a massive stack of papers with the speech bubble: 'HERE'S A NEW PROJECT, NOW THAT YOU HAVE TIME.'",
+      "tags": ["workload", "pressure", "unfair", "office-life", "overworked"],
+      "mood": "overwhelmed"
+    },
+    {
+      "id": "system-trap-04",
+      "path": "assets/human-insight/images/system-trap-04.png",
+      "desc": "An angry person struggles to break free from heavy chains and wires controlled by a giant hand labeled 'WORLD EFFICIENCY', while a small robot operates the system's gears.",
+      "tags": [
+        "trapped",
+        "system",
+        "efficiency-pressure",
+        "control",
+        "struggle",
+        "technology"
+      ],
+      "mood": "rebellious"
+    },
+    {
+      "id": "cf-da-bao-gio-tat-bao-602aa827",
+      "path": "assets/human-insight/images/da-bao-gio-tat-bao-602aa827.jpg",
+      "desc": "AI-generated illustration for: Đã bao giờ bạn tắt báo thức, nhìn lên trần nhà và tự hỏi: rốt cuộc mình đang chiến đấu vì điều gì chưa?",
+      "tags": ["da", "bao", "gio", "tat", "thuc", "nhin", "len", "determined"],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-ngay-ap-luc-bop-nghet-31582df0",
+      "path": "assets/human-insight/images/ngay-ap-luc-bop-nghet-31582df0.jpg",
+      "desc": "A tired person sitting alone on the edge of a bed in the early morning, phone glowing in their hand, alarm clock nearby, heavy pressure shown as soft shadows around the chest, cinematic human-insight metaphor, no text.",
+      "tags": [
+        "stress",
+        "pressure",
+        "fatigue",
+        "overworked",
+        "ngay",
+        "ap",
+        "luc",
+        "bop",
+        "nghet",
+        "long"
+      ],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-nguoi-ta-thich-ke-ve-0506c8e3",
+      "path": "assets/human-insight/images/nguoi-ta-thich-ke-ve-0506c8e3.jpg",
+      "desc": "A lone worker at a small desk in darkness, distant bright city lights and applause silhouettes far outside the window, contrast between public success and private lonely effort, cinematic metaphor, no text.",
+      "tags": [
+        "finance",
+        "investment",
+        "wealth",
+        "nguoi",
+        "ta",
+        "thich",
+        "ke",
+        "ve",
+        "thanh",
+        "cong",
+        "ruc",
+        "determined"
+      ],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-do-ly-ca-phe-nguoi-11654080",
+      "path": "assets/human-insight/images/do-ly-ca-phe-nguoi-11654080.jpg",
+      "desc": "A cold coffee cup beside an open laptop at midnight, a person facing a mirror with quiet self-doubt, rejected papers scattered on the desk, intimate cinematic motivational illustration, no text.",
+      "tags": [
+        "do",
+        "ly",
+        "ca",
+        "phe",
+        "nguoi",
+        "luc",
+        "nua",
+        "dem",
+        "determined"
+      ],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-hay-nho-dieu-nay-ngay-d84d3b61",
+      "path": "assets/human-insight/images/hay-nho-dieu-nay-ngay-d84d3b61.jpg",
+      "desc": "A person rising from exhaustion at a desk, washing their face in a small mirror, laptop opening again, a path of light forming forward from the desk, powerful quiet determination, no text.",
+      "tags": [
+        "stress",
+        "pressure",
+        "fatigue",
+        "overworked",
+        "learning",
+        "studying",
+        "coding",
+        "hay",
+        "nho",
+        "dieu",
+        "nay",
+        "ngay",
+        "giay",
+        "phut"
+      ],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-chung-ta-gang-phai-chung-8d66347b",
+      "path": "assets/human-insight/images/chung-ta-gang-phai-chung-8d66347b.jpg",
+      "desc": "A strong person standing as a protective support behind family silhouettes, two roads ahead showing freedom of choice, humble strength and responsibility, cinematic inspirational metaphor, no text.",
+      "tags": [
+        "family",
+        "support",
+        "choice",
+        "responsibility",
+        "chung",
+        "ta",
+        "gang",
+        "phai",
+        "minh",
+        "voi",
+        "ca",
+        "determined"
+      ],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-muoi-nam-nua-se-cam-ba586ed0",
+      "path": "assets/human-insight/images/muoi-nam-nua-se-cam-ba586ed0.jpg",
+      "desc": "A future self warmly reaching back toward a tired present self on a staircase, each step marked by effort through light and shadow without any words, emotional perseverance, no text.",
+      "tags": [
+        "future",
+        "perseverance",
+        "stairs",
+        "effort",
+        "muoi",
+        "nam",
+        "nua",
+        "se",
+        "cam",
+        "on",
+        "ngay",
+        "dang",
+        "determined"
+      ],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-vay-nen-than-van-chut-f43f71ea",
+      "path": "assets/human-insight/images/vay-nen-than-van-chut-f43f71ea.jpg",
+      "desc": "A person wiping tears and standing at sunrise, a long road opening forward into bright future light, shoulders steady, heroic but intimate motivational ending, no text.",
+      "tags": [
+        "tears",
+        "sunrise",
+        "road",
+        "future",
+        "resilience",
+        "vay",
+        "nen",
+        "than",
+        "van",
+        "chut",
+        "cung",
+        "khoc"
+      ],
+      "mood": "determined"
+    },
+    {
+      "id": "cf-da-bao-gio-tat-bao-602aa827-2",
+      "path": "assets/human-insight/images/da-bao-gio-tat-bao-602aa827-2.jpg",
+      "desc": "A single exhausted person lying awake in bed at dawn, alarm clock on bedside table, looking at the ceiling with a quiet question, minimal beige paper storyboard, empty walls, no numbers, no symbols, no captions, no written marks anywhere.",
+      "tags": ["da", "bao", "gio", "tat", "thuc", "nhin", "len", "determined"],
+      "mood": "determined"
+    }
+  ]
+}

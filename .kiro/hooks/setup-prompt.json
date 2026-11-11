@@ -1,0 +1,13 @@
+{
+  "name": "Setup Environment",
+  "version": "1.0.0",
+  "description": "Auto-triggers when user types /setup in chat",
+  "when": {
+    "type": "promptSubmit",
+    "patterns": ["/setup*"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "The user has issued a /setup command. Read and execute the full instructions in docs/SKILL-SETUP.md. Auto-detect OS — do NOT ask user. The full user prompt is: {{prompt}}"
+  }
+}

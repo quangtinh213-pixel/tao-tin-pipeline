@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10131b" />
+    <title>Video Production Studio · Premium Workflow</title>
+    <link rel="stylesheet" href="/styles.css?v=2.1" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Premium Workflow Video Production Studio">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-eyebrow">PREMIUM WORKFLOW</span>
+            <span class="brand-name">Production Studio</span>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <div class="library-stat" aria-label="Số video đã render">
+            <span class="stat-dot" aria-hidden="true"></span>
+            <span id="video-count">0</span>
+            <span class="stat-label">đã render</span>
+          </div>
+          <button id="theme-toggle" class="icon-button" type="button" title="Chuyển chế độ Giao diện Sáng / Tối">
+            <span id="theme-icon" class="theme-icon" aria-hidden="true">☀️</span>
+            <span id="theme-label">Giao diện Sáng</span>
+          </button>
+          <button id="refresh-button" class="icon-button" type="button" title="Làm mới danh sách">
+            <span class="refresh-icon" aria-hidden="true">↻</span>
+            <span>Làm mới</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="producer-grid" aria-labelledby="producer-title">
+          <div class="producer-copy">
+            <div class="kicker-row">
+              <p class="section-kicker">AI VIDEO PRODUCTION STUDIO</p>
+              <span class="badge-pill">Parallel Engine</span>
+            </div>
+            <h1 id="producer-title">Từ ý tưởng đến video,<br /><span>sản xuất song song tốc độ cao.</span></h1>
+            <p>Dán một hoặc nhiều URL bài viết (mỗi dòng một link) hoặc mô tả nội dung. Hệ thống tự động phân luồng xử lý song song: thu thập media → kịch bản → giọng đọc → căn chỉnh → render Remotion.</p>
+            <div class="connection-row">
+              <span id="api-dot" class="connection-dot pending" aria-hidden="true"></span>
+              <span id="api-status">Đang kiểm tra kết nối ChatGPT API…</span>
+              <span id="api-model" class="model-chip"></span>
+              <span id="concurrency-chip" class="concurrency-chip">Song song: 2 luồng</span>
+            </div>
+          </div>
+
+          <form id="production-form" class="production-form">
+            <div class="field-header">
+              <label class="field-label" for="production-context">NỘI DUNG, LINK BÀI BÁO HOẶC TIKTOK SHOP</label>
+              <span id="batch-counter" class="batch-counter hidden" aria-live="polite">1 bài viết</span>
+            </div>
+            <textarea id="production-context" name="context" rows="5" maxlength="12000" placeholder="Dán URL bài báo (tự chọn News Showcase), link TikTok Shop (tự chọn Storytelling Showcase) hoặc mô tả video bạn muốn tạo…" required></textarea>
+            <div class="form-row">
+              <label class="select-field">
+                <span>Template</span>
+                <select id="production-template" name="templateId"></select>
+              </label>
+              <label class="select-field">
+                <span>Model AI</span>
+                <select id="production-model" name="model">
+                  <option value="gpt-5.6-terra" selected>GPT-5.6 Terra (Model nhỏ / Nhanh)</option>
+                  <option value="gpt-5.6-luna">GPT-5.6 Luna (Tiêu chuẩn)</option>
+                  <option value="gpt-5.5">GPT-5.5</option>
+                  <option value="gpt-6-astra">GPT-6 Astra (Mạnh nhất)</option>
+                </select>
+              </label>
+              <label class="select-field">
+                <span>Âm thanh</span>
+                <select id="production-audio" name="audioMode">
+                  <option value="template">Theo template</option>
+                  <option value="full">Giọng + nhạc + SFX</option>
+                  <option value="music">Giọng + nhạc</option>
+                  <option value="sfx">Giọng + SFX</option>
+                  <option value="voice-only">Chỉ giọng đọc</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-footer">
+              <p id="production-hint">Hỗ trợ link TikTok Shop (Storytelling), link bài viết (News Media) hoặc nội dung tự do.</p>
+              <button id="produce-button" class="produce-button" type="submit">
+                <span class="produce-icon" aria-hidden="true">▶</span>
+                <span id="produce-button-text">Bắt đầu sản xuất</span>
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section id="jobs-section" class="jobs-section hidden" aria-labelledby="jobs-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">PARALLEL PRODUCTION QUEUE</p>
+              <h2 id="jobs-title">Tiến trình sản xuất song song</h2>
+            </div>
+            <div class="queue-status-group">
+              <span id="active-job-count" class="queue-count">0 tác vụ</span>
+            </div>
+          </div>
+          <div id="job-list" class="job-list job-grid"></div>
+        </section>
+
+        <section class="intro-section" aria-labelledby="page-title">
+          <div>
+            <p class="section-kicker">RENDERED ARCHIVE</p>
+            <h2 id="page-title">Kho video của bạn</h2>
+            <p class="intro-copy">Tìm nhanh video đã render, mở đúng file trong Finder hoặc sao chép kịch bản để sử dụng lại.</p>
+          </div>
+          <div class="intro-badge">
+            <span class="badge-line"></span>
+            <span>Local workspace</span>
+          </div>
+        </section>
+
+        <section class="toolbar" aria-label="Bộ lọc video">
+          <label class="search-field" for="dashboard-search">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="sr-only">Tìm video</span>
+            <input id="dashboard-search" type="search" placeholder="Tìm theo tiêu đề, template hoặc nguồn..." autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+          <p id="sync-status" class="sync-status" role="status" aria-live="polite">Đang tải thư viện...</p>
+        </section>
+
+        <section id="video-list" class="video-list" aria-live="polite" aria-busy="true">
+          <div id="loading-state" class="state-card loading-state">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-line"></div>
+            <div class="skeleton skeleton-line short"></div>
+          </div>
+        </section>
+
+        <section id="empty-state" class="state-card empty-state hidden" aria-live="polite">
+          <div class="empty-icon" aria-hidden="true">◌</div>
+          <h2>Chưa tìm thấy video</h2>
+          <p>Dashboard chỉ hiển thị các file đã render tại <code>videos/*/output/video.mp4</code>.</p>
+        </section>
+
+        <section id="error-state" class="state-card error-state hidden" aria-live="assertive">
+          <div class="empty-icon" aria-hidden="true">!</div>
+          <h2>Không thể tải thư viện</h2>
+          <p id="error-message">Hãy kiểm tra dashboard server rồi thử lại.</p>
+          <button id="retry-button" class="button button-quiet" type="button">Thử lại</button>
+        </section>
+      </main>
+
+      <footer class="footer-note">
+        <span class="footer-pulse" aria-hidden="true"></span>
+        <span>Sản xuất cục bộ · API key chỉ được đọc ở server · Video lưu trong workspace</span>
+      </footer>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js?v=2.1" defer></script>
+  </body>
+</html>

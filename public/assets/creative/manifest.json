@@ -1,0 +1,42 @@
+{
+  "templateCategory": "creative",
+  "note": "Music manifest for creative SFX templates. Select one bgMusic path that matches the story tone. Each track owns its render volume; keep duplicate paths consistent across manifests.",
+  "music": [
+    {
+      "id": "news-ambient-01",
+      "path": "assets/news/music/news-ambient-01.mp3",
+      "volume": 0.09,
+      "desc": "Subtle, clean background — neutral for explainers",
+      "mood": ["neutral", "informative", "serious"]
+    },
+    {
+      "id": "sonican-flash-news",
+      "path": "assets/news/music/sonican-flash-news.mp3",
+      "volume": 0.166,
+      "desc": "Clean modern news bed — neutral for technology updates",
+      "mood": ["neutral", "informative", "technology"]
+    },
+    {
+      "id": "the-mountain-news-music",
+      "path": "assets/news/music/the_mountain-news-news-music.mp3",
+      "volume": 0.11,
+      "desc": "Steady editorial news bed — neutral for technology coverage",
+      "mood": ["neutral", "informative", "technology"]
+    },
+    {
+      "id": "sonican-tech-news-information",
+      "path": "assets/news/music/sonican-tech-news-information.mp3",
+      "volume": 0.072,
+      "desc": "Technology-focused news bed — neutral and informative",
+      "mood": ["neutral", "informative", "technology"]
+    },
+    {
+      "id": "grand-project-breaking-news",
+      "path": "assets/news/music/grand_project-breaking-news-background-music_short.mp3",
+      "volume": 0.089,
+      "desc": "Dramatic breaking-news bed for high-stakes or urgent stories",
+      "mood": ["dramatic", "breaking", "urgent", "serious"]
+    }
+  ],
+  "assets": []
+}

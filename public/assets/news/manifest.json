@@ -1,0 +1,56 @@
+{
+  "templateCategory": "news",
+  "note": "For news templates. Each music track owns its render volume. Images are fetched from public URLs with source credit. AI must set image.credit (source name) and image.date for every image used. ONLY accept .jpg/.jpeg/.png/.webp for photos and .mp4/.mov for videos. NEVER use .gif or animated formats. Never fabricate image URLs — only use URLs from the actual news article provided by the user. If no valid image URL is available, omit the image field entirely.",
+  "music": [
+    {
+      "id": "news-ambient-01",
+      "path": "assets/news/music/news-ambient-01.mp3",
+      "volume": 0.09,
+      "desc": "Subtle, clean background — neutral for news",
+      "mood": ["neutral", "informative", "serious"]
+    },
+    {
+      "id": "sonican-flash-news",
+      "path": "assets/news/music/sonican-flash-news.mp3",
+      "volume": 0.166,
+      "desc": "Clean modern news bed — neutral for technology updates",
+      "mood": ["neutral", "informative", "technology"]
+    },
+    {
+      "id": "the-mountain-news-music",
+      "path": "assets/news/music/the_mountain-news-news-music.mp3",
+      "volume": 0.11,
+      "desc": "Steady editorial news bed — neutral for technology coverage",
+      "mood": ["neutral", "informative", "technology"]
+    },
+    {
+      "id": "sonican-tech-news-information",
+      "path": "assets/news/music/sonican-tech-news-information.mp3",
+      "volume": 0.072,
+      "desc": "Technology-focused news bed — neutral and informative",
+      "mood": ["neutral", "informative", "technology"]
+    },
+    {
+      "id": "miromaxmusic-music-promotion",
+      "path": "assets/news/music/miromaxmusic-music-promotion.mp3",
+      "volume": 0.08,
+      "desc": "Gentle, polished editorial bed for lifestyle and general-interest news",
+      "mood": ["gentle", "uplifting", "lifestyle", "beauty", "architecture", "real-estate", "automotive", "travel"]
+    },
+    {
+      "id": "nastelbom-soft-music",
+      "path": "assets/news/music/nastelbom-soft-music.mp3",
+      "volume": 0.085,
+      "desc": "Soft, calm background for elegant and informative feature stories",
+      "mood": ["soft", "calm", "informative", "lifestyle", "beauty", "architecture", "real-estate", "automotive", "travel"]
+    },
+    {
+      "id": "grand-project-breaking-news",
+      "path": "assets/news/music/grand_project-breaking-news-background-music_short.mp3",
+      "volume": 0.089,
+      "desc": "Dramatic breaking-news bed for high-stakes or urgent stories",
+      "mood": ["dramatic", "breaking", "urgent", "serious"]
+    }
+  ],
+  "assets": []
+}

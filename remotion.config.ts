@@ -1,3 +1,4 @@
+import os from 'node:os';
 import { Config } from '@remotion/cli/config';
 
 // 1. Bộ tăng tốc phần cứng macOS (Apple VideoToolbox: h264_videotoolbox)
@@ -6,8 +7,8 @@ Config.setHardwareAcceleration('if-possible');
 // 2. Preset nén video nhanh (tiết kiệm thời gian encode khi fallback CPU)
 Config.setX264Preset('faster');
 
-// 3. Concurrency tối ưu cho CPU Intel Core i9-9880H (8 physical cores)
-Config.setConcurrency(8);
+// 3. Concurrency: 8 trên máy i9-9880H, tự giảm theo số nhân trên máy ít nhân hơn (VPS 6 nhân)
+Config.setConcurrency(Math.min(8, os.cpus().length));
 
 // 4. Định dạng frame JPEG chất lượng 80% (tối ưu kích thước snapshot và IPC transfer)
 Config.setVideoImageFormat('jpeg');

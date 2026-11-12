@@ -20,9 +20,10 @@ git pull --ff-only >>"$LOG" 2>&1 || true
 
 PROMPT="Đọc AGENTS.md và docs/SKILL-TAO-TIN.md rồi chạy /tao-tin ${COUNT} đến hết, đây là lượt chạy theo lịch tự động, không có người trả lời: không hỏi lại, tự xử lý lỗi theo tài liệu."
 
-# --dangerously-skip-permissions: bắt buộc vì không có ai bấm duyệt lệnh khi chạy cron.
+# Không có ai bấm duyệt khi chạy cron: chỉ cho phép đúng các lệnh pipeline cần
+# (danh sách ở agy-settings.json); lệnh ngoài danh sách bị từ chối.
 timeout 4h agy -p "$PROMPT" \
-  --dangerously-skip-permissions \
+  --settings "$APP_DIR/deploy/vps/agy-settings.json" \
   --output-format text \
   --print-timeout 0 >>"$LOG" 2>&1
 CODE=$?

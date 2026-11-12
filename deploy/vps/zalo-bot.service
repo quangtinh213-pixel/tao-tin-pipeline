@@ -1,0 +1,16 @@
+[Unit]
+Description=Zalo bot giao viec cho agy (tao-tin)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/opt/tao-tin
+ExecStart=/usr/bin/node /opt/tao-tin/deploy/vps/zalo-bot.mjs
+Environment=HOME=/root
+Environment=PATH=/root/.local/bin:/usr/local/bin:/usr/bin:/bin
+Restart=always
+RestartSec=5
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

@@ -13,9 +13,13 @@ apt-get install -y curl git ffmpeg python3 python3-pip util-linux ca-certificate
   fonts-noto fonts-noto-color-emoji fonts-dejavu-core
 
 echo "==> Swap 4GB (render Remotion tốn RAM)"
+# VPS dạng container (LXC) không cho bật swap: bỏ qua, không dừng script.
 if ! swapon --show | grep -q /swapfile; then
-  fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile
-  grep -q /swapfile /etc/fstab || echo '/swapfile none swap sw 0 0' >> /etc/fstab
+  if fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile >/dev/null && swapon /swapfile 2>/dev/null; then
+    grep -q /swapfile /etc/fstab || echo '/swapfile none swap sw 0 0' >> /etc/fstab
+  else
+    echo "   (không bật được swap, bỏ qua)"; rm -f /swapfile
+  fi
 fi
 
 echo "==> Node.js 22"

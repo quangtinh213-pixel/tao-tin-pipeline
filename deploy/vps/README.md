@@ -52,6 +52,7 @@ Chạy `crontab -e` rồi thêm dòng sau. VPS để giờ VN (`timedatectl set-
 
 - Mỗi lượt có khoá. Lượt cũ chưa xong thì lượt mới tự bỏ qua, các bài không bao giờ chạy song song.
 - Mỗi lượt tối đa 4 giờ. Nếu lỗi, VPS báo qua Telegram (cần `TELEGRAM_BOT_TOKEN` và `TELEGRAM_CHAT_ID` trong `.env`).
+- Cuối mỗi lượt, `cleanup-uploaded.sh` xoá `videos/<slug>/output/` và `public/<slug>/` của các video đã có `youtube.json` (đã đăng xong). File nhỏ như `youtube.json`, caption, script được giữ lại để xếp lịch đăng. Video upload lỗi được giữ nguyên để lượt sau đăng lại. Xem trước sẽ xoá gì: `deploy/vps/cleanup-uploaded.sh --dry-run`.
 - agy chạy với `--dangerously-skip-permissions` vì khi chạy cron không có ai bấm duyệt lệnh. Vì vậy chỉ chạy trên VPS dành riêng cho việc này.
 
 ## Lưu ý

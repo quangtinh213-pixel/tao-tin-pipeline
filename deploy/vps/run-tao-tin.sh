@@ -57,5 +57,8 @@ if [ $CODE -ne 0 ] && [ -z "${AGY_PROMPT:-}" ]; then
   node scripts/notify-telegram.mjs "⚠️ VPS tạo tin lỗi (exit $CODE). Log: $LOG" >/dev/null 2>&1 || true
 fi
 
+# Xoá video + tài nguyên render của các bài đã đăng YouTube xong (giữ ổ 40 GB không đầy).
+"$APP_DIR/deploy/vps/cleanup-uploaded.sh" >>"$LOG" 2>&1 || true
+
 find "$APP_DIR/logs" -name '*.log' -mtime +14 -delete 2>/dev/null
 exit $CODE

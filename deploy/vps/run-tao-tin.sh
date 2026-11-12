@@ -27,11 +27,31 @@ PROMPT="${AGY_PROMPT:-$DEFAULT_PROMPT} Đây là lượt chạy tự động tr�
 
 # Không có ai bấm duyệt: chỉ cho phép đúng các lệnh pipeline cần
 # (danh sách ở agy-settings.json); lệnh ngoài danh sách bị từ chối.
-timeout 4h agy -p "$PROMPT" \
-  --settings "$APP_DIR/deploy/vps/agy-settings.json" \
-  --output-format text \
-  --print-timeout 0 >>"$LOG" 2>&1
-CODE=$?
+# Model Google hay báo 503 "No capacity" lúc đông: chờ rồi thử lại, sau đó đổi model.
+# Lượt dở được /tao-tin tự làm tiếp (Bước 0), nên chạy lại từ đầu là an toàn.
+MODELS=("" "" "gemini-3.8-flash-medium" "claude-sonnet-4-6")
+CODE=1
+for i in "${!MODELS[@]}"; do
+  MODEL="${MODELS[$i]}"
+  ATTEMPT_LOG="$(mktemp)"
+  echo "=== lần $((i+1)) $(date +%H:%M:%S) model=${MODEL:-mặc định}" >>"$LOG"
+  timeout 4h agy -p "$PROMPT" \
+    ${MODEL:+--model "$MODEL"} \
+    --settings "$APP_DIR/deploy/vps/agy-settings.json" \
+    --output-format text \
+    --print-timeout 0 >"$ATTEMPT_LOG" 2>&1
+  CODE=$?
+  cat "$ATTEMPT_LOG" >>"$LOG"
+  if grep -qE 'code 503|UNAVAILABLE|RESOURCE_EXHAUSTED|No capacity|high traffic' "$ATTEMPT_LOG"; then
+    rm -f "$ATTEMPT_LOG"
+    echo "=== model quá tải, chờ 2 phút rồi thử lại" >>"$LOG"
+    sleep 120
+    continue
+  fi
+  rm -f "$ATTEMPT_LOG"
+  break
+done
+echo "=== kết thúc $(date +%H:%M:%S) exit=$CODE" >>"$LOG"
 
 if [ $CODE -ne 0 ] && [ -z "${AGY_PROMPT:-}" ]; then
   node scripts/notify-telegram.mjs "⚠️ VPS tạo tin lỗi (exit $CODE). Log: $LOG" >/dev/null 2>&1 || true

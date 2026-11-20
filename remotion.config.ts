@@ -1,5 +1,19 @@
 import os from 'node:os';
+import fs from 'node:fs';
 import { Config } from '@remotion/cli/config';
+
+// 0. Tận dụng trình duyệt sẵn có trên hệ thống để render tức thì (bỏ qua download headless shell)
+const browserCandidates = [
+  'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  '/usr/bin/google-chrome',
+];
+const foundBrowser = browserCandidates.find((p) => fs.existsSync(p));
+if (foundBrowser) {
+  Config.setBrowserExecutable(foundBrowser);
+}
 
 // 1. Bộ tăng tốc phần cứng macOS (Apple VideoToolbox: h264_videotoolbox)
 Config.setHardwareAcceleration('if-possible');

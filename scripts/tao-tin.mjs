@@ -27,6 +27,7 @@ import {
   loadProcessedHistory,
   normalizeUrl,
   saveProcessedHistory,
+  selectShortTemplate,
   upsertHistory,
 } from './auto-news-pipeline.mjs';
 import {buildCandidatePool, parsePubDate, validatePicks} from './rank-news.mjs';
@@ -85,6 +86,7 @@ export async function getCandidates({
 export function selectArticles(picks, {
   candidatesFile = DEFAULTS.candidatesFile,
   runFile = DEFAULTS.runFile,
+  historyFile = DEFAULTS.historyFile,
   now = new Date(),
   force = false,
 } = {}) {
@@ -98,7 +100,23 @@ export function selectArticles(picks, {
   }
   const articles = validatePicks(picks, readJson(candidatesFile), {count: picks.length});
   if (articles.length === 0) throw new Error('Không có bài hợp lệ trong danh sách chọn.');
-  const run = {startedAt: now.toISOString(), articles: articles.map((article) => ({...article, status: 'pending'}))};
+  let recentTemplates = [];
+  if (fs.existsSync(historyFile)) {
+    try {
+      const hist = readJson(historyFile);
+      if (Array.isArray(hist)) {
+        recentTemplates = hist.map((item) => item?.templateId).filter(Boolean);
+      }
+    } catch {
+      // ignore invalid history when computing recentTemplates
+    }
+  }
+  const enrichedArticles = articles.map((article, index) => {
+    const templateId = article.templateId || selectShortTemplate(article, {index, recentTemplates});
+    recentTemplates.push(templateId);
+    return {...article, templateId, status: 'pending'};
+  });
+  const run = {startedAt: now.toISOString(), articles: enrichedArticles};
   writeJson(runFile, run);
   return run;
 }
@@ -107,7 +125,10 @@ export function nextArticle({runFile = DEFAULTS.runFile} = {}) {
   if (!fs.existsSync(runFile)) return null;
   const {articles} = readJson(runFile);
   const index = articles.findIndex((article) => article.status === 'pending');
-  return index === -1 ? null : {...articles[index], position: index + 1, total: articles.length};
+  if (index === -1) return null;
+  const current = articles[index];
+  const templateId = current.templateId || selectShortTemplate(current, {index});
+  return {...current, templateId, position: index + 1, total: articles.length};
 }
 
 export function recordResult({
@@ -142,6 +163,7 @@ export function recordResult({
     url: article.link,
     source: article.source,
     reason: article.reason,
+    ...(article.templateId && {templateId: article.templateId}),
     status,
     processedAt: now.toISOString(),
     lastError: error,

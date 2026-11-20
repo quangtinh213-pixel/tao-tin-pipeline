@@ -9,6 +9,7 @@
  */
 import {readFile, writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
 
 const FPS = 30;
 const SNAP_SECONDS = 2;
@@ -47,7 +48,7 @@ export function buildLongExplainerTiming({chapters, script, timeline}) {
     const entryWords = entry.text.split(/\s+/u).map(cleanWord).filter(Boolean).slice(0, 5);
     let bestPos = -1;
     let bestScore = 0;
-    const searchLimit = Math.min(tw.length - 3, currentPos + 180);
+    const searchLimit = Math.min(tw.length, currentPos + 180);
 
     for (let pos = currentPos + 1; pos < searchLimit; pos++) {
       let score = 0;
@@ -64,7 +65,20 @@ export function buildLongExplainerTiming({chapters, script, timeline}) {
 
     if (bestPos !== -1 && bestScore >= 2.0) {
       currentPos = bestPos;
-      starts.push(tw[bestPos].start);
+      let t = tw[bestPos].start;
+      if (timeline.segments?.length) {
+        let bestSeg = t;
+        let bestDiff = SNAP_SECONDS;
+        for (const seg of timeline.segments) {
+          const diff = Math.abs(seg.start - t);
+          if (diff <= bestDiff) {
+            bestDiff = diff;
+            bestSeg = seg.start;
+          }
+        }
+        t = bestSeg;
+      }
+      starts.push(t);
     } else {
       // Fallback: estimate from previous anchor
       starts.push(null);
@@ -161,7 +175,7 @@ export function buildLongExplainerBeats({scenes, timeline}) {
   });
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === resolve(new URL(import.meta.url).pathname)) {
+if (process.argv[1] && resolve(process.argv[1]) === resolve(fileURLToPath(import.meta.url))) {
   const slug = process.argv[2];
   if (!slug) {
     console.error('Usage: node scripts/long-explainer-timing.mjs "<slug>"');

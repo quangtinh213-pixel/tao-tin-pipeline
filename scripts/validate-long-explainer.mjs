@@ -7,6 +7,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 
 const FPS = 30;
 export const MAX_BEAT_SECONDS = 8;
@@ -71,7 +72,7 @@ export function validateLongExplainer(spec, sourceText) {
   return {errors, warnings};
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname)) {
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))) {
   const slug = process.argv[2];
   if (!slug) {
     console.error('Usage: node scripts/validate-long-explainer.mjs "<slug>"');

@@ -4,6 +4,7 @@ export {ChapterCard} from './ChapterCard';
 export {Graphic, countUp, formatViNumber} from './Graphic';
 export {Layout, getChapterIndex} from './Layout';
 export {LongExplainerVideo} from './LongExplainerVideo';
+export {LongExplainerThumbnail} from './Thumbnail';
 export type {LayoutProps} from './Layout';
 export {SFX_URLS, getLongExplainerSfx} from './sfx';
 export type {SfxEvent} from './sfx';
@@ -16,5 +17,6 @@ export type {
   LongExplainerGraphic,
   LongExplainerSource,
   LongExplainerSpec,
+  LongExplainerThumbnailSpec,
   LongExplainerVisual,
 } from './types';

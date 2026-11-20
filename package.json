@@ -11,6 +11,7 @@
     "validate-caption": "node scripts/validate-caption.mjs",
     "studio": "npx remotion studio src/Root.tsx",
     "render": "npx remotion render src/Root.tsx Video --codec h264 --hardware-acceleration if-possible --x264-preset faster",
+    "thumbnail": "node scripts/generate-thumbnail.mjs",
     "clean-cache": "node scripts/clean-public-cache.mjs",
     "record-demo": "node scripts/record-demo.mjs",
     "article-video": "node scripts/article-video.mjs",
@@ -33,7 +34,13 @@
     "auto-news": "node scripts/auto-news-pipeline.mjs",
     "auto-news:dry": "node scripts/auto-news-pipeline.mjs --dry-run",
     "auto-news:daemon": "node scripts/auto-news-pipeline.mjs --daemon",
-    "tao-tin": "node scripts/tao-tin.mjs"
+    "tao-tin": "node scripts/tao-tin.mjs",
+    "tao-video-dai": "node scripts/tao-video-dai.mjs",
+    "video-dai:review": "node scripts/tao-video-dai.mjs --review",
+    "daily": "node scripts/daily-orchestrator.mjs",
+    "daily:daemon": "node scripts/daily-orchestrator.mjs --daemon",
+    "daily:status": "node scripts/daily-orchestrator.mjs --status",
+    "daily:report": "node scripts/daily-orchestrator.mjs --report"
   },
   "dependencies": {
     "@google/genai": "2.5.0",

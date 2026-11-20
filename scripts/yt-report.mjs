@@ -12,7 +12,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {google} from 'googleapis';
 import {sendTelegram} from './notify-telegram.mjs';
-import {takenPublishTimes} from './youtube-upload.mjs';
+import {getAuthenticatedYouTubeClient, takenPublishTimes} from './youtube-upload.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const VIDEOS_DIR = path.join(ROOT, 'videos');
@@ -54,6 +54,56 @@ export function readUploadedVideos(videosDir = VIDEOS_DIR, {sinceMs = 0} = {}) {
   return videos;
 }
 
+function parseIsoDuration(iso) {
+  const m = String(iso || '').match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/u);
+  if (!m) return null;
+  return Number(m[1] || 0) * 3600 + Number(m[2] || 0) * 60 + Number(m[3] || 0);
+}
+
+export async function fetchChannelVideos({ytClient, videosDir = VIDEOS_DIR, sinceMs = 0} = {}) {
+  const local = new Map(readUploadedVideos(videosDir, {sinceMs: 0}).map((v) => [v.videoId, v]));
+  if (!ytClient) return [...local.values()].filter((v) => Date.parse(v.publishAt) >= sinceMs);
+
+  const ch = await ytClient.channels.list({part: ['contentDetails'], mine: true});
+  const uploadsId = ch.data?.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+  if (!uploadsId) return [...local.values()].filter((v) => Date.parse(v.publishAt) >= sinceMs);
+
+  const ids = [];
+  let pageToken;
+  for (let p = 0; p < 4; p += 1) {
+    const pl = await ytClient.playlistItems.list({part: ['contentDetails'], playlistId: uploadsId, maxResults: 50, pageToken});
+    for (const item of pl.data?.items || []) {
+      if (item.contentDetails?.videoId) ids.push(item.contentDetails.videoId);
+    }
+    pageToken = pl.data?.nextPageToken;
+    if (!pageToken) break;
+  }
+
+  const out = [];
+  for (let i = 0; i < ids.length; i += 50) {
+    const res = await ytClient.videos.list({part: ['snippet', 'contentDetails', 'status'], id: ids.slice(i, i + 50)});
+    for (const v of res.data?.items || []) {
+      const pubIso = v.status?.publishAt || v.snippet?.publishedAt;
+      const pubMs = Date.parse(pubIso || '');
+      if (!(pubMs >= sinceMs)) continue;
+      const sec = parseIsoDuration(v.contentDetails?.duration);
+      const title = v.snippet?.title || '';
+      const loc = local.get(v.id);
+      const isShort = title.toLowerCase().includes('#shorts') || (Number.isFinite(sec) && sec <= 90);
+      out.push({
+        slug: loc?.slug || v.id,
+        videoId: v.id,
+        title,
+        publishAt: new Date(pubMs).toISOString(),
+        seconds: sec ?? loc?.seconds ?? null,
+        isShort,
+        hookCardArm: loc?.hookCardArm ?? null,
+      });
+    }
+  }
+  return out;
+}
+
 // Steepest 3-point fall after the first 3s (the swipe-away is measured separately); ties keep the latest, closest to the fall.
 export function retentionDrop(curve, seconds, segments = []) {
   if (!seconds || curve.length < 10) return null;
@@ -88,9 +138,14 @@ export function buildSummary({videos, daily, now = Date.now()}) {
     `${name} n=${videos.length} · % xem ${median(videos.map((video) => video.apv))?.toFixed(0) ?? '-'}% · còn ở 30%: ${median(videos.map((video) => video.retention?.[29])) ?? '-'}%`;
   const withText = (video) => (video.drop?.text ? `${line(video)}\n   ↳ "${video.drop.text.slice(0, 90)}"` : line(video));
 
+  const shortsList = videos.filter((v) => v.isShort ?? (String(v.title || '').toLowerCase().includes('#shorts') || (v.seconds && v.seconds <= 90)));
+  const longList = videos.filter((v) => !(v.isShort ?? (String(v.title || '').toLowerCase().includes('#shorts') || (v.seconds && v.seconds <= 90))));
+  const sumViews = (arr) => arr.reduce((s, v) => s + Number(v.views || 0), 0).toLocaleString('vi-VN');
+
   return [
     `📊 VN News — ${daily[0]?.day ?? '?'} → ${daily.at(-1)?.day ?? '?'} (Analytics trễ ~2-3 ngày)`,
     `View: ${totalViews.toLocaleString('vi-VN')} · Sub ròng: ${subs >= 0 ? '+' : ''}${subs} · ${videos.length} video`,
+    `Shorts: ${shortsList.length} video · ${sumViews(shortsList)} view | Video dài: ${longList.length} video · ${sumViews(longList)} view`,
     `% xem trung vị: ${median(measured.map((video) => video.apv))?.toFixed(1) ?? '-'}% · Video ≥1.500 view: ${videos.filter((video) => video.views >= 1500).length}`,
     ...(drops.length ? [`Người xem rời nhiều nhất ở ~${Math.round(median(drops.map((drop) => drop.ratio)) * 100)}% thời lượng (trung vị giây ${median(drops.map((drop) => drop.at))})`] : []),
     ...(arm('card').length || arm('control').length
@@ -114,10 +169,10 @@ function analyticsClient(env = process.env) {
   return google.youtubeAnalytics({version: 'v2', auth});
 }
 
-export async function buildReport({days = 14, now = Date.now(), client = analyticsClient()} = {}) {
+export async function buildReport({days = 14, now = Date.now(), client = analyticsClient(), ytClient = getAuthenticatedYouTubeClient()} = {}) {
   const startDate = vnDate(now - days * DAY_MS);
   const endDate = vnDate(now);
-  const videos = readUploadedVideos(VIDEOS_DIR, {sinceMs: Date.parse(`${startDate}T00:00:00+07:00`)});
+  const videos = await fetchChannelVideos({ytClient, videosDir: VIDEOS_DIR, sinceMs: Date.parse(`${startDate}T00:00:00+07:00`)});
   const base = {ids: 'channel==MINE', startDate, endDate};
 
   const metrics = {};

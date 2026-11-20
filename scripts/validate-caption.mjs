@@ -1,5 +1,6 @@
 import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {validateCaption} from './caption-rules.mjs';
 
 async function readJson(filePath) {
@@ -30,7 +31,7 @@ function usage() {
   return 'Dùng: node scripts/validate-caption.mjs <captionPath> <specPath> <scriptPath>';
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === resolve(new URL(import.meta.url).pathname)) {
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const [, , captionPath, specPath, scriptPath, ...extra] = process.argv;
   if (!captionPath || !specPath || !scriptPath || extra.length > 0) {
     console.error(usage());

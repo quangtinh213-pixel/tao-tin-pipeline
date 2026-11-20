@@ -122,6 +122,13 @@ Bạn cần có Client ID và Client Secret từ Google Cloud Console để ủy
     } catch {
       // Ignored if unable to open browser automatically
     }
+  } else if (process.platform === 'win32') {
+    try {
+      await execFileAsync('cmd.exe', ['/c', 'start', '', authUrl]);
+      console.log(`(Đã tự động mở trang xác thực trên trình duyệt của bạn)`);
+    } catch {
+      // Ignored if unable to open browser automatically
+    }
   }
 
   // Set up local HTTP server to receive the authorization code

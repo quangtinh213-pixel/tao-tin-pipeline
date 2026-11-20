@@ -1,104 +1,68 @@
 {
-  "generatedAt": "2026-11-09T17:42:14.404Z",
+  "generatedAt": "2026-11-20T02:32:09.128Z",
   "settings": {
-    "count": 2,
+    "count": 1,
     "maxAgeHours": 36,
     "minScore": 45,
     "allowLegal": false
   },
   "stats": {
-    "articles": 613,
-    "clusters": 536,
+    "articles": 604,
+    "clusters": 551,
     "trends": 10,
-    "qualified": 6
+    "qualified": 1
   },
   "picks": [
     {
       "rank": 1,
-      "title": "Hiện trường vụ sập mố cầu trên tuyến giao thông huyết mạch qua Thanh Hóa",
-      "score": 63,
+      "title": "10 tháng, FPT báo lợi nhuận trước thuế tăng 16,8%",
+      "score": 59,
       "breakdown": {
-        "coverage": 28,
-        "trend": 0,
-        "reach": 22,
-        "explainer": 10,
-        "freshness": 3
-      },
-      "category": "thiên tai – thời tiết",
-      "outlets": [
-        "tuoitre.vn",
-        "vnexpress.net",
-        "znews.vn"
-      ],
-      "trend": null,
-      "ageHours": 9.6,
-      "publishSlot": "2026-11-11T05:00:00.000Z",
-      "sources": [
-        {
-          "outlet": "tuoitre.vn",
-          "url": "https://tuoitre.vn/hien-truong-vu-sap-mo-cau-tren-tuyen-giao-thong-huyet-mach-qua-thanh-hoa-100261109143356041.htm",
-          "title": "Hiện trường vụ sập mố cầu trên tuyến giao thông huyết mạch qua Thanh Hóa",
-          "pubDate": "11/9/2026 3:08:00 PM"
-        },
-        {
-          "outlet": "vnexpress.net",
-          "url": "https://vnexpress.net/sap-mo-cau-tren-tuyen-duong-huyet-mach-o-thanh-hoa-5142319.html",
-          "title": "Sập mố cầu trên tuyến đường huyết mạch ở Thanh Hóa",
-          "pubDate": "Mon, 09 Nov 2026 09:38:22 +0700"
-        },
-        {
-          "outlet": "znews.vn",
-          "url": "https://znews.vn/mua-lon-gay-ngap-sat-lo-nhieu-noi-sap-mo-cau-huyet-mach-o-thanh-hoa-post1695129.html",
-          "title": "Mưa lớn gây ngập, sạt lở nhiều nơi, sập mố cầu huyết mạch ở Thanh Hóa",
-          "pubDate": "Mon, 09 Nov 2026 14:10:41 +0700"
-        }
-      ],
-      "reasons": []
-    },
-    {
-      "rank": 2,
-      "title": "Bộ trưởng Nội vụ: Đề xuất Quốc hội bổ sung ngày 27.7 được nghỉ hưởng nguyên lương",
-      "score": 56,
-      "breakdown": {
-        "coverage": 28,
-        "trend": 0,
-        "reach": 25,
+        "coverage": 36,
+        "trend": 7,
+        "reach": 13,
         "explainer": 0,
-        "freshness": 3
+        "freshness": 3,
+        "majorCase": 0,
+        "hotShortBonus": 0
       },
-      "category": "tiền lương – thu nhập",
+      "category": "thuế – phí – quy định",
       "outlets": [
-        "dantri.com.vn",
-        "thanhnien.vn",
-        "znews.vn"
+        "vneconomy.vn",
+        "cafef.vn",
+        "vietnambiz.vn",
+        "nguoiquansat.vn"
       ],
-      "trend": null,
-      "ageHours": 12.8,
-      "publishSlot": "2026-11-11T13:00:00.000Z",
+      "trend": {
+        "term": "lợi nhuận",
+        "traffic": 200
+      },
+      "ageHours": 17.6,
+      "publishSlot": "2026-11-20T05:00:00.000Z",
       "sources": [
         {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/thoi-su/de-nghi-quoc-hoi-bo-sung-277-la-ngay-nghi-duoc-huong-nguyen-luong-20261109095532614.htm",
-          "title": "Đề nghị Quốc hội bổ sung 27/7 là ngày nghỉ được hưởng nguyên lương",
-          "pubDate": "Mon, 09 Nov 2026 09:59:22 +0700"
+          "outlet": "vneconomy.vn",
+          "url": "https://vneconomy.vn/10-thang-fpt-bao-loi-nhuan-truoc-thue-tang-168.htm",
+          "title": "10 tháng, FPT báo lợi nhuận trước thuế tăng 16,8%",
+          "pubDate": "Thu, 19 Nov 2026 08:57:23 GMT"
         },
         {
-          "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/bo-truong-noi-vu-de-xuat-quoc-hoi-bo-sung-ngay-277-duoc-nghi-huong-nguyen-luong-185261109094214298.htm",
-          "title": "Bộ trưởng Nội vụ: Đề xuất Quốc hội bổ sung ngày 27.7 được nghỉ hưởng nguyên lương",
-          "pubDate": "Mon, 09 Nov 26 10:23:00 +0700"
+          "outlet": "cafef.vn",
+          "url": "https://cafef.vn/hon-26000-ty-dong-von-hoa-boc-hoi-khoi-nhom-thep-tu-dau-nam-chuyen-gi-day-18826111710145041.chn",
+          "title": "Hơn 26.000 tỷ đồng vốn hóa “bốc hơi” khỏi nhóm thép từ đầu năm, chuyện gì đây?",
+          "pubDate": null
         },
         {
-          "outlet": "znews.vn",
-          "url": "https://znews.vn/bo-truong-noi-vu-noi-ly-do-de-xuat-nghi-huong-nguyen-luong-ngay-277-post1695132.html",
-          "title": "Bộ trưởng Nội vụ nói lý do đề xuất nghỉ hưởng nguyên lương ngày 27/7",
-          "pubDate": "Mon, 09 Nov 2026 11:57:13 +0700"
+          "outlet": "vietnambiz.vn",
+          "url": "https://vietnambiz.vn/chi-mot-nhip-tang-1-cua-ty-gia-loi-nhuan-nganh-thep-bi-anh-huong-the-nao-20261119214610895.htm",
+          "title": "Chỉ một nhịp tăng 1% của tỷ giá, lợi nhuận ngành thép bị ảnh hưởng thế nào?",
+          "pubDate": null
         },
         {
-          "outlet": "znews.vn",
-          "url": "https://znews.vn/de-xuat-quoc-hoi-bo-sung-277-la-ngay-nghi-duoc-huong-nguyen-luong-post1695137.html",
-          "title": "Đề xuất Quốc hội bổ sung 27/7 là ngày nghỉ được hưởng nguyên lương",
-          "pubDate": "Mon, 09 Nov 2026 10:26:40 +0700"
+          "outlet": "nguoiquansat.vn",
+          "url": "https://nguoiquansat.vn/quang-sat-tang-10-usd-tan-loi-nhuan-hoa-phat-co-the-mat-hon-6-000-ty-dong-328761.html",
+          "title": "Quặng sắt tăng 10 USD/tấn, lợi nhuận Hoà Phát có thể mất hơn 6.000 tỷ đồng",
+          "pubDate": null
         }
       ],
       "reasons": []
@@ -107,95 +71,92 @@
   "rejected": [
     {
       "rank": 1,
-      "title": "Hà Nội đón đợt rét đậm đầu mùa, giao thông ùn tắc kéo dài",
-      "score": 66,
+      "title": "Hà Nội chi 958 tỷ đồng tặng quà Tết 2027, ai được nhận tới 10 triệu đồng?",
+      "score": 53,
       "breakdown": {
-        "coverage": 28,
+        "coverage": 16,
         "trend": 0,
-        "reach": 25,
+        "reach": 24,
         "explainer": 10,
-        "freshness": 3
+        "freshness": 3,
+        "majorCase": 0,
+        "hotShortBonus": 0
       },
-      "category": "thiên tai – thời tiết",
+      "category": "tiền lương – thu nhập",
       "outlets": [
-        "vnexpress.net",
-        "dantri.com.vn",
-        "znews.vn"
+        "thanhnien.vn",
+        "vietnamnet.vn"
       ],
       "trend": null,
-      "ageHours": 14.2,
+      "ageHours": 17.5,
       "publishSlot": null,
       "sources": [
         {
-          "outlet": "vnexpress.net",
-          "url": "https://vnexpress.net/ha-noi-un-tac-keo-dai-trong-mua-lanh-5142284.html",
-          "title": "Hà Nội ùn tắc kéo dài trong mưa lạnh",
-          "pubDate": "Mon, 09 Nov 2026 08:59:40 +0700"
+          "outlet": "thanhnien.vn",
+          "url": "https://thanhnien.vn/nguoi-co-cong-nguoi-huong-luong-huu-duoc-tang-qua-tet-2027-185261119142530568.htm",
+          "title": "Người có công, người hưởng lương hưu được tặng quà tết 2027",
+          "pubDate": "Thu, 19 Nov 26 14:43:00 +0700"
         },
         {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/thoi-su/ha-noi-don-dot-ret-dam-dau-mua-giao-thong-un-tac-keo-dai-20261109101228298.htm",
-          "title": "Hà Nội đón đợt rét đậm đầu mùa, giao thông ùn tắc kéo dài",
-          "pubDate": "Mon, 09 Nov 2026 10:31:26 +0700"
-        },
-        {
-          "outlet": "znews.vn",
-          "url": "https://znews.vn/pho-ha-noi-un-tac-keo-dai-sang-dau-tuan-mua-lanh-post1694749.html",
-          "title": "Phố Hà Nội ùn tắc kéo dài sáng đầu tuần mưa lạnh",
-          "pubDate": "Mon, 09 Nov 2026 08:41:41 +0700"
+          "outlet": "vietnamnet.vn",
+          "url": "https://vietnamnet.vn/ha-noi-chi-hon-958-ty-dong-tang-qua-tet-dinh-mui-2027-2576786.html",
+          "title": "Hà Nội chi 958 tỷ đồng tặng quà Tết 2027, ai được nhận tới 10 triệu đồng?",
+          "pubDate": "Thu, 19 Nov 2026 16:00:54 +0700"
         }
       ],
       "reasons": [
-        "đã có video dài về sự kiện này"
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google"
       ]
     },
     {
       "rank": 2,
-      "title": "Nghiên cứu phương án chuyển toàn bộ hoạt động khai thác quốc tế từ sân bay Nội Bài sang Gia Bình",
-      "score": 56,
+      "title": "Tài xế thoát chết khi loạt bó sắt đẩy sập cabin xe đầu kéo ở TPHCM",
+      "score": 49,
       "breakdown": {
         "coverage": 36,
-        "trend": 7,
-        "reach": 10,
+        "trend": 10,
+        "reach": 0,
         "explainer": 0,
-        "freshness": 3
+        "freshness": 3,
+        "majorCase": 0,
+        "hotShortBonus": 0
       },
-      "category": "giao thông – hạ tầng",
+      "category": "khác",
       "outlets": [
         "tuoitre.vn",
-        "vneconomy.vn",
-        "laodong.vn",
-        "cafef.vn"
+        "vnexpress.net",
+        "dantri.com.vn",
+        "laodong.vn"
       ],
       "trend": {
-        "term": "sân bay gia bình",
-        "traffic": 200
+        "term": "xe đầu kéo",
+        "traffic": 500
       },
-      "ageHours": 8.1,
+      "ageHours": 13.3,
       "publishSlot": null,
       "sources": [
         {
           "outlet": "tuoitre.vn",
-          "url": "https://tuoitre.vn/nghien-cuu-phuong-an-chuyen-toan-bo-hoat-dong-khai-thac-quoc-te-tu-san-bay-noi-bai-sang-gia-binh-1002611091319079.htm",
-          "title": "Nghiên cứu phương án chuyển toàn bộ hoạt động khai thác quốc tế từ sân bay Nội Bài sang Gia Bình",
-          "pubDate": "11/9/2026 2:53:00 PM"
+          "url": "https://tuoitre.vn/sat-bo-day-sap-cabin-xe-dau-keo-o-xa-nha-be-100261119182726192.htm",
+          "title": "Sắt bó đẩy sập cabin xe đầu kéo ở xã Nhà Bè",
+          "pubDate": "11/19/2026 6:43:00 PM"
         },
         {
-          "outlet": "vneconomy.vn",
-          "url": "https://vneconomy.vn/ha-noi-nghien-cuu-ket-noi-duong-sat-truc-tiep-san-bay-gia-binh-va-noi-bai.htm",
-          "title": "Hà Nội nghiên cứu kết nối đường sắt trực tiếp sân bay Gia Bình và Nội Bài",
-          "pubDate": "Mon, 09 Nov 2026 09:36:22 GMT"
+          "outlet": "vnexpress.net",
+          "url": "https://vnexpress.net/bo-thep-gan-chuc-tan-de-sap-cabin-xe-dau-keo-o-tp-hcm-5146777.html",
+          "title": "Bó thép gần chục tấn đè sập cabin xe đầu kéo ở TP HCM",
+          "pubDate": "Thu, 19 Nov 2026 19:28:06 +0700"
+        },
+        {
+          "outlet": "dantri.com.vn",
+          "url": "https://dantri.com.vn/thoi-su/tai-xe-thoat-chet-khi-loat-bo-sat-day-sap-cabin-xe-dau-keo-o-tphcm-20261119192134949.htm",
+          "title": "Tài xế thoát chết khi loạt bó sắt đẩy sập cabin xe đầu kéo ở TPHCM",
+          "pubDate": "Thu, 19 Nov 2026 20:11:42 +0700"
         },
         {
           "outlet": "laodong.vn",
-          "url": "https://laodong.vn/giao-thong/ket-noi-san-bay-gia-binh-voi-ha-noi-bang-tuyen-duong-sat-ngan-nhat-1797333.ldo",
-          "title": "Kết nối sân bay Gia Bình với Hà Nội bằng tuyến đường sắt ngắn nhất",
-          "pubDate": null
-        },
-        {
-          "outlet": "cafef.vn",
-          "url": "https://cafef.vn/sieu-san-bay-quoc-te-lon-hon-noi-bai-thoi-han-hoat-dong-70-nam-dang-duoc-khan-truong-xay-dung-ha-noi-gap-rut-tim-phuong-an-ket-noi-188261109165624997.chn",
-          "title": "&apos;Siêu sân bay&apos; quốc tế lớn hơn Nội Bài, thời hạn hoạt động 70 năm đang được khẩn trương xây dựng, Hà Nội &apos;gấp rút&apos; tìm phương án kết nối",
+          "url": "https://laodong.vn/xa-hoi/hai-xe-dau-keo-va-cham-tren-duong-tranh-hue-mot-tai-xe-nhap-vien-1803412.ldo",
+          "title": "Hai xe đầu kéo va chạm trên đường tránh Huế, một tài xế nhập viện",
           "pubDate": null
         }
       ],
@@ -205,469 +166,30 @@
     },
     {
       "rank": 3,
-      "title": "Phát hiện 1 cựu sinh viên ĐHQGHN từng kinh doanh vàng bạc, nay là Chủ tịch tập đoàn BĐS nghìn tỷ: Có thời điểm lọt Top 10 người giàu nhất sàn chứng khoán Việt Nam",
-      "score": 56,
+      "title": "Giá xăng dầu hôm nay 20.11.2026: Xăng E10 giảm về sát mốc 19.000 đồng/lít",
+      "score": 44,
       "breakdown": {
-        "coverage": 16,
+        "coverage": 0,
         "trend": 0,
-        "reach": 25,
+        "reach": 14,
         "explainer": 10,
-        "freshness": 5
+        "freshness": 5,
+        "majorCase": 0,
+        "hotShortBonus": 15
       },
       "category": "giá cả – tiền tệ",
       "outlets": [
-        "vietnamnet.vn",
-        "cafef.vn"
-      ],
-      "trend": null,
-      "ageHours": 0.6,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "vietnamnet.vn",
-          "url": "https://vietnamnet.vn/phat-hien-14-nguoi-nuoc-ngoai-nghi-lua-dao-qua-san-chung-khoan-ao-o-tphcm-2572850.html",
-          "title": "Phát hiện 14 người nước ngoài nghi lừa đảo qua sàn chứng khoán ảo ở TPHCM",
-          "pubDate": "Sun, 08 Nov 2026 22:52:41 +0700"
-        },
-        {
-          "outlet": "cafef.vn",
-          "url": "https://cafef.vn/phat-hien-1-cuu-sinh-vien-dhqghn-tung-kinh-doanh-vang-bac-nay-la-chu-tich-tap-doan-bds-nghin-ty-co-thoi-diem-lot-top-10-nguoi-giau-nhat-san-chung-khoan-viet-nam-188261110000257785.chn",
-          "title": "Phát hiện 1 cựu sinh viên ĐHQGHN từng kinh doanh vàng bạc, nay là Chủ tịch tập đoàn BĐS nghìn tỷ: Có thời điểm lọt Top 10 người giàu nhất sàn chứng khoán Việt Nam",
-          "pubDate": "Tue, 10 Nov 2026 00:05:00 +07"
-        },
-        {
-          "outlet": "cafef.vn",
-          "url": "https://cafef.vn/loat-thuong-hieu-viet-ve-tay-nuoc-ngoai-cuoc-di-san-ngam-giua-con-bao-ban-rong-hang-tram-nghin-ty-tren-san-chung-khoan-188261109230616695.chn",
-          "title": "Loạt thương hiệu Việt về tay nước ngoài: Cuộc đi săn ngầm giữa cơn bão bán ròng hàng trăm nghìn tỷ trên sàn chứng khoán",
-          "pubDate": "Tue, 10 Nov 2026 00:03:00 +07"
-        }
-      ],
-      "reasons": [
-        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google"
-      ]
-    },
-    {
-      "rank": 4,
-      "title": "Ông Trần Quốc Bình giữ chức Phó bí thư Tỉnh ủy Hưng Yên",
-      "score": 51,
-      "breakdown": {
-        "coverage": 36,
-        "trend": 10,
-        "reach": 0,
-        "explainer": 0,
-        "freshness": 5
-      },
-      "category": "khác",
-      "outlets": [
-        "tuoitre.vn",
-        "24h.com.vn",
-        "laodong.vn",
-        "baohungyen.vn"
-      ],
-      "trend": {
-        "term": "trần quốc bình",
-        "traffic": 500
-      },
-      "ageHours": 2.9,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "tuoitre.vn",
-          "url": "https://tuoitre.vn/ong-tran-quoc-binh-giu-chuc-pho-bi-thu-tinh-uy-hung-yen-100261109205331397.htm",
-          "title": "Ông Trần Quốc Bình giữ chức Phó bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": "11/9/2026 9:48:00 PM"
-        },
-        {
-          "outlet": "24h.com.vn",
-          "url": "https://www.24h.com.vn/tin-tuc-trong-ngay/ong-tran-quoc-binh-lam-pho-bi-thu-tinh-uy-hung-yen-c46a1809742.html",
-          "title": "Ông Trần Quốc Bình làm Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "laodong.vn",
-          "url": "https://laodong.vn/thoi-su/ong-tran-quoc-binh-giu-chuc-pho-bi-thu-tinh-uy-hung-yen-1797604.ldo",
-          "title": "Ông Trần Quốc Bình giữ chức Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "baohungyen.vn",
-          "url": "https://baohungyen.vn/hoi-nghi-ban-chap-hanh-dang-bo-tinh-khoa-i-nhiem-ky-2025-2030-ve-cong-tac-can-bo-3200716.html",
-          "title": "Hội nghị Ban Chấp hành Đảng bộ tỉnh khóa I, nhiệm kỳ 2025 – 2030 về công tác cán bộ",
-          "pubDate": null
-        }
-      ],
-      "reasons": [
-        "ít người bị ảnh hưởng trực tiếp"
-      ]
-    },
-    {
-      "rank": 5,
-      "title": "Cây bàng vuông Trường Sa 15 tuổi bị chặt: Người trực tiếp mang về từ đảo nói gì?",
-      "score": 51,
-      "breakdown": {
-        "coverage": 36,
-        "trend": 0,
-        "reach": 0,
-        "explainer": 10,
-        "freshness": 5
-      },
-      "category": "khác",
-      "outlets": [
-        "tuoitre.vn",
-        "dantri.com.vn",
-        "thanhnien.vn",
-        "znews.vn"
-      ],
-      "trend": null,
-      "ageHours": 4.5,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "tuoitre.vn",
-          "url": "https://tuoitre.vn/vu-cua-ha-cay-bang-vuong-truong-sa-sao-khong-gan-cho-cay-mot-tam-bang-100261109155451288.htm",
-          "title": "Vụ cưa hạ cây bàng vuông Trường Sa: Sao không gắn cho cây một tấm bảng?",
-          "pubDate": "11/9/2026 8:13:00 PM"
-        },
-        {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/thoi-su/vu-cua-cay-bang-vuong-o-dak-lak-nguoi-mang-cay-ve-trong-len-tieng-20261109121134633.htm",
-          "title": "Vụ cưa cây bàng vuông ở Đắk Lắk: Người mang cây về trồng lên tiếng",
-          "pubDate": "Mon, 09 Nov 2026 13:06:49 +0700"
-        },
-        {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/thoi-su/vu-cay-bang-vuong-quy-bi-cua-ha-de-xuat-phat-nguoi-chat-cay-20-trieu-dong-20261109090118891.htm",
-          "title": "Vụ cây bàng vuông quý bị cưa hạ: Đề xuất phạt người chặt cây 20 triệu đồng",
-          "pubDate": "Mon, 09 Nov 2026 09:11:30 +0700"
-        },
-        {
-          "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/de-xuat-xu-phat-nguoi-don-ha-cay-bang-vuong-truong-sa-o-dak-lak-185261109104006829.htm",
-          "title": "Đề xuất xử phạt người đốn hạ cây bàng vuông Trường Sa ở Đắk Lắk",
-          "pubDate": "Mon, 09 Nov 26 11:05:00 +0700"
-        },
-        {
-          "outlet": "znews.vn",
-          "url": "https://znews.vn/cay-bang-vuong-truong-sa-15-tuoi-bi-chat-nguoi-truc-tiep-mang-ve-tu-dao-noi-gi-post1695028.html",
-          "title": "Cây bàng vuông Trường Sa 15 tuổi bị chặt: Người trực tiếp mang về từ đảo nói gì?",
-          "pubDate": "Sun, 08 Nov 2026 20:04:36 +0700"
-        }
-      ],
-      "reasons": [
-        "ít người bị ảnh hưởng trực tiếp"
-      ]
-    },
-    {
-      "rank": 6,
-      "title": "Ông Trần Quốc Bình làm Phó Bí thư Tỉnh ủy Hưng Yên",
-      "score": 51,
-      "breakdown": {
-        "coverage": 36,
-        "trend": 10,
-        "reach": 0,
-        "explainer": 0,
-        "freshness": 5
-      },
-      "category": "khác",
-      "outlets": [
-        "dantri.com.vn",
-        "24h.com.vn",
-        "laodong.vn",
-        "baohungyen.vn"
-      ],
-      "trend": {
-        "term": "trần quốc bình",
-        "traffic": 500
-      },
-      "ageHours": 2.5,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/thoi-su/ong-tran-quoc-binh-lam-pho-bi-thu-tinh-uy-hung-yen-20261109215901553.htm",
-          "title": "Ông Trần Quốc Bình làm Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": "Mon, 09 Nov 2026 22:13:40 +0700"
-        },
-        {
-          "outlet": "24h.com.vn",
-          "url": "https://www.24h.com.vn/tin-tuc-trong-ngay/ong-tran-quoc-binh-lam-pho-bi-thu-tinh-uy-hung-yen-c46a1809742.html",
-          "title": "Ông Trần Quốc Bình làm Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "laodong.vn",
-          "url": "https://laodong.vn/thoi-su/ong-tran-quoc-binh-giu-chuc-pho-bi-thu-tinh-uy-hung-yen-1797604.ldo",
-          "title": "Ông Trần Quốc Bình giữ chức Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "baohungyen.vn",
-          "url": "https://baohungyen.vn/hoi-nghi-ban-chap-hanh-dang-bo-tinh-khoa-i-nhiem-ky-2025-2030-ve-cong-tac-can-bo-3200716.html",
-          "title": "Hội nghị Ban Chấp hành Đảng bộ tỉnh khóa I, nhiệm kỳ 2025 – 2030 về công tác cán bộ",
-          "pubDate": null
-        }
-      ],
-      "reasons": [
-        "ít người bị ảnh hưởng trực tiếp"
-      ]
-    },
-    {
-      "rank": 7,
-      "title": "Ông Trần Quốc Bình giữ chức Phó bí thư Tỉnh ủy Hưng Yên",
-      "score": 51,
-      "breakdown": {
-        "coverage": 36,
-        "trend": 10,
-        "reach": 0,
-        "explainer": 0,
-        "freshness": 5
-      },
-      "category": "khác",
-      "outlets": [
-        "thanhnien.vn",
-        "24h.com.vn",
-        "laodong.vn",
-        "baohungyen.vn"
-      ],
-      "trend": {
-        "term": "trần quốc bình",
-        "traffic": 500
-      },
-      "ageHours": 4.5,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/ong-tran-quoc-binh-giu-chuc-pho-bi-thu-tinh-uy-hung-yen-185261109200001162.htm",
-          "title": "Ông Trần Quốc Bình giữ chức Phó bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": "Mon, 09 Nov 26 20:12:00 +0700"
-        },
-        {
-          "outlet": "24h.com.vn",
-          "url": "https://www.24h.com.vn/tin-tuc-trong-ngay/ong-tran-quoc-binh-lam-pho-bi-thu-tinh-uy-hung-yen-c46a1809742.html",
-          "title": "Ông Trần Quốc Bình làm Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "laodong.vn",
-          "url": "https://laodong.vn/thoi-su/ong-tran-quoc-binh-giu-chuc-pho-bi-thu-tinh-uy-hung-yen-1797604.ldo",
-          "title": "Ông Trần Quốc Bình giữ chức Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "baohungyen.vn",
-          "url": "https://baohungyen.vn/hoi-nghi-ban-chap-hanh-dang-bo-tinh-khoa-i-nhiem-ky-2025-2030-ve-cong-tac-can-bo-3200716.html",
-          "title": "Hội nghị Ban Chấp hành Đảng bộ tỉnh khóa I, nhiệm kỳ 2025 – 2030 về công tác cán bộ",
-          "pubDate": null
-        }
-      ],
-      "reasons": [
-        "ít người bị ảnh hưởng trực tiếp"
-      ]
-    },
-    {
-      "rank": 8,
-      "title": "Ông Trần Quốc Bình làm Phó bí thư Tỉnh ủy Hưng Yên",
-      "score": 51,
-      "breakdown": {
-        "coverage": 36,
-        "trend": 10,
-        "reach": 0,
-        "explainer": 0,
-        "freshness": 5
-      },
-      "category": "khác",
-      "outlets": [
-        "znews.vn",
-        "24h.com.vn",
-        "laodong.vn",
-        "baohungyen.vn"
-      ],
-      "trend": {
-        "term": "trần quốc bình",
-        "traffic": 500
-      },
-      "ageHours": 3.5,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "znews.vn",
-          "url": "https://znews.vn/ong-tran-quoc-binh-lam-pho-bi-thu-tinh-uy-hung-yen-post1695123.html",
-          "title": "Ông Trần Quốc Bình làm Phó bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": "Mon, 09 Nov 2026 21:10:07 +0700"
-        },
-        {
-          "outlet": "24h.com.vn",
-          "url": "https://www.24h.com.vn/tin-tuc-trong-ngay/ong-tran-quoc-binh-lam-pho-bi-thu-tinh-uy-hung-yen-c46a1809742.html",
-          "title": "Ông Trần Quốc Bình làm Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "laodong.vn",
-          "url": "https://laodong.vn/thoi-su/ong-tran-quoc-binh-giu-chuc-pho-bi-thu-tinh-uy-hung-yen-1797604.ldo",
-          "title": "Ông Trần Quốc Bình giữ chức Phó Bí thư Tỉnh ủy Hưng Yên",
-          "pubDate": null
-        },
-        {
-          "outlet": "baohungyen.vn",
-          "url": "https://baohungyen.vn/hoi-nghi-ban-chap-hanh-dang-bo-tinh-khoa-i-nhiem-ky-2025-2030-ve-cong-tac-can-bo-3200716.html",
-          "title": "Hội nghị Ban Chấp hành Đảng bộ tỉnh khóa I, nhiệm kỳ 2025 – 2030 về công tác cán bộ",
-          "pubDate": null
-        }
-      ],
-      "reasons": [
-        "ít người bị ảnh hưởng trực tiếp"
-      ]
-    },
-    {
-      "rank": 9,
-      "title": "Đại biểu Quốc hội đề xuất cấm bán thuốc lá cho người sinh từ năm 2010",
-      "score": 50,
-      "breakdown": {
-        "coverage": 16,
-        "trend": 0,
-        "reach": 21,
-        "explainer": 10,
-        "freshness": 3
-      },
-      "category": "sức khỏe – thực phẩm",
-      "outlets": [
-        "vnexpress.net",
         "thanhnien.vn"
       ],
       "trend": null,
-      "ageHours": 7.8,
+      "ageHours": 1.1,
       "publishSlot": null,
       "sources": [
-        {
-          "outlet": "vnexpress.net",
-          "url": "https://vnexpress.net/de-xuat-cam-ban-thuoc-la-vinh-vien-cho-nguoi-sinh-tu-nam-2010-5142500.html",
-          "title": "Đề xuất cấm bán thuốc lá vĩnh viễn cho người sinh từ năm 2010",
-          "pubDate": "Mon, 09 Nov 2026 16:52:16 +0700"
-        },
         {
           "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/dai-bieu-quoc-hoi-de-xuat-cam-ban-thuoc-la-cho-nguoi-sinh-tu-nam-2010-185261109152034155.htm",
-          "title": "Đại biểu Quốc hội đề xuất cấm bán thuốc lá cho người sinh từ năm 2010",
-          "pubDate": "Mon, 09 Nov 26 16:31:00 +0700"
-        }
-      ],
-      "reasons": [
-        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google"
-      ]
-    },
-    {
-      "rank": 10,
-      "title": "“Tôi mong Quốc hội quyết định để tôi bị thật nhiều hãng thuốc lá ghét”",
-      "score": 50,
-      "breakdown": {
-        "coverage": 16,
-        "trend": 0,
-        "reach": 21,
-        "explainer": 10,
-        "freshness": 3
-      },
-      "category": "sức khỏe – thực phẩm",
-      "outlets": [
-        "dantri.com.vn",
-        "znews.vn"
-      ],
-      "trend": null,
-      "ageHours": 7.4,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/thoi-su/toi-mong-quoc-hoi-quyet-dinh-de-toi-bi-that-nhieu-hang-thuoc-la-ghet-20261109153517939.htm",
-          "title": "“Tôi mong Quốc hội quyết định để tôi bị thật nhiều hãng thuốc lá ghét”",
-          "pubDate": "Mon, 09 Nov 2026 15:42:20 +0700"
-        },
-        {
-          "outlet": "znews.vn",
-          "url": "https://znews.vn/dbqh-mong-hang-thuoc-la-ghet-vi-de-xuat-nang-tuoi-mua-thuoc-la-len-21-post1695109.html",
-          "title": "ĐBQH mong hãng thuốc lá ghét vì đề xuất nâng tuổi mua thuốc lá lên 21",
-          "pubDate": "Mon, 09 Nov 2026 17:21:14 +0700"
-        }
-      ],
-      "reasons": [
-        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google"
-      ]
-    },
-    {
-      "rank": 11,
-      "title": "Cựu Giám đốc chi nhánh ngân hàng SeABank lĩnh 10 năm tù khi đang bị truy nã",
-      "score": 45,
-      "breakdown": {
-        "coverage": 28,
-        "trend": 0,
-        "reach": 14,
-        "explainer": 0,
-        "freshness": 3
-      },
-      "category": "giá cả – tiền tệ",
-      "outlets": [
-        "dantri.com.vn",
-        "thanhnien.vn",
-        "vietnamnet.vn"
-      ],
-      "trend": null,
-      "ageHours": 11,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/phap-luat/cuu-giam-doc-chi-nhanh-ngan-hang-seabank-linh-10-nam-tu-khi-dang-bi-truy-na-20261109133849877.htm",
-          "title": "Cựu Giám đốc chi nhánh ngân hàng SeABank lĩnh 10 năm tù khi đang bị truy nã",
-          "pubDate": "Mon, 09 Nov 2026 13:44:53 +0700"
-        },
-        {
-          "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/cuu-giam-doc-seabank-bi-xet-xu-vang-mat-gui-don-ve-toa-xin-khoan-hong-185261109112233255.htm",
-          "title": "Cựu giám đốc SeABank bị xét xử vắng mặt, gửi đơn về tòa xin khoan hồng",
-          "pubDate": "Mon, 09 Nov 26 11:35:00 +0700"
-        },
-        {
-          "outlet": "vietnamnet.vn",
-          "url": "https://vietnamnet.vn/cuu-pho-tong-giam-doc-seabank-bi-tuyen-10-nam-tu-2572918.html",
-          "title": "Cựu Phó Tổng giám đốc SeaBank bị tuyên 10 năm tù khi đang ở nước ngoài",
-          "pubDate": "Mon, 09 Nov 2026 11:24:19 +0700"
-        }
-      ],
-      "reasons": [
-        "tin hình sự/tai nạn, để cho Shorts"
-      ]
-    },
-    {
-      "rank": 12,
-      "title": "Bộ trưởng Nội vụ: Bổ sung ngày nghỉ 27/7 hưởng lương vào dự thảo luật",
-      "score": 44,
-      "breakdown": {
-        "coverage": 16,
-        "trend": 0,
-        "reach": 25,
-        "explainer": 0,
-        "freshness": 3
-      },
-      "category": "tiền lương – thu nhập",
-      "outlets": [
-        "vnexpress.net",
-        "dantri.com.vn"
-      ],
-      "trend": null,
-      "ageHours": 12.9,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "vnexpress.net",
-          "url": "https://vnexpress.net/bo-truong-noi-vu-da-bo-sung-ngay-nghi-le-27-7-vao-du-luat-5142361.html",
-          "title": "Bộ trưởng Nội vụ: Đã bổ sung ngày nghỉ lễ 27/7 vào dự luật",
-          "pubDate": "Mon, 09 Nov 2026 10:47:38 +0700"
-        },
-        {
-          "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/noi-vu/bo-truong-noi-vu-bo-sung-ngay-nghi-277-huong-luong-vao-du-thao-luat-20261109113429703.htm",
-          "title": "Bộ trưởng Nội vụ: Bổ sung ngày nghỉ 27/7 hưởng lương vào dự thảo luật",
-          "pubDate": "Mon, 09 Nov 2026 11:49:06 +0700"
+          "url": "https://thanhnien.vn/gia-xang-dau-hom-nay-20112026-xang-e10-giam-ve-sat-moc-19000-dong-lit-185261120081149809.htm",
+          "title": "Giá xăng dầu hôm nay 20.11.2026: Xăng E10 giảm về sát mốc 19.000 đồng/lít",
+          "pubDate": "Fri, 20 Nov 26 08:26:00 +0700"
         }
       ],
       "reasons": [
@@ -676,83 +198,47 @@
       ]
     },
     {
-      "rank": 13,
-      "title": "Phát động giải thưởng ‘Tinh hoa pháp lý Việt Nam lần thứ 2’",
-      "score": 43,
-      "breakdown": {
-        "coverage": 16,
-        "trend": 0,
-        "reach": 14,
-        "explainer": 10,
-        "freshness": 3
-      },
-      "category": "tiền lương – thu nhập",
-      "outlets": [
-        "tuoitre.vn",
-        "thanhnien.vn"
-      ],
-      "trend": null,
-      "ageHours": 7.7,
-      "publishSlot": null,
-      "sources": [
-        {
-          "outlet": "tuoitre.vn",
-          "url": "https://tuoitre.vn/phat-dong-giai-thuong-tinh-hoa-phap-ly-viet-nam-nam-2027-100261109154549852.htm",
-          "title": "Phát động Giải thưởng Tinh hoa pháp lý Việt Nam năm 2027",
-          "pubDate": "11/9/2026 4:02:00 PM"
-        },
-        {
-          "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/phat-dong-giai-thuong-tinh-hoa-phap-ly-viet-nam-lan-thu-2-185261109163024512.htm",
-          "title": "Phát động giải thưởng ‘Tinh hoa pháp lý Việt Nam lần thứ 2’",
-          "pubDate": "Mon, 09 Nov 26 16:58:00 +0700"
-        }
-      ],
-      "reasons": [
-        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
-        "điểm 43 < 45"
-      ]
-    },
-    {
-      "rank": 14,
-      "title": "U17 Việt Nam thắng U17 Fiji 2-0",
+      "rank": 4,
+      "title": "Va chạm giữa 2 xe đầu kéo khiến quốc lộ 1 ách tắc nhiều giờ",
       "score": 43,
       "breakdown": {
         "coverage": 28,
         "trend": 10,
         "reach": 0,
         "explainer": 0,
-        "freshness": 5
+        "freshness": 5,
+        "majorCase": 0,
+        "hotShortBonus": 0
       },
       "category": "khác",
       "outlets": [
-        "tuoitre.vn",
-        "thanhnien.vn",
-        "bongdaplus.vn"
+        "dantri.com.vn",
+        "vnexpress.net",
+        "laodong.vn"
       ],
       "trend": {
-        "term": "u17 việt nam",
+        "term": "xe đầu kéo",
         "traffic": 500
       },
-      "ageHours": 2.6,
+      "ageHours": 1.1,
       "publishSlot": null,
       "sources": [
         {
-          "outlet": "tuoitre.vn",
-          "url": "https://tuoitre.vn/u17-viet-nam-thang-u17-fiji-2-0-10026110921512995.htm",
-          "title": "U17 Việt Nam thắng U17 Fiji 2-0",
-          "pubDate": "11/9/2026 10:07:00 PM"
+          "outlet": "dantri.com.vn",
+          "url": "https://dantri.com.vn/thoi-su/va-cham-giua-2-xe-dau-keo-khien-quoc-lo-1-ach-tac-nhieu-gio-20261120075029397.htm",
+          "title": "Va chạm giữa 2 xe đầu kéo khiến quốc lộ 1 ách tắc nhiều giờ",
+          "pubDate": "Fri, 20 Nov 2026 08:23:39 +0700"
         },
         {
-          "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/lich-thi-dau-u17-viet-nam-u17-fiji-21-gio-hom-nay-hlv-roland-tiet-lo-chien-thuat-nong-185261108210219593.htm",
-          "title": "Lịch thi đấu U.17 Việt Nam - U.17 Fiji (21 giờ hôm nay): HLV Roland tiết lộ chiến thuật nóng…",
+          "outlet": "vnexpress.net",
+          "url": "https://vnexpress.net/xe-dau-keo-lui-nhu-bay-tong-lien-tiep-oto-xe-may-5146638.html",
+          "title": "Xe đầu kéo lùi như bay tông liên tiếp ôtô, xe máy",
           "pubDate": null
         },
         {
-          "outlet": "bongdaplus.vn",
-          "url": "https://bongdaplus.vn/u17-world-cup/u17-viet-nam-lai-thang-truoc-them-u17-world-cup-5285782611.html",
-          "title": "World Cup 2026 - U17 Việt Nam lại thắng trước thềm U17 World Cup",
+          "outlet": "laodong.vn",
+          "url": "https://laodong.vn/xa-hoi/hai-xe-dau-keo-va-cham-tren-duong-tranh-hue-mot-tai-xe-nhap-vien-1803412.ldo",
+          "title": "Hai xe đầu kéo va chạm trên đường tránh Huế, một tài xế nhập viện",
           "pubDate": null
         }
       ],
@@ -762,41 +248,422 @@
       ]
     },
     {
-      "rank": 15,
-      "title": "Lần đầu đèo Khánh Lê có trụ SOS, người gặp nạn gọi trực tiếp công an",
-      "score": 43,
+      "rank": 5,
+      "title": "Chìm thuyền giữa hồ Na Hang, người đàn ông mất tích khi bơi vào bờ",
+      "score": 42,
       "breakdown": {
         "coverage": 16,
         "trend": 0,
-        "reach": 24,
+        "reach": 10,
         "explainer": 0,
-        "freshness": 3
+        "freshness": 1,
+        "majorCase": 0,
+        "hotShortBonus": 15
       },
       "category": "giao thông – hạ tầng",
       "outlets": [
         "dantri.com.vn",
-        "thanhnien.vn"
+        "vietnamnet.vn"
       ],
       "trend": null,
-      "ageHours": 11.1,
+      "ageHours": 34.8,
       "publishSlot": null,
       "sources": [
         {
           "outlet": "dantri.com.vn",
-          "url": "https://dantri.com.vn/thoi-su/mat-song-dien-thoai-van-goi-duoc-cong-an-giai-cuu-tren-deo-khanh-le-20261109131611793.htm",
-          "title": "Mất sóng điện thoại vẫn gọi được công an giải cứu trên đèo Khánh Lê",
-          "pubDate": "Mon, 09 Nov 2026 13:33:51 +0700"
+          "url": "https://dantri.com.vn/thoi-su/chim-thuyen-giua-ho-thuy-dien-na-hang-mot-nguoi-mat-tich-20261118223830242.htm",
+          "title": "Chìm thuyền giữa hồ Thủy điện Na Hang, một người mất tích",
+          "pubDate": "Wed, 18 Nov 2026 22:44:21 +0700"
         },
         {
-          "outlet": "thanhnien.vn",
-          "url": "https://thanhnien.vn/lan-dau-deo-khanh-le-co-tru-sos-nguoi-gap-nan-goi-truc-tiep-cong-an-185261109105519576.htm",
-          "title": "Lần đầu đèo Khánh Lê có trụ SOS, người gặp nạn gọi trực tiếp công an",
-          "pubDate": "Mon, 09 Nov 26 12:52:37 +0700"
+          "outlet": "vietnamnet.vn",
+          "url": "https://vietnamnet.vn/chim-thuyen-giua-ho-na-hang-mot-nguoi-dan-ong-mat-tich-2576537.html",
+          "title": "Chìm thuyền giữa hồ Na Hang, người đàn ông mất tích khi bơi vào bờ",
+          "pubDate": "Wed, 18 Nov 2026 21:48:47 +0700"
         }
       ],
       "reasons": [
         "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
-        "điểm 43 < 45"
+        "ít người bị ảnh hưởng trực tiếp",
+        "điểm 42 < 45"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Vụ nghi ngộ độc ở Đồng Nai: 43 trẻ nhập viện sau khi ăn tại trường",
+      "score": 42,
+      "breakdown": {
+        "coverage": 16,
+        "trend": 0,
+        "reach": 23,
+        "explainer": 0,
+        "freshness": 3,
+        "majorCase": 0,
+        "hotShortBonus": 0
+      },
+      "category": "sức khỏe – thực phẩm",
+      "outlets": [
+        "dantri.com.vn",
+        "znews.vn"
+      ],
+      "trend": null,
+      "ageHours": 10.4,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "dantri.com.vn",
+          "url": "https://dantri.com.vn/suc-khoe/hon-50-hoc-sinh-nghi-ngo-doc-sau-bua-an-tai-truong-o-dong-nai-20261119181317541.htm",
+          "title": "Hơn 50 học sinh nghi ngộ độc sau bữa ăn tại trường ở Đồng Nai",
+          "pubDate": "Thu, 19 Nov 2026 23:07:48 +0700"
+        },
+        {
+          "outlet": "znews.vn",
+          "url": "https://znews.vn/vu-nghi-ngo-doc-o-dong-nai-43-tre-nhap-vien-sau-khi-an-tai-truong-post1697489.html",
+          "title": "Vụ nghi ngộ độc ở Đồng Nai: 43 trẻ nhập viện sau khi ăn tại trường",
+          "pubDate": "Thu, 19 Nov 2026 08:43:45 +0700"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 42 < 45"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "VNVC và MSD công bố kế hoạch chuyển giao công nghệ chiến lược sản xuất vaccine",
+      "score": 41,
+      "breakdown": {
+        "coverage": 28,
+        "trend": 0,
+        "reach": 12,
+        "explainer": 0,
+        "freshness": 1,
+        "majorCase": 0,
+        "hotShortBonus": 0
+      },
+      "category": "sức khỏe – thực phẩm",
+      "outlets": [
+        "vnexpress.net",
+        "dantri.com.vn",
+        "znews.vn"
+      ],
+      "trend": null,
+      "ageHours": 22.4,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "vnexpress.net",
+          "url": "https://vnexpress.net/vnvc-va-msd-cong-bo-ke-hoach-chuyen-giao-cong-nghe-san-xuat-vaccine-5146371.html",
+          "title": "VNVC và MSD công bố kế hoạch chuyển giao công nghệ sản xuất vaccine",
+          "pubDate": "Thu, 19 Nov 2026 09:00:00 +0700"
+        },
+        {
+          "outlet": "dantri.com.vn",
+          "url": "https://dantri.com.vn/thoi-su/vnvc-va-msd-cong-bo-ke-hoach-chuyen-giao-cong-nghe-chien-luoc-san-xuat-vaccine-20261118220254572.htm",
+          "title": "VNVC và MSD công bố kế hoạch chuyển giao công nghệ chiến lược sản xuất vaccine",
+          "pubDate": "Thu, 19 Nov 2026 08:00:00 +0700"
+        },
+        {
+          "outlet": "znews.vn",
+          "url": "https://znews.vn/vnvc-va-msd-cong-bo-ke-hoach-san-xuat-vaccine-tai-viet-nam-post1697527.html",
+          "title": "VNVC và MSD công bố kế hoạch sản xuất vaccine tại Việt Nam",
+          "pubDate": "Thu, 19 Nov 2026 11:05:31 +0700"
+        }
+      ],
+      "reasons": [
+        "điểm 41 < 45"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Tắm bãi biển Trung Lương 4 học sinh bị sóng cuốn, 1 nữ sinh mất tích",
+      "score": 41,
+      "breakdown": {
+        "coverage": 0,
+        "trend": 0,
+        "reach": 25,
+        "explainer": 0,
+        "freshness": 1,
+        "majorCase": 0,
+        "hotShortBonus": 15
+      },
+      "category": "tiền lương – thu nhập",
+      "outlets": [
+        "thanhnien.vn"
+      ],
+      "trend": null,
+      "ageHours": 19.3,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "thanhnien.vn",
+          "url": "https://thanhnien.vn/tam-bai-bien-trung-luong-4-hoc-sinh-bi-song-cuon-1-nu-sinh-mat-tich-185261119135222049.htm",
+          "title": "Tắm bãi biển Trung Lương 4 học sinh bị sóng cuốn, 1 nữ sinh mất tích",
+          "pubDate": "Thu, 19 Nov 26 14:12:00 +0700"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 41 < 45"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "4 học sinh tắm biển Trung Lương ở Gia Lai, 1 em mất tích giữa sóng to",
+      "score": 41,
+      "breakdown": {
+        "coverage": 0,
+        "trend": 0,
+        "reach": 25,
+        "explainer": 0,
+        "freshness": 1,
+        "majorCase": 0,
+        "hotShortBonus": 15
+      },
+      "category": "tiền lương – thu nhập",
+      "outlets": [
+        "znews.vn"
+      ],
+      "trend": null,
+      "ageHours": 18.5,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "znews.vn",
+          "url": "https://znews.vn/4-hoc-sinh-tam-bien-trung-luong-o-gia-lai-1-em-mat-tich-giua-song-to-post1697572.html",
+          "title": "4 học sinh tắm biển Trung Lương ở Gia Lai, 1 em mất tích giữa sóng to",
+          "pubDate": "Thu, 19 Nov 2026 15:03:55 +0700"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 41 < 45"
+      ]
+    },
+    {
+      "rank": 10,
+      "title": "\"Khắc phục bệnh thành tích, giảm áp lực để việc học mang lại niềm vui\"",
+      "score": 40,
+      "breakdown": {
+        "coverage": 16,
+        "trend": 0,
+        "reach": 21,
+        "explainer": 0,
+        "freshness": 3,
+        "majorCase": 0,
+        "hotShortBonus": 0
+      },
+      "category": "sức khỏe – thực phẩm",
+      "outlets": [
+        "vnexpress.net",
+        "dantri.com.vn"
+      ],
+      "trend": null,
+      "ageHours": 13.5,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "vnexpress.net",
+          "url": "https://vnexpress.net/thu-tuong-giam-ap-luc-de-viec-hoc-mang-lai-ca-niem-vui-va-tri-thuc-5146759.html",
+          "title": "Thủ tướng: Giảm áp lực để việc học mang lại cả niềm vui và tri thức",
+          "pubDate": "Thu, 19 Nov 2026 18:46:49 +0700"
+        },
+        {
+          "outlet": "dantri.com.vn",
+          "url": "https://dantri.com.vn/thoi-su/khac-phuc-benh-thanh-tich-giam-ap-luc-de-viec-hoc-mang-lai-niem-vui-20261119195541931.htm",
+          "title": "\"Khắc phục bệnh thành tích, giảm áp lực để việc học mang lại niềm vui\"",
+          "pubDate": "Thu, 19 Nov 2026 20:02:04 +0700"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 40 < 45"
+      ]
+    },
+    {
+      "rank": 11,
+      "title": "Giá xăng giảm tiếp, có loại giảm gần 1.000 đồng/lít",
+      "score": 40,
+      "breakdown": {
+        "coverage": 0,
+        "trend": 0,
+        "reach": 14,
+        "explainer": 10,
+        "freshness": 1,
+        "majorCase": 0,
+        "hotShortBonus": 15
+      },
+      "category": "giá cả – tiền tệ",
+      "outlets": [
+        "dantri.com.vn"
+      ],
+      "trend": null,
+      "ageHours": 18.9,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "dantri.com.vn",
+          "url": "https://dantri.com.vn/kinh-doanh/gia-xang-giam-tiep-co-loai-giam-gan-1000-donglit-20261119134340709.htm",
+          "title": "Giá xăng giảm tiếp, có loại giảm gần 1.000 đồng/lít",
+          "pubDate": "Thu, 19 Nov 2026 14:40:37 +0700"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 40 < 45"
+      ]
+    },
+    {
+      "rank": 12,
+      "title": "Từ 1/1/2027, một nhóm người lao động có thể hưởng lương cao hơn mức tối thiểu ít nhất 7%: Ai được áp dụng?",
+      "score": 40,
+      "breakdown": {
+        "coverage": 0,
+        "trend": 0,
+        "reach": 25,
+        "explainer": 10,
+        "freshness": 5,
+        "majorCase": 0,
+        "hotShortBonus": 0
+      },
+      "category": "tiền lương – thu nhập",
+      "outlets": [
+        "cafef.vn"
+      ],
+      "trend": null,
+      "ageHours": 1,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "cafef.vn",
+          "url": "https://cafef.vn/tu-1-1-2027-mot-nhom-nguoi-lao-dong-co-the-huong-luong-cao-hon-muc-toi-thieu-it-nhat-7-ai-duoc-ap-dung-188261120064455633.chn",
+          "title": "Từ 1/1/2027, một nhóm người lao động có thể hưởng lương cao hơn mức tối thiểu ít nhất 7%: Ai được áp dụng?",
+          "pubDate": "Fri, 20 Nov 2026 08:35:00 +07"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 40 < 45"
+      ]
+    },
+    {
+      "rank": 13,
+      "title": "Cẩn trọng với các chiêu trò lừa đảo vé concert",
+      "score": 40,
+      "breakdown": {
+        "coverage": 0,
+        "trend": 0,
+        "reach": 23,
+        "explainer": 0,
+        "freshness": 5,
+        "majorCase": 12,
+        "hotShortBonus": 0
+      },
+      "category": "pháp luật – đại án",
+      "outlets": [
+        "cafef.vn"
+      ],
+      "trend": null,
+      "ageHours": 1.7,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "cafef.vn",
+          "url": "https://cafef.vn/can-trong-voi-cac-chieu-tro-lua-dao-ve-concert-18826112007524498.chn",
+          "title": "Cẩn trọng với các chiêu trò lừa đảo vé concert",
+          "pubDate": "Fri, 20 Nov 2026 07:52:00 +07"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 40 < 45"
+      ]
+    },
+    {
+      "rank": 14,
+      "title": "Đà Nẵng phát hiện 2 tấm bia khắc tên 'Nguyễn Gia', 'Tô Ng... Lang' cạnh hài cốt liệt sĩ",
+      "score": 39,
+      "breakdown": {
+        "coverage": 36,
+        "trend": 0,
+        "reach": 0,
+        "explainer": 0,
+        "freshness": 3,
+        "majorCase": 0,
+        "hotShortBonus": 0
+      },
+      "category": "khác",
+      "outlets": [
+        "tuoitre.vn",
+        "vnexpress.net",
+        "thanhnien.vn",
+        "vietnamnet.vn"
+      ],
+      "trend": null,
+      "ageHours": 13.1,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "tuoitre.vn",
+          "url": "https://tuoitre.vn/da-nang-phat-hien-2-tam-bia-khac-ten-nguyen-gia-to-ng-lang-canh-hai-cot-liet-si-100261119171243819.htm",
+          "title": "Đà Nẵng phát hiện 2 tấm bia khắc tên 'Nguyễn Gia', 'Tô Ng... Lang' cạnh hài cốt liệt sĩ",
+          "pubDate": "11/19/2026 8:26:00 PM"
+        },
+        {
+          "outlet": "vnexpress.net",
+          "url": "https://vnexpress.net/hai-hai-cot-liet-si-kem-bia-khac-ten-to-ng-lang-va-nguyen-gia-5146744.html",
+          "title": "Hai hài cốt liệt sĩ kèm bia khắc tên Tô Ng... Lang và Nguyễn Gia",
+          "pubDate": "Thu, 19 Nov 2026 18:49:16 +0700"
+        },
+        {
+          "outlet": "thanhnien.vn",
+          "url": "https://thanhnien.vn/da-nang-phat-hien-3-hai-cot-liet-si-co-bia-khac-ten-va-don-vi-185261119170844563.htm",
+          "title": "Đà Nẵng phát hiện 3 hài cốt liệt sĩ, có bia khắc tên và đơn vị",
+          "pubDate": "Thu, 19 Nov 26 17:43:00 +0700"
+        },
+        {
+          "outlet": "vietnamnet.vn",
+          "url": "https://vietnamnet.vn/tim-thay-hai-cot-liet-si-cung-2-tam-bia-khac-ten-don-vi-2576842.html",
+          "title": "Tìm thấy hài cốt liệt sĩ cùng 2 tấm bia khắc tên, đơn vị",
+          "pubDate": "Thu, 19 Nov 2026 17:42:25 +0700"
+        }
+      ],
+      "reasons": [
+        "ít người bị ảnh hưởng trực tiếp",
+        "điểm 39 < 45"
+      ]
+    },
+    {
+      "rank": 15,
+      "title": "Muốn trở thành luật sư phải qua kỳ thi quốc gia",
+      "score": 39,
+      "breakdown": {
+        "coverage": 0,
+        "trend": 0,
+        "reach": 24,
+        "explainer": 10,
+        "freshness": 5,
+        "majorCase": 0,
+        "hotShortBonus": 0
+      },
+      "category": "thuế – phí – quy định",
+      "outlets": [
+        "vnexpress.net"
+      ],
+      "trend": null,
+      "ageHours": 0.2,
+      "publishSlot": null,
+      "sources": [
+        {
+          "outlet": "vnexpress.net",
+          "url": "https://vnexpress.net/muon-tro-thanh-luat-su-phai-qua-ky-thi-quoc-gia-5146877.html",
+          "title": "Muốn trở thành luật sư phải qua kỳ thi quốc gia",
+          "pubDate": "Fri, 20 Nov 2026 09:19:25 +0700"
+        }
+      ],
+      "reasons": [
+        "chưa đủ độ \"hot\": cần ≥3 báo, hoặc 2 báo + xu hướng Google",
+        "điểm 39 < 45"
       ]
     }
   ]

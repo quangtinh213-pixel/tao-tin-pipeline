@@ -85,11 +85,9 @@ khi người dùng yêu cầu bỏ lượt cũ).
 
 Các lần `/gen-video` ghi chung `src/`, nên luôn làm **một bài một lúc**:
 
-1. `node scripts/tao-tin.mjs next` → lấy `link` của bài kế tiếp. `null` → sang Bước 4.
+1. `node scripts/tao-tin.mjs next` → lấy `link` và `templateId` được phân bổ cho bài kế tiếp (mặc định `news/media-showcase` nếu thiếu). `null` → sang Bước 4.
 2. Chạy toàn bộ pipeline `/gen-video` cho bài đó theo `docs/SKILL-GEN-VIDEO.md`,
-   với `<context>` là `link`. Đây là trường hợp article URL: template
-   `news/media-showcase`, `--audio=full`, áp dụng đầy đủ quy tắc lấy media của
-   template. Ghi nhớ `<slug>` của video.
+   với `<context>` là `link`, `--template <templateId>` (luân phiên đa dạng template theo chủ đề để tránh lặp khuôn) và `--audio=full`. Ghi nhớ `<slug>` của video.
 3. Render thành công (`videos/<slug>/output/video.mp4` tồn tại) → upload:
    ```bash
    node scripts/youtube-upload.mjs "<slug>"

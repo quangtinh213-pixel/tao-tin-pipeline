@@ -20,6 +20,7 @@
  */
 
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
@@ -180,8 +181,11 @@ if (fs.existsSync(outputPath) && fs.statSync(outputPath).size > 0 && !force) {
 
 // ─── VieNeu-TTS (local, free, 48 kHz) ────────────────────────────────────────
 // Used first when the template sets vieneuVoice, or when .env sets TTS_PROVIDER=vieneu / VIENEU_VOICE.
-const VIENEU_DIR = process.env.VIENEU_DIR || path.join(process.env.HOME || '', 'Documents', 'VieNeu-TTS');
-const VIENEU_PYTHON = path.join(VIENEU_DIR, '.venv', 'bin', 'python');
+const VIENEU_DIR = process.env.VIENEU_DIR || path.join(os.homedir(), 'Documents', 'VieNeu-TTS');
+// Windows venvs keep the interpreter in Scripts\python.exe, macOS/Linux in bin/python.
+const VIENEU_PYTHON = process.platform === 'win32'
+  ? path.join(VIENEU_DIR, '.venv', 'Scripts', 'python.exe')
+  : path.join(VIENEU_DIR, '.venv', 'bin', 'python');
 const vieneuVoiceName = process.env.VIENEU_VOICE || templateVoice.vieneuVoice || 'Thùy Dung';
 const useVieNeu = process.env.TTS_PROVIDER === 'vieneu' || Boolean(process.env.VIENEU_VOICE || templateVoice.vieneuVoice);
 

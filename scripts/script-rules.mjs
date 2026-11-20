@@ -1,5 +1,6 @@
 import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
 
 // Rules come from VN News Analytics (10/2026): hooks with these patterns kept
 // ~30-37% average view percentage versus ~50% for the rest. See SCRIPT_RULES.md §2.
@@ -75,7 +76,7 @@ export async function validateScriptFile(scriptPath, options) {
   return validateScript(payload?.script, options);
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === resolve(new URL(import.meta.url).pathname)) {
+if (process.argv[1] && resolve(process.argv[1]) === resolve(fileURLToPath(import.meta.url))) {
   const [, , scriptPath, ...extra] = process.argv;
   // Long-form templates raise the word cap: --max-words=2200 (hook rule stays the same).
   const maxFlag = extra.length === 1 ? extra[0].match(/^--max-words=(\d+)$/) : null;

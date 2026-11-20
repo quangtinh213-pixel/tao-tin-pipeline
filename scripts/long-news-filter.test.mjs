@@ -106,12 +106,39 @@ describe('buildQueue', () => {
 });
 
 describe('long-form publish slots', () => {
-  it('schedules two videos a day at 12:00 and 20:00 (VN time)', () => {
+  it('schedules two slots a day at 12:00 and 15:30 (VN time)', () => {
     const now = new Date('2026-11-09T08:00:00+07:00');
     const taken = [];
     for (let i = 0; i < 4; i += 1) taken.push(nextPublishSlot(taken, {now, ...longSlotOptions({})}).getTime());
     expect(taken.map((t) => new Date(t).toISOString())).toEqual([
-      '2026-11-09T05:00:00.000Z', '2026-11-09T13:00:00.000Z', '2026-11-10T05:00:00.000Z', '2026-11-10T13:00:00.000Z',
+      '2026-11-09T05:00:00.000Z', '2026-11-09T08:30:00.000Z', '2026-11-10T05:00:00.000Z', '2026-11-10T08:30:00.000Z',
     ]);
+  });
+});
+
+describe('Task 2: major fraud/public-impact cases & hot Short bonus', () => {
+  it('unlocks major fraud/corruption cases while keeping graphic violent crime blocked', () => {
+    const major = classify(['Cựu tổng giám đốc Sen Tài Thu hưởng lợi 225 tỉ vụ lừa đảo gần 1.000 tỉ đồng']);
+    expect(major.majorCase).toBe(true);
+    expect(major.sensitive).toBe(false);
+
+    const graphic = classify(['Án mạng chém người tử vong rồi tự tử gây rúng động']);
+    expect(graphic.sensitive).toBe(true);
+    expect(graphic.majorCase).toBe(false);
+  });
+
+  it('adds +12 majorCase and +15 hotShortBonus when matching a Short >= 1000 views', () => {
+    const cluster = clusterItems([
+      item('Cựu tổng giám đốc Sen Tài Thu hưởng lợi 225 tỉ vụ lừa đảo gần 1.000 tỉ đồng', 'vnexpress.net', 60),
+      item('Vụ lừa đảo gần 1.000 tỉ đồng tại Sen Tài Thu: Cựu tổng giám đốc hưởng lợi 225 tỉ', 'tuoitre.vn', 60),
+      item('Khởi tố vụ án lừa đảo 1.000 tỉ đồng ở Sen Tài Thu, hưởng lợi 225 tỉ', 'dantri.com.vn', 60),
+    ])[0];
+    const hotShorts = [
+      {title: '3 lần mang 26 tỷ giấu dưới gầm giường để chạy án vụ Sen Tài Thu #Shorts', views: 1310, publishAt: NOW.toISOString()},
+    ];
+    const scored = scoreCluster(cluster, {now: NOW, hotShorts});
+    expect(scored.breakdown.majorCase).toBe(12);
+    expect(scored.breakdown.hotShortBonus).toBe(15);
+    expect(gateReasons(scored)).toEqual([]);
   });
 });

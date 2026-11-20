@@ -1,0 +1,190 @@
+{
+  "records": {
+    "2026-11-14": {
+      "1": {
+        "finishedAt": "2026-11-14T04:30:01.312Z",
+        "shorts": 3
+      },
+      "2": {
+        "finishedAt": "2026-11-14T04:30:20.014Z",
+        "long": "dry-run",
+        "shorts": 2
+      },
+      "3": {
+        "finishedAt": "2026-11-14T11:07:39.449Z",
+        "mode": "agy",
+        "long": "dry-run",
+        "shorts": 2
+      },
+      "4": {
+        "finishedAt": "2026-11-14T11:34:39.748Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "report": {
+        "finishedAt": "2026-11-14T16:32:15.110Z",
+        "mode": "agy",
+        "long": 0,
+        "shorts": 0
+      }
+    },
+    "2026-11-15": {
+      "1": {
+        "finishedAt": "2026-11-14T23:50:28.923Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "2": {
+        "finishedAt": "2026-11-15T03:13:03.842Z",
+        "mode": "agy",
+        "long": "failed",
+        "shorts": 2
+      },
+      "4": {
+        "finishedAt": "2026-11-15T12:20:18.000Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "report": {
+        "finishedAt": "2026-11-15T16:30:48.465Z",
+        "mode": "agy",
+        "long": 0,
+        "shorts": 0
+      }
+    },
+    "2026-11-16": {
+      "1": {
+        "finishedAt": "2026-11-16T06:10:03.181Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "2": {
+        "finishedAt": "2026-11-16T03:51:48.315Z",
+        "mode": "agy",
+        "long": "failed",
+        "shorts": 2
+      },
+      "3": {
+        "finishedAt": "2026-11-16T09:14:57.140Z",
+        "mode": "agy",
+        "long": "completed",
+        "shorts": 2
+      },
+      "report": {
+        "finishedAt": "2026-11-16T16:01:30.043Z",
+        "mode": "agy",
+        "long": 0,
+        "shorts": 0
+      }
+    },
+    "2026-11-17": {
+      "1": {
+        "finishedAt": "2026-11-16T23:50:23.850Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "2": {
+        "finishedAt": "2026-11-17T03:20:38.889Z",
+        "mode": "agy",
+        "long": "completed",
+        "shorts": 2
+      },
+      "3": {
+        "finishedAt": "2026-11-17T08:46:36.214Z",
+        "mode": "agy",
+        "long": "skipped",
+        "shorts": 2
+      },
+      "report": {
+        "finishedAt": "2026-11-17T16:01:20.325Z",
+        "mode": "agy",
+        "long": 0,
+        "shorts": 0
+      }
+    },
+    "2026-11-18": {
+      "1": {
+        "finishedAt": "2026-11-17T23:47:39.422Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "2": {
+        "finishedAt": "2026-11-18T03:16:45.136Z",
+        "mode": "agy",
+        "long": "completed",
+        "shorts": 2
+      },
+      "3": {
+        "finishedAt": "2026-11-18T08:49:55.074Z",
+        "mode": "agy",
+        "long": "skipped",
+        "shorts": 2
+      },
+      "4": {
+        "finishedAt": "2026-11-18T11:45:51.565Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "report": {
+        "finishedAt": "2026-11-18T16:01:25.783Z",
+        "mode": "agy",
+        "long": 0,
+        "shorts": 0
+      }
+    },
+    "2026-11-19": {
+      "1": {
+        "finishedAt": "2026-11-18T23:49:18.706Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "2": {
+        "finishedAt": "2026-11-19T03:16:24.400Z",
+        "mode": "agy",
+        "long": "completed",
+        "shorts": 2
+      },
+      "3": {
+        "finishedAt": "2026-11-19T08:45:56.256Z",
+        "mode": "agy",
+        "long": "skipped",
+        "shorts": 3
+      },
+      "4": {
+        "finishedAt": "2026-11-19T11:46:40.850Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "report": {
+        "finishedAt": "2026-11-19T16:01:15.541Z",
+        "mode": "agy",
+        "long": 0,
+        "shorts": 0
+      }
+    },
+    "2026-11-20": {
+      "1": {
+        "finishedAt": "2026-11-19T23:47:28.834Z",
+        "mode": "agy",
+        "shorts": 2
+      },
+      "2": {
+        "finishedAt": "2026-11-20T03:05:54.405Z",
+        "mode": "agy",
+        "long": "completed",
+        "shorts": 2
+      },
+      "3": {
+        "finishedAt": "2026-11-20T08:44:18.111Z",
+        "mode": "agy",
+        "long": "skipped",
+        "shorts": 3
+      },
+      "4": {
+        "finishedAt": "2026-11-20T11:56:55.204Z",
+        "mode": "agy",
+        "shorts": 2
+      }
+    }
+  }
+}

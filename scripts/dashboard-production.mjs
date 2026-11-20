@@ -1,4 +1,5 @@
 import {spawn} from 'node:child_process';
+import {existsSync} from 'node:fs';
 import {modelCandidates} from './rank-news.mjs';
 import {mkdir, readFile, readdir, stat, writeFile} from 'node:fs/promises';
 import {join, relative, resolve, sep} from 'node:path';
@@ -330,6 +331,180 @@ const TOOLS = [
   },
 ];
 
+const GEMINI_TOOLS = [{
+  functionDeclarations: [
+    {
+      name: 'report_stage',
+      description: 'Update the visible production stage before doing work in that stage.',
+      parameters: {
+        type: 'OBJECT',
+        properties: {
+          stage: {type: 'STRING', description: 'Stage identifier'},
+          message: {type: 'STRING', description: 'Status message for current stage'},
+        },
+        required: ['stage', 'message'],
+      },
+    },
+    {
+      name: 'list_files',
+      description: 'List project files below a safe project-relative directory.',
+      parameters: {
+        type: 'OBJECT',
+        properties: {
+          path: {type: 'STRING', description: 'Directory path relative to project root'},
+          limit: {type: 'INTEGER', description: 'Max number of files to return'},
+        },
+        required: ['path'],
+      },
+    },
+    {
+      name: 'read_files',
+      description: 'Read up to 12 UTF-8 project files. Secrets and dependency directories are blocked.',
+      parameters: {
+        type: 'OBJECT',
+        properties: {
+          paths: {type: 'ARRAY', items: {type: 'STRING'}, description: 'Array of relative file paths to read'},
+        },
+        required: ['paths'],
+      },
+    },
+    {
+      name: 'write_file',
+      description: 'Write one complete UTF-8 file. Writes are limited to this video artifacts and src/.',
+      parameters: {
+        type: 'OBJECT',
+        properties: {
+          path: {type: 'STRING', description: 'Relative path of file to write'},
+          content: {type: 'STRING', description: 'Full content of the file'},
+        },
+        required: ['path', 'content'],
+      },
+    },
+    {
+      name: 'run_action',
+      description: 'Run one allowlisted workflow action and return its output.',
+      parameters: {
+        type: 'OBJECT',
+        properties: {
+          action: {type: 'STRING', description: 'The workflow action to run'},
+          message: {type: 'STRING', description: 'Reason or context for running action'},
+        },
+        required: ['action', 'message'],
+      },
+    },
+    {
+      name: 'finish',
+      description: 'Finish only after video.mp4 exists and verification has passed.',
+      parameters: {
+        type: 'OBJECT',
+        properties: {
+          summary: {type: 'STRING', description: 'Summary of the completed video'},
+        },
+        required: ['summary'],
+      },
+    },
+  ],
+}];
+
+async function runGeminiAgent(job, rootDir, {assemblyMutex} = {}) {
+  const {GoogleGenAI} = await import('@google/genai');
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error('Chưa cấu hình GEMINI_API_KEY trong .env');
+  const ai = new GoogleGenAI({apiKey});
+  const model = process.env.GEMINI_MODEL || 'gemini-3.5-flash';
+  const tiktok = isTikTokShopUrl(job.context);
+  const article = isPublicArticleUrl(job.context);
+
+  const systemInstruction = `You are the production agent for this repository. Be rigorous, source-grounded, concise in logs, and persist until the requested video is verified. Step 1 setup is already completed; you must strictly use the assigned slug "${job.slug}" for all file operations and never re-derive or change the slug.`;
+
+  const initialPrompt = `Produce one complete Remotion video in the current project.
+
+Job:
+- slug: ${job.slug}
+- context: ${job.context}
+- template: ${job.templateId}
+- audio mode: ${job.audioMode}
+- tiktok Shop URL shortcut: ${tiktok}
+- article URL shortcut: ${article}
+
+MANDATORY RULES:
+1. Step 1 (Setup) is ALREADY COMPLETED by the server. The workspace directories (videos/${job.slug}/ and public/${job.slug}/) and initial setup files (videos/${job.slug}/context.txt, template.txt, audio.txt) have already been created with the exact slug "${job.slug}".
+2. You MUST use the exact slug "${job.slug}" for all file paths, tools, actions, and verification. NEVER derive a different slug, NEVER rename or truncate the slug, and NEVER attempt to write to any other directory. All file tools are locked to "${job.slug}".
+3. Read AGENTS.md and docs/SKILL-GEN-VIDEO.md first, then progressively load only the required canonical docs.
+4. Follow the exact pipeline:
+   - If tiktok Shop URL shortcut is true: run action "acquire_tiktok_product" first to scrape product data and media. You can also run "generate_product_image" to create scenario/meme illustration images for the script.
+   - If article URL shortcut is true: run action "acquire_source_media" first.
+   - Step 2: Planner (write videos/${job.slug}/plan.json).
+   - Step 3: Teller (write videos/${job.slug}/script/script.json). For commerce templates, write humorous or psychological reverse-exposure scripts with fast pacing and strong retention hooks.
+   - Step 4: Audio (run action "synthesize_voice").
+   - Step 5: Transcribe (run action "transcribe_voice").
+   - Step 6: Spec (write videos/${job.slug}/spec.json). For commerce templates, YOU MUST INCLUDE PRODUCT MEDIA in scenes (check public/${job.slug}/evidence/ for images). Assign media: {src: "${job.slug}/evidence/image-01.jpg"} or mediaList arrays to hook, reveal, and features scenes. NEVER output empty media scenes.
+   - Caption (run action "generate_caption", then "validate_caption").
+   - Step 7: Coder (update src/Root.tsx, src/VideoContent.tsx, and scene files).
+   - Step 8: Verification & Render (run "typecheck", "test", "render", "probe_output").
+   - Finally call "finish".
+5. All file paths must be project-relative. Never read .env or expose secrets. Use report_stage as you advance. Use only the provided actions for commands. Do not claim success until render, tests, and independent probe succeed; then call finish.`;
+
+  const chat = ai.chats.create({
+    model,
+    config: {
+      systemInstruction,
+      tools: GEMINI_TOOLS,
+    },
+  });
+
+  let messageInput = initialPrompt;
+
+  for (let round = 0; round < MAX_TOOL_ROUNDS; round += 1) {
+    if (job.abortController.signal.aborted) throw new Error('Production cancelled.');
+    appendLog(job, `Gemini · lượt xử lý ${round + 1}`, 'ai');
+
+    let response;
+    try {
+      response = await chat.sendMessage(
+        typeof messageInput === 'string'
+          ? {message: messageInput}
+          : {message: messageInput}
+      );
+    } catch (err) {
+      appendLog(job, `⚠️ Lỗi Gemini: ${err.message}`, 'error');
+      throw err;
+    }
+
+    const calls = response.functionCalls || [];
+    if (calls.length === 0) {
+      if (job.agentFinished) return;
+      if (response.text) {
+        messageInput = 'Vui lòng tiếp tục bước tiếp theo bằng cách gọi các công cụ hoặc gọi finish khi video.mp4 đã được tạo và kiểm tra.';
+        continue;
+      }
+      throw new Error('Gemini stopped before completing the video.');
+    }
+
+    const toolResponses = [];
+    for (const call of calls) {
+      let result;
+      try {
+        result = await executeTool({job, rootDir, name: call.name, args: call.args || {}, assemblyMutex});
+      } catch (error) {
+        appendLog(job, error.message, 'error');
+        result = {ok: false, error: error.message};
+      }
+      toolResponses.push({
+        functionResponse: {
+          name: call.name,
+          response: result,
+          id: call.id,
+        },
+      });
+    }
+
+    if (job.agentFinished) return;
+    messageInput = toolResponses;
+  }
+  throw new Error(`Gemini exceeded ${MAX_TOOL_ROUNDS} tool rounds.`);
+}
+
 export function isTransientAgentError(error) {
   const status = error?.status || error?.statusCode;
   return status === 503 ||
@@ -451,6 +626,37 @@ MANDATORY RULES:
   throw new Error(`ChatGPT exceeded ${MAX_TOOL_ROUNDS} tool rounds.`);
 }
 
+async function runAgyAgent(job, rootDir, {assemblyMutex} = {}) {
+  const {runAgyGenVideo} = await import('./agy-runner.mjs');
+  const release = assemblyMutex ? await assemblyMutex.acquire(job.abortController.signal) : null;
+  if (release) {
+    job.releaseAssemblyLock = release;
+    job.hasAssemblyLock = true;
+  }
+  try {
+    setStage(job, 'teller', 'agy đang xử lý pipeline tạo video');
+    await runAgyGenVideo({
+      context: job.context,
+      templateId: job.templateId,
+      audioMode: job.audioMode,
+      slug: job.slug,
+      rootDir,
+      onLog: (msg) => appendLog(job, msg, 'ai'),
+    });
+    const outputFile = join(rootDir, 'videos', job.slug, 'output', 'video.mp4');
+    if (!existsSync(outputFile)) {
+      throw new Error(`agy đã chạy xong nhưng chưa thấy ${outputFile}`);
+    }
+    job.agentFinished = true;
+  } finally {
+    if (job.releaseAssemblyLock) {
+      job.releaseAssemblyLock();
+      job.releaseAssemblyLock = null;
+      job.hasAssemblyLock = false;
+    }
+  }
+}
+
 export async function readJsonBody(request) {
   let size = 0;
   const chunks = [];
@@ -505,7 +711,10 @@ export async function scanTemplateOptions(rootDir) {
 
 export function createProductionManager({
   rootDir,
-  runner = runOpenAiAgent,
+  useAgy = false,
+  runner = (useAgy
+    ? runAgyAgent
+    : (process.env.GEMINI_API_KEY ? runGeminiAgent : runOpenAiAgent)),
   maxConcurrent = Math.max(1, Number(process.env.DASHBOARD_CONCURRENCY) || 2),
 } = {}) {
   const projectRoot = resolve(rootDir ?? process.cwd());
@@ -516,8 +725,10 @@ export function createProductionManager({
 
   function apiStatus() {
     return {
-      connected: Boolean(process.env.OPENAI_API_KEY),
-      model: process.env.OPENAI_MODEL || 'gpt-5.6-terra',
+      connected: useAgy ? true : Boolean(process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY),
+      model: useAgy
+        ? (process.env.AGY_MODEL || 'agy-cli')
+        : (process.env.GEMINI_MODEL || (process.env.GEMINI_API_KEY ? 'gemini-3.5-flash' : (process.env.OPENAI_MODEL || 'gpt-5.6-terra'))),
       ttsReady: Boolean(process.env.ELEVENLABS_API_KEY || process.env.GEMINI_API_KEY),
       sttReady: Boolean(process.env.GROQ_API_KEY || process.env.STT_API_KEY),
       concurrency: maxConcurrent,
@@ -580,8 +791,8 @@ export function createProductionManager({
       error.status = 400;
       throw error;
     }
-    if (!process.env.OPENAI_API_KEY) {
-      const error = new Error('Chưa cấu hình OPENAI_API_KEY trên server.');
+    if (!useAgy && !process.env.OPENAI_API_KEY && !process.env.GEMINI_API_KEY) {
+      const error = new Error('Chưa cấu hình GEMINI_API_KEY hoặc OPENAI_API_KEY trên server.');
       error.status = 503;
       throw error;
     }

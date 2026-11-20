@@ -126,26 +126,34 @@ export const REACH_LEXICON = [
   {category: 'công nghệ – an ninh mạng', weight: 10, re: /lừa đảo|mạo danh|an ninh mạng|dữ liệu cá nhân|trí tuệ nhân tạo|\bai\b|chatgpt|iphone|điện thoại|ứng dụng|tài khoản|sim |mã otp|định danh/iu},
   {category: 'quốc tế tác động Việt Nam', weight: 9, re: /thuế quan|xuất khẩu|nhập khẩu|fed|kinh tế mỹ|trung quốc|hiệp định|đầu tư nước ngoài|chip|dầu thô|chuỗi cung ứng/iu},
   {category: 'chính sách lớn', weight: 9, re: /quốc hội|chính phủ|thủ tướng|bộ chính trị|nghị quyết|sáp nhập|cải cách|tăng trưởng|gdp|ngân sách/iu},
+  {category: 'pháp luật – đại án', weight: 13, re: /lừa đảo|tham nhũng|thất thoát|chiếm đoạt|rửa tiền|đường dây|đại án|trục lợi|chạy án|hối lộ/iu},
 ];
 const MASS_REACH = /triệu người|hàng triệu|cả nước|toàn quốc|người dân|mọi người|hộ gia đình|người lao động|người tiêu dùng|63 tỉnh|34 tỉnh/iu;
 const EXPLAINER = /vì sao|tại sao|như thế nào|ra sao|liệu|bao nhiêu|có phải|thay đổi|hệ quả|tác động|ảnh hưởng|điều chỉnh|từ (ngày )?\d|hiệu lực/iu;
 
-// Long videos stay factual explainers: crime and graphic stories belong to Shorts, not here.
-const SENSITIVE = /tử vong|thi thể|giết|sát hại|hiếp|xâm hại|tự tử|nổ súng|chém|đâm|bạo hành|ma túy|bị bắt|khởi tố|truy nã|cướp|trộm|tai nạn|đuối nước|cháy|nổ |bắt giữ|án mạng/iu;
+// Graphic violent crime & minor accidents stay in Shorts; major fraud/corruption/public-impact cases are unlocked for Long-form.
+const SENSITIVE_GRAPHIC = /tử vong|thi thể|giết|sát hại|hiếp|xâm hại|tự tử|nổ súng|chém|đâm|bạo hành|ma túy|truy nã|cướp|trộm|tai nạn|đuối nước|cháy|nổ |án mạng/iu;
+const MAJOR_CASE = /lừa đảo|tham nhũng|thất thoát|chiếm đoạt|rửa tiền|đường dây|đại án|trục lợi|chạy án|hối lộ|khởi tố|bị bắt|bắt giữ/iu;
 const LOW_VALUE = /con giáp|tử vi|khuyến mãi|ưu đãi|ra mắt xe|giá xe|hoa hậu|ca sĩ|diễn viên|sao việt|showbiz|ngoại hình|bóng đá|v-league|hlv|cầu thủ|xổ số|kết quả|lịch thi đấu|\bpr\b|quảng cáo|hot girl|đám cưới|ly hôn|scandal/iu;
 
 export function classify(texts, descriptions = '') {
   const text = texts.join(' | ');
+  const headText = texts.slice(0, 2).join(' ');
   const matches = REACH_LEXICON.filter((entry) => entry.re.test(text));
   const sorted = [...matches].sort((a, b) => b.weight - a.weight);
   const base = sorted.slice(0, 2).reduce((sum, entry) => sum + entry.weight, 0);
   const mass = MASS_REACH.test(`${text} ${descriptions}`) ? 4 : 0;
+  const sensitiveGraphic = SENSITIVE_GRAPHIC.test(headText);
+  const majorCase = !sensitiveGraphic && MAJOR_CASE.test(headText);
+  const sensitive = sensitiveGraphic || (!majorCase && /\b(bị bắt|khởi tố|bắt giữ)\b/iu.test(headText));
   return {
     category: sorted[0]?.category ?? 'khác',
     reach: Math.min(25, base + mass),
     labels: sorted.map((entry) => entry.category),
-    sensitive: SENSITIVE.test(texts.slice(0, 2).join(' ')),
-    lowValue: LOW_VALUE.test(texts.slice(0, 2).join(' ')),
+    sensitive,
+    sensitiveGraphic,
+    majorCase,
+    lowValue: LOW_VALUE.test(headText),
     explainer: EXPLAINER.test(`${text} ${descriptions}`),
   };
 }
@@ -180,7 +188,22 @@ export function matchTrend(cluster, trends, same = sameStory) {
   return best;
 }
 
-export function scoreCluster(cluster, {trends = [], now = new Date(), maxAgeHours = 36, same = sameStory} = {}) {
+export function loadHotShortTopics(perfPath = path.join(ROOT, 'data', 'performance.json'), {minViews = 1000, maxAgeDays = 7, now = new Date()} = {}) {
+  try {
+    if (!fs.existsSync(perfPath)) return [];
+    const data = JSON.parse(fs.readFileSync(perfPath, 'utf8'));
+    const cutoff = now.getTime() - maxAgeDays * 24 * HOUR;
+    return (data.videos || []).filter((v) => {
+      const pubMs = Date.parse(v.publishAt || '');
+      const isShort = v.isShort ?? (String(v.title || '').toLowerCase().includes('#shorts') || (v.seconds && v.seconds <= 90));
+      return isShort && Number(v.views || 0) >= minViews && Number.isFinite(pubMs) && pubMs >= cutoff;
+    });
+  } catch {
+    return [];
+  }
+}
+
+export function scoreCluster(cluster, {trends = [], hotShorts = [], now = new Date(), maxAgeHours = 36, same = sameStory} = {}) {
   const fresh = cluster.filter((item) => {
     const t = parsePubDate(item.pubDate);
     return Number.isFinite(t) && now.getTime() - t <= maxAgeHours * HOUR && t - now.getTime() <= 10 * 60_000;
@@ -191,12 +214,21 @@ export function scoreCluster(cluster, {trends = [], now = new Date(), maxAgeHour
   const ageHours = newest ? (now.getTime() - newest) / HOUR : Infinity;
   const ranked = [...cluster].sort((a, b) => b.title.length - a.title.length);
   const kind = classify([ranked[0].title, ...ranked.slice(1, 4).map((i) => i.title)], ranked.map((i) => i.description).join(' '));
+  const cToks = tokenize(ranked[0].title);
+  const matchesHotShort = hotShorts.some((s) => {
+    const cleanTitle = String(s.title || '').replace(/\s*#shorts$/iu, '');
+    if (same({title: cleanTitle}, {title: ranked[0].title})) return true;
+    const sToks = tokenize(cleanTitle);
+    return shared(cToks.bigrams, sToks.bigrams) >= 1 && shared(cToks.content, sToks.content) >= 2;
+  });
   const breakdown = {
     coverage: outletScore(outlets.size),
     trend: trend ? trendScore(trend.traffic) : 0,
     reach: kind.reach,
     explainer: kind.explainer ? 10 : 0,
     freshness: ageHours <= 6 ? 5 : ageHours <= 18 ? 3 : ageHours <= 36 ? 1 : 0,
+    majorCase: kind.majorCase ? 12 : 0,
+    hotShortBonus: matchesHotShort ? 15 : 0,
   };
   return {
     title: ranked[0].title,
@@ -272,7 +304,7 @@ export function isAlreadyCovered(candidate, history, same = sameStory) {
 }
 
 // ─── Run ─────────────────────────────────────────────────────────────────────
-export async function buildQueue({count = 4, maxAgeHours = 36, minScore = 45, allowLegal = false, now = new Date(), fetchItems = fetchFeedItems, fetchTrends, history = loadLongHistory(), log = console.error} = {}) {
+export async function buildQueue({count = 4, maxAgeHours = 36, minScore = 45, allowLegal = false, now = new Date(), fetchItems = fetchFeedItems, fetchTrends, hotShorts = loadHotShortTopics(undefined, {now}), history = loadLongHistory(), log = console.error} = {}) {
   const trends = await (fetchTrends ?? (async () => {
     try {
       const response = await fetch(TRENDS_URL, {headers: {'User-Agent': 'Mozilla/5.0'}});
@@ -289,7 +321,7 @@ export async function buildQueue({count = 4, maxAgeHours = 36, minScore = 45, al
   log(`Đã đọc ${items.length} bài trong ${maxAgeHours}h từ ${LONG_FEEDS.length} nguồn, ${trends.length} xu hướng Google.`);
 
   const same = makeMatcher([...items.map((item) => item.title), ...trends.flatMap((t) => t.news.map((n) => n.title)), ...history.titles.map((h) => h.title)]);
-  const scored = clusterItems(items, same).map((cluster) => scoreCluster(cluster, {trends, now, maxAgeHours, same}));
+  const scored = clusterItems(items, same).map((cluster) => scoreCluster(cluster, {trends, hotShorts, now, maxAgeHours, same}));
   const evaluated = scored.map((candidate) => {
     const reasons = gateReasons(candidate, {minScore, allowLegal});
     if (isAlreadyCovered(candidate, history, same)) reasons.push('đã có video dài về sự kiện này');

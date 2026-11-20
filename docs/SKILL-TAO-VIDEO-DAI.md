@@ -1,82 +1,69 @@
 # /tao-video-dai — Chọn tin hot, dựng video dài 16:9 và hẹn giờ đăng
 
 Kích hoạt khi người dùng gõ `/tao-video-dai [số lượng]` hoặc "tạo video dài".
-Mặc định **2** video (đúng nhịp 2 video/ngày). Mỗi video dùng template
-`news/long-explainer`, hẹn đăng vào khung 12:00 hoặc 20:00 (giờ Việt Nam).
+Mặc định **2** video/ngày (khung 12:00 và 20:00 giờ Việt Nam).
 
-Helper: `scripts/long-news-filter.mjs` (bộ lọc tin + hàng đợi), logic giờ đăng
-trong `scripts/youtube-upload.mjs` (`longSlotOptions`).
+Được vận hành bởi **Pipeline HyperFrames thu gọn** (`pipeline/tttc`), mang lại chất lượng kịch bản có trích nguồn chuẩn xác, đồ họa isometric 1080p, thời gian render siêu nhanh (~3–5 phút) và hoàn toàn tự động.
+
+## Kiến trúc Pipeline thu gọn
+
+Pipeline kế thừa hệ thống của dự án Youtube nhưng được tinh giản cho chế độ tự động hoá:
+- **Nguồn tin & Radar:** Đọc tin từ 8 báo lớn + Google Trends (`scripts/long-news-filter.mjs`) ghi vào `data/long-queue.json`.
+- **Trích nguồn:** Đọc nguồn gốc, trích xuất số liệu vào `nguon.json`, chụp ảnh bằng chứng tự động.
+- **Kịch bản:** 6 Beat (~2.000–2.500 từ, thời lượng 8–11 phút). Mọi câu có số liệu đều gắn trích dẫn `[#id]`.
+- **Bộ lọc phong cách & kiểm tra:** Kiểm tra 0 từ cấm (`tu-cam.json`), kiểm tra nhịp điệu (`tttc.phong_cach`), đối chiếu 100% số liệu với nguồn gốc (`tttc.kiem`), chấm điểm tiêu đề (`tttc.tieu_de`).
+- **Giọng đọc & Mốc từ:** VieNeu-TTS / ElevenLabs đồng bộ mốc thời gian từng từ (`giong-timing.json`).
+- **Đạo diễn & Cảnh:** 80–120 cảnh, đồ thị cảm xúc, 30% cảnh cao trào có chuyển động/ẩn dụ, 17 mẫu cảnh HyperFrames (`minh-hoa`, `bieu-do`, `so-lon`, `trang-nguon`, `trich-bao`, `nhan-vat`, `chuong`).
+- **Render:** HyperFrames render trực tiếp 1080p 30fps (`final.mp4`), kiểm tra hình tiếng (`check_av`).
+- **Thumbnail & Xuất bản:** Thumbnail 1280x720 độ tương phản cao, SRT phụ đề, mô tả kèm mốc chương. Tự động hẹn giờ trên YouTube (12:00 / 20:00).
 
 ## Quy tắc chạy
 
-- **Chạy tuần tự, một lượt một lúc.** Mỗi video ghi đè `src/VideoContent.tsx` và
-  `src/Root.tsx`, nên không chạy cùng lúc với `/tao-tin`, `auto-news` hay một
-  `/gen-video` khác.
-- Không hỏi lại giữa chừng trừ khi gặp blocker thật (thiếu key, YouTube chưa
-  xác thực, không đủ nguồn).
-- Video được tải lên **private + hẹn giờ công khai** (`publishAt`), nên còn một
-  khoảng thời gian để người dùng xem lại trên YouTube Studio trước khi lên sóng.
+- **Chạy tuần tự, một lượt một lúc.**
+- **Chế độ tự động hoàn toàn (--auto):** Tự động duyệt qua các cổng khi kịch bản và cảnh sạch lỗi, không nghẽn bởi các điểm duyệt thủ công (phục vụ Task Scheduler / daily-orchestrator).
+- **Chế độ duyệt thủ công (--review):** Dừng tại `duyet-1.html` (duyệt kịch bản) và `duyet-2.html` (duyệt bản dựng và chọn tiêu đề/thumbnail).
 
-## Bước 1 — Lọc tin
+## Cách thực thi
 
+### Cách 1: Chạy nhanh qua Node helper (Khuyên dùng)
 ```bash
-node scripts/long-news-filter.mjs --count <N>
+# Tự động lấy tin điểm cao nhất từ hàng đợi và chạy toàn bộ pipeline
+node scripts/tao-video-dai.mjs
+
+# Chạy cho một video cụ thể
+node scripts/tao-video-dai.mjs 2026-11-15-thoi-tiet-10-ngay-toi-khong-khi-lanh
+
+# Chạy có điểm dừng để duyệt tay
+node scripts/tao-video-dai.mjs --review
 ```
 
-Ghi `data/long-queue.json`. Bộ lọc chạy không cần LLM hay API key: đọc RSS 8 báo
-(Tuổi Trẻ, VnExpress, Dân Trí, Thanh Niên, VietnamNet, Zing News, CafeF,
-VnEconomy) + Google Trends VN, gom các bài cùng sự kiện, rồi chấm điểm 100:
+### Cách 2: Chạy trực tiếp qua Python CLI trong `pipeline/`
+```bash
+cd pipeline
 
-| Tiêu chí | Điểm | Ý nghĩa |
-|---|---:|---|
-| Độ phủ | 0–40 | số báo khác nhau cùng đưa tin (Google Trends tính thêm các báo trong xu hướng) |
-| Xu hướng | 0–20 | từ khóa khớp Google Trends VN, theo lượng tìm kiếm |
-| Độ chạm | 0–25 | liên quan tới lương, giá cả, thuế phí, quy định mới, nhà đất, thời tiết, sức khỏe, giáo dục, giao thông, an ninh mạng… (xem `REACH_LEXICON`) |
-| Giải thích được | 0–10 | có câu hỏi "vì sao/ra sao/ảnh hưởng gì", mốc hiệu lực, con số |
-| Độ mới | 0–5 | tin càng mới càng cao |
+# Chạy tự động trọn gói
+uv run python -m tttc.chay_dai <slug> --auto
 
-Cổng loại cứng (không đạt thì không vào hàng đợi, dù điểm cao):
+# Chạy từng bước cụ thể
+uv run python -m tttc.chay_dai <slug> --step kiem      # Kiểm tra kịch bản & đối chiếu nguồn
+uv run python -m tttc.chay_dai <slug> --step giong     # Tạo giọng đọc & mốc từ
+uv run python -m tttc.chay_dai <slug> --step canh      # Chia cảnh & đạo diễn
+uv run python -m tttc.chay_dai <slug> --step render    # Render HyperFrames ra final.mp4
+uv run python -m tttc.chay_dai <slug> --step dong-goi  # Tạo thumbnail & SRT
+uv run python -m tttc.chay_dai <slug> --step dang      # Upload YouTube hẹn giờ
+```
 
-- Chưa đủ "hot": cần ≥3 báo, hoặc 2 báo + khớp Google Trends.
-- Điểm dưới 45; tin quá 36 giờ; độ chạm dưới 12.
-- Tin hình sự/tai nạn/bạo lực (để cho Shorts; `--allow-legal` để mở lại).
-- Giải trí, thể thao, quảng cáo, tử vi.
-- Đã có video dài về cùng sự kiện (so tiêu đề và URL với `videos/*`).
+## Cổng chất lượng bắt buộc trước khi xuất bản
 
-Chọn N tin có **đa dạng chủ đề**: tin thứ hai ưu tiên chủ đề khác tin thứ nhất,
-trừ khi kém hơn hơn 12 điểm. Mỗi tin kèm danh sách nguồn (`sources`, đã có ≥2
-báo) và `publishSlot` dự kiến.
-
-Hàng đợi rỗng → báo "không có tin đủ chuẩn" và dừng; **không hạ chuẩn để đủ số**.
-
-## Bước 2 — Với từng tin (tuần tự)
-
-1. Dựng `context` gồm link chính (tin điểm cao nhất, báo uy tín nhất) + 2–4 link
-   phụ lấy từ `sources` + một dòng câu hỏi giải thích cho video.
-2. Chạy `/gen-video --template news/long-explainer --audio=music <context>` theo
-   `docs/templates/news/long-explainer.md` (nguồn → kịch bản → giọng → spec → caption → render).
-3. Nếu `YOUTUBE_AUTO_UPLOAD=true`, bước upload của `/gen-video` tự chọn khung
-   12:00/20:00 còn trống. Nếu thất bại, ghi lại slug và để người dùng đăng bằng
-   `node scripts/youtube-upload.mjs "<slug>"`.
-4. Không đăng Facebook Reel (video dài tự bị bỏ qua).
-
-## Bước 3 — Cổng chất lượng trước khi coi là xong
-
-- Mọi số liệu trong video có trong bài nguồn; tiêu đề không hứa hơn nội dung.
-- Kịch bản đạt `script-rules.mjs --max-words=2200`; spec đạt `validate-long-explainer.mjs`.
-- Đã xem khung hình đầu, một thẻ chương, một cảnh số liệu và cảnh cuối.
-- Sai ở cổng nào thì sửa hoặc **bỏ video đó**, không đăng bản chưa đạt.
-
-## Báo cáo
-
-Cuối lượt, liệt kê từng tin: tiêu đề, điểm, slug, giờ hẹn đăng, và cổng nào
-chưa đạt (nếu có). Đề xuất bước tiếp theo.
+1. **Kịch bản:** `gop.kiem_1` đạt 0 lỗi (0 từ cấm, không mở/kết sáo rỗng, tiêu đề ≥ 8/10).
+2. **Số liệu:** 100% số liệu trong kịch bản có thẻ `[#id]` trỏ vào `nguon.json`.
+3. **Cảnh:** `gop.kiem_canh` đạt 0 lỗi, cảnh cắt 2.5–4.5s/cảnh, không có 3 cảnh liền cùng mẫu.
+4. **Hình-tiếng:** `check_av` khớp độ dài hình và tiếng (chênh lệch ≤ 0.5s).
 
 ## Cấu hình
 
-| Biến `.env` | Mặc định | Ý nghĩa |
+| Biến `.env` / `config.json` | Mặc định | Ý nghĩa |
 |---|---|---|
-| `YOUTUBE_LONG_PUBLISH_SLOTS` | `12:00,20:00` | khung giờ đăng video dài (giờ VN) |
-| `YOUTUBE_LONG_PUBLISH_GAP_MINUTES` | `240` | khoảng cách tối thiểu giữa hai video dài |
-
-Khung giờ là giả định ban đầu; chỉnh lại sau 2 tuần theo số liệu giữ chân thật.
+| `YOUTUBE_LONG_PUBLISH_SLOTS` | `12:00,20:00` | Khung giờ đăng video dài (giờ VN) |
+| `YOUTUBE_AUTO_UPLOAD` | `true` | Tự động tải lên YouTube chế độ riêng tư + hẹn giờ |
+| `ELEVENLABS_API_KEY` | (tuỳ chọn) | Nếu không có, hệ thống dùng VieNeu-TTS chạy local |

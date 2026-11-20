@@ -60,6 +60,18 @@ export interface LongExplainerSource {
   evidenceSlug: string;
 }
 
+export interface LongExplainerThumbnailSpec {
+  badge?: string; // e.g. "CẬP NHẬT 2026", "TIN NÓNG", "CHÍNH SÁCH MỚI"
+  badgeColor?: 'red' | 'yellow' | 'blue' | 'emerald';
+  bigText: string; // e.g. "+80.400 TỶ" or "VÀNG LAO DỐC"
+  subText?: string; // e.g. "LƯƠNG BẠN TĂNG BAO NHIÊU?" or "NÊN BÁN GẤP?"
+  highlightWord?: string; // Word in bigText or subText to highlight
+  accentColor?: string; // Hex color for highlights or glow
+  mainAssetId?: string; // ID of asset in mediaAssets to feature
+  evidenceShotId?: string; // ID of screenshot in evidenceShots to feature
+  layout?: 'split-contrast' | 'shock-metric' | 'evidence-focus' | 'cinematic';
+}
+
 export interface LongExplainerSpec {
   templateId: 'news/long-explainer';
   slug: string;
@@ -77,4 +89,5 @@ export interface LongExplainerSpec {
   mediaAssets: LongExplainerAsset[];
   evidenceShots: LongExplainerEvidenceShot[];
   beats: LongExplainerBeat[];
+  thumbnail?: LongExplainerThumbnailSpec;
 }

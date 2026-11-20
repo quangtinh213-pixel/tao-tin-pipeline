@@ -74,17 +74,14 @@ function buildPrompt(candidates, {count, recentTitles, now}) {
 Chọn đúng ${count} bài phù hợp nhất để làm video từ danh sách ứng viên.
 
 Tiêu chí (theo dữ liệu kênh: tin dân sinh giữ chân người xem tốt nhất):
-- ƯU TIÊN CAO NHẤT tin HOT, gây "hóng biến", đang được bàn tán: vi phạm pháp luật (bắt giữ,
-  khởi tố, xét xử, triệt phá đường dây, lừa đảo), tai nạn và sự cố nghiêm trọng, sai phạm của
-  cán bộ/doanh nghiệp/người nổi tiếng (tham nhũng, gian lận, hàng giả, thực phẩm bẩn, bị xử phạt),
-  xung đột/ẩu đả gây phẫn nộ, vụ việc có diễn biến bất ngờ hoặc tình tiết lạ.
-- Khoảng 70% số bài thuộc nhóm trên cùng ĐỜI SỐNG, SỰ CỐ BẤT NGỜ, CHUYỆN LẠ/BÍ ẨN:
-  cảnh báo an toàn, câu chuyện khơi lòng trắc ẩn hoặc tò mò.
-- Giữa hai tin cùng nhóm, chọn tin có tình tiết cụ thể, kịch tính, quy mô lớn hoặc liên quan
-  nhiều người hơn.
-- Tối đa khoảng 30% là kinh tế/chính sách/văn hóa, và chỉ khi tin có hệ quả trực tiếp tới túi tiền
-  hoặc sinh hoạt của người dân (giá cả, lương, phí, quy định mới áp dụng cho mọi người).
-- KHÔNG chọn tin chỉ báo cáo số liệu khô khan: doanh thu, lãi lỗ doanh nghiệp, chỉ số vĩ mô, hội nghị.
+- ƯU TIÊN CAO NHẤT tin HOT, gây "hóng biến", đang được bàn tán:
+  + Cứu hộ cứu nạn, người mất tích, tình huống sinh tử (nhóm đạt view cao nhất kênh).
+  + Thiên tai, thời tiết cực đoan/bất thường như rét đậm, bão lũ (nhóm giữ chân APV cao nhất kênh >100%).
+  + Vi phạm pháp luật: bắt giữ, khởi tố, xét xử, triệt phá đường dây, lừa đảo, sai phạm cán bộ cấp cao.
+  + Tai nạn nghiêm trọng có tình tiết bất ngờ, sự cố lạ khơi gợi lòng trắc ẩn hoặc cảnh giác.
+- Khoảng 70% số bài thuộc nhóm trên cùng ĐỜI SỐNG, SỰ CỐ BẤT NGỜ, CHUYỆN LẠ/BÍ ẨN.
+- Tối đa khoảng 30% là giá vàng hôm nay, tiền tệ, đền bù, chính sách sát sườn túi tiền người dân.
+- TUYỆT ĐỐI KHÔNG chọn tin chỉ báo cáo số liệu khô khan: doanh thu, lãi lỗ doanh nghiệp, chỉ số vĩ mô, hội nghị.
 - Tin mới, có tiềm năng hình ảnh (ưu tiên hasImage = true).
 - KHÔNG chọn 2 bài cùng một sự kiện.
 - KHÔNG chọn bài trùng sự kiện với các video đã đăng trong 24 giờ qua.
@@ -109,6 +106,36 @@ export async function createDefaultClient({timeout, maxRetries} = {}) {
   });
 }
 
+export async function rankWithGemini(candidates, {count, recentTitles = [], now = new Date(), onLog = () => {}} = {}) {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) return null;
+  const candidateModels = ['gemini-3.5-flash', 'gemini-3.8-flash', 'gemini-flash-latest', 'gemini-flash-lite-latest'];
+  try {
+    const {GoogleGenAI} = await import('@google/genai');
+    const ai = new GoogleGenAI({apiKey});
+    const input = buildPrompt(candidates, {count, recentTitles, now});
+    for (const model of candidateModels) {
+      try {
+        const response = await ai.models.generateContent({
+          model,
+          contents: input,
+        });
+        const text = response.text ?? '';
+        const picks = parsePicksJson(text);
+        if (picks.length) {
+          const validated = validatePicks(picks, candidates, {count});
+          if (validated.length) return validated;
+        }
+      } catch (err) {
+        // Try next model if one is unavailable
+      }
+    }
+  } catch (err) {
+    onLog(`⚠️ Xếp hạng Gemini thất bại: ${err.message}`);
+  }
+  return null;
+}
+
 export async function rankArticles(candidates, {
   count,
   recentTitles = [],
@@ -120,20 +147,47 @@ export async function rankArticles(candidates, {
 } = {}) {
   if (!candidates.length) return [];
   let lastError = null;
-  try {
-    const openai = client || await createDefaultClient({timeout: 120_000, maxRetries: 0});
-    const input = buildPrompt(candidates, {count, recentTitles, now});
-    for (const candidateModel of models) {
-      try {
-        const response = await openai.responses.create({model: candidateModel, input});
-        return validatePicks(parsePicksJson(response.output_text), candidates, {count});
-      } catch (error) {
-        lastError = error;
+
+  // When client is explicitly provided (e.g. unit tests with mock client)
+  if (client) {
+    try {
+      const input = buildPrompt(candidates, {count, recentTitles, now});
+      for (const candidateModel of models) {
+        try {
+          const response = await client.responses.create({model: candidateModel, input});
+          return validatePicks(parsePicksJson(response.output_text), candidates, {count});
+        } catch (error) {
+          lastError = error;
+        }
       }
+    } catch (error) {
+      lastError = error;
     }
-  } catch (error) {
-    lastError = error;
+    if (lastError) onLog(`Connection error.`);
+    return [];
   }
-  onLog(`⚠️ Xếp hạng LLM thất bại: ${lastError?.message}. Dùng chọn luân phiên.`);
+
+  // By default, block external LLM APIs and use `agy` CLI instead.
+  if (process.env.ALLOW_LLM_API !== 'true') {
+    const {rankArticlesWithAgy} = await import('./agy-runner.mjs');
+    const agyPicks = await rankArticlesWithAgy(candidates, {count, recentTitles, now, onLog});
+    if (agyPicks?.length) {
+      onLog(`✅ agy đã xếp hạng thành công ${agyPicks.length} bài.`);
+      return agyPicks;
+    }
+    onLog(`⚠️ Xếp hạng bằng agy không trả về kết quả. Dùng chọn luân phiên.`);
+    return [];
+  }
+
+  // Primary ranker: Gemini AI (only when ALLOW_LLM_API=true)
+  if (process.env.GEMINI_API_KEY) {
+    const geminiPicks = await rankWithGemini(candidates, {count, recentTitles, now, onLog});
+    if (geminiPicks?.length) {
+      onLog(`✅ Gemini đã xếp hạng thành công ${geminiPicks.length} bài.`);
+      return geminiPicks;
+    }
+  }
+
+  onLog(`⚠️ Xếp hạng LLM thất bại. Dùng chọn luân phiên.`);
   return [];
 }

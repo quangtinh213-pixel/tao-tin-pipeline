@@ -1,9 +1,13 @@
 import React from 'react';
-import {CalculateMetadataFunction, Composition, registerRoot} from 'remotion';
+import {CalculateMetadataFunction, Composition, Still, registerRoot} from 'remotion';
+import {Thumbnail} from './Thumbnail';
 import {Video, type VideoProps} from './Video';
+import {PodcastVideo, podcastDuration} from './podcast/PodcastVideo';
 
-const defaultSlug = '2026-11-11-dantri-gia-vang-the-gioi-giam-manh-cpi-my';
-const defaultDuration = 1142;
+const PODCASTS: Array<{id: string; slug: string}> = [];
+
+const defaultSlug = '2026-11-20-tuoitre-vn-xang-giam-5-lan-to-pho-dia-com';
+const defaultDuration = 1165;
 const defaultWidth = 1080;
 const defaultHeight = 1920;
 
@@ -26,17 +30,39 @@ const calculateMetadata: CalculateMetadataFunction<any> = async ({props, default
 };
 
 export const RemotionRoot: React.FC = () => (
-  <Composition
-    id="Video"
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    component={Video as any}
-    calculateMetadata={calculateMetadata}
-    durationInFrames={defaultDuration}
-    fps={30}
-    width={defaultWidth}
-    height={defaultHeight}
-    defaultProps={{slug: defaultSlug} satisfies VideoProps}
-  />
+  <>
+    <Composition
+      id="Video"
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      component={Video as any}
+      calculateMetadata={calculateMetadata}
+      durationInFrames={defaultDuration}
+      fps={30}
+      width={defaultWidth}
+      height={defaultHeight}
+      defaultProps={{slug: defaultSlug} satisfies VideoProps}
+    />
+    {PODCASTS.map((p) => (
+      <Composition
+        key={p.id}
+        id={p.id}
+        component={PodcastVideo}
+        durationInFrames={podcastDuration(p.slug, 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{slug: p.slug}}
+      />
+    ))}
+    <Still
+      id="Thumbnail"
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      component={Thumbnail as any}
+      width={1280}
+      height={720}
+      defaultProps={{slug: defaultSlug} satisfies VideoProps}
+    />
+  </>
 );
 
 registerRoot(RemotionRoot);

@@ -22,6 +22,7 @@ import {
   runAutoNewsBatch,
   saveProcessedHistory,
   selectArticlesForBatch,
+  selectShortTemplate,
 } from './auto-news-pipeline.mjs';
 
 describe('auto-news-pipeline', () => {
@@ -629,5 +630,67 @@ describe('review fixes', () => {
     saveProcessedHistory(historyFile, [{url: 'u'}]);
     expect(JSON.parse(await readFile(historyFile, 'utf8'))).toEqual([{url: 'u'}]);
     expect(existsSync(`${historyFile}.tmp`)).toBe(false);
+  });
+});
+
+describe('selectShortTemplate', () => {
+  it('selects topic-matched 9:16 templates across categories', () => {
+    expect(selectShortTemplate({title: 'Giá vàng miếng hôm nay biến động mạnh'})).toBe('news/business-ledger-light');
+    expect(selectShortTemplate({title: 'Công bố 11 phương thức tuyển sinh đại học 2027'})).toBe('news/education-briefing-light');
+    expect(selectShortTemplate({title: 'Cảnh báo ngộ độc thực phẩm bẩn tại bệnh viện'})).toBe('news/health-briefing-light');
+    expect(selectShortTemplate({title: 'Khung giá quản lý chung cư và bất động sản TPHCM'})).toBe('news/real-estate-civic-light');
+    expect(selectShortTemplate({title: 'Khởi tố đường dây lừa đảo nghìn tỷ'})).toBe('news/current-affairs-dark');
+    expect(selectShortTemplate({title: 'Tìm thấy cụ bà sau 6 ngày mất tích giữa núi đá'})).toBe('news/media-showcase');
+  });
+
+  it('avoids repeating the immediately preceding template across consecutive articles', () => {
+    const recent = ['news/business-ledger-light'];
+    const picked = selectShortTemplate({title: 'Giá vàng nhẫn trơn lập đỉnh mới'}, {index: 0, recentTemplates: recent});
+    expect(picked).not.toBe('news/business-ledger-light');
+    expect(['news/modern-news-canvas', 'news/current-affairs-light']).toContain(picked);
+  });
+
+  it('passes diversified templateId to productionManager.createJob and records it in history', async () => {
+    const dir = await mkdtemp(join(tmpdir(), 'auto-news-tpl-'));
+    const historyFile = join(dir, 'history.json');
+    const videosDir = join(dir, 'videos');
+    const lockFile = join(dir, 'auto-news.lock');
+    const fresh = 'Fri, 30 Oct 2026 07:00:00 +0700';
+    globalThis.fetch = vi.fn(async () => ({
+      ok: true,
+      text: async () => `<rss><channel>
+        <item><title>Giá vàng hôm nay lập kỷ lục mới</title><link>https://a.vn/gold</link><pubDate>${fresh}</pubDate></item>
+        <item><title>Khởi tố đường dây lừa đảo 500 tỷ</title><link>https://a.vn/fraud</link><pubDate>${fresh}</pubDate></item>
+      </channel></rss>`,
+    }));
+    const createdJobs = [];
+    const manager = {
+      createJob: vi.fn(async (payload) => {
+        createdJobs.push(payload);
+        return {id: `job-${createdJobs.length}`, slug: `slug-${createdJobs.length}`, status: 'completed'};
+      }),
+      getJob: (id) => ({id, slug: id.replace('job-', 'slug-'), status: 'completed'}),
+      retryJob: vi.fn(),
+    };
+    const uploader = vi.fn(async (slug) => ({videoId: `v-${slug}`, url: `https://youtu.be/v-${slug}`}));
+    await runAutoNewsBatch({
+      rootDir: dir,
+      feeds: [{source: 'A', id: 'a', urls: ['https://a.vn/rss']}],
+      count: 2,
+      historyFile,
+      videosDir,
+      lockFile,
+      now: () => new Date('2026-10-30T01:00:00Z'),
+      preflight: async () => true,
+      ranker: vi.fn(async (pool, {count}) => pool.slice(0, count).map((item) => ({...item, reason: 'tin hot'}))),
+      notify: vi.fn().mockResolvedValue(true),
+      onLog: () => {},
+      productionManager: manager,
+      uploader,
+    });
+    expect(createdJobs.map((j) => j.templateId)).toEqual(['news/business-ledger-light', 'news/modern-news-canvas']);
+    const saved = JSON.parse(await readFile(historyFile, 'utf8'));
+    expect(saved.map((h) => h.templateId)).toEqual(['news/business-ledger-light', 'news/modern-news-canvas']);
+    await rm(dir, {recursive: true, force: true});
   });
 });

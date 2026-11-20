@@ -23,6 +23,7 @@ import {fileURLToPath} from 'node:url';
 import {createProductionManager} from './dashboard-production.mjs';
 import {uploadVideo} from './youtube-upload.mjs';
 import {buildCandidatePool, createDefaultClient, modelCandidates, parsePubDate, rankArticles} from './rank-news.mjs';
+import {checkAgyPreflight} from './agy-runner.mjs';
 import {sendTelegram} from './notify-telegram.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -331,12 +332,32 @@ export function releaseLock(lockPath) {
   }
 }
 
+export async function checkGeminiPreflight({
+  apiKey = process.env.GEMINI_API_KEY,
+  model = process.env.GEMINI_MODEL || 'gemini-3.5-flash',
+  onLog = console.log,
+} = {}) {
+  if (!apiKey) {
+    onLog('⚠️ Thiếu GEMINI_API_KEY trong .env');
+    return false;
+  }
+  try {
+    const {GoogleGenAI} = await import('@google/genai');
+    const ai = new GoogleGenAI({apiKey});
+    await ai.models.generateContent({model, contents: 'ping'});
+    return true;
+  } catch (error) {
+    onLog(`🔌 Preflight Gemini API không phản hồi: ${error.message}`);
+    return false;
+  }
+}
+
 export async function checkOpenAiProxy({
   client,
   model = process.env.OPENAI_MODEL,
   models = modelCandidates(model),
   attempts = 3,
-  delayMs = 300_000,
+  delayMs = Number(process.env.PROXY_CHECK_DELAY_MS || 300_000),
   sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
   onLog = console.log,
 } = {}) {
@@ -409,9 +430,53 @@ export function formatBatchSummary({slotLabel, processed, failed, backlogPending
   return lines.join('\n');
 }
 
+const SHORT_TEMPLATE_POOLS = [
+  {
+    pattern: /(giá vàng|vàng miếng|vàng nhẫn|lãi suất|ngân hàng|thuế|lương tối thiểu|tiền lương|tỷ giá|chứng khoán|trái phiếu)/u,
+    templates: ['news/business-ledger-light', 'news/modern-news-canvas', 'news/current-affairs-light'],
+  },
+  {
+    pattern: /(học sinh|nữ sinh|nam sinh|sinh viên|trường học|tuyển sinh|giáo viên|hiệu trưởng|đại học|lớp \d+|bộ giáo dục|thi tốt nghiệp)/u,
+    templates: ['news/education-briefing-light', 'news/modern-news-canvas', 'news/media-showcase'],
+  },
+  {
+    pattern: /(bệnh viện|bác sĩ|y tế|ngộ độc|thực phẩm bẩn|dịch bệnh|cấp cứu|thuốc giả|hiến tạng|bệnh nhân)/u,
+    templates: ['news/health-briefing-light', 'news/health-public-alert', 'news/modern-news-canvas'],
+  },
+  {
+    pattern: /(chung cư|bất động sản|đất rừng|đất nền|sổ đỏ|quy hoạch|cao tốc|vành đai|cầu vượt|sân bay|dự án|nhà ở xã hội|trụ sở)/u,
+    templates: ['news/real-estate-civic-light', 'news/real-estate-plex-light', 'news/modern-news-canvas'],
+  },
+  {
+    pattern: /(khởi tố|tuyên án|xét xử|tòa án|viện kiểm sát|đường dây|lừa đảo|tham nhũng|bắt tạm giam|nghị định|luật)/u,
+    templates: ['news/current-affairs-dark', 'news/modern-news-canvas', 'news/media-showcase', 'news/current-affairs-light'],
+  },
+];
+
+const DEFAULT_SHORT_TEMPLATES = ['news/media-showcase', 'news/modern-news-canvas', 'news/current-affairs-light'];
+
+/**
+ * Pick a topic-matched 9:16 template while avoiding back-to-back template repetition.
+ */
+export function selectShortTemplate(article, {index = 0, recentTemplates = []} = {}) {
+  if (typeof article?.templateId === 'string' && article.templateId.trim()) {
+    return article.templateId.trim();
+  }
+  const haystack = `${article?.title || ''} ${article?.description || ''} ${article?.reason || ''}`
+    .toLowerCase()
+    .normalize('NFC');
+  const matched = SHORT_TEMPLATE_POOLS.find((group) => group.pattern.test(haystack));
+  const pool = matched ? matched.templates : DEFAULT_SHORT_TEMPLATES;
+  const lastTemplate = recentTemplates.filter(Boolean).at(-1);
+  const available = pool.length > 1 && lastTemplate ? pool.filter((id) => id !== lastTemplate) : pool;
+  const safePool = available.length > 0 ? available : pool;
+  return safePool[Math.abs(Number(index) || 0) % safePool.length];
+}
+
 async function renderWithRetry(manager, article, jobTimeoutMs, onLog) {
-  const job = await manager.createJob({context: article.link, templateId: 'news/media-showcase', audioMode: 'full'});
-  onLog(`   ID Job: ${job.id} | Slug: ${job.slug}`);
+  const templateId = article.templateId || selectShortTemplate(article);
+  const job = await manager.createJob({context: article.link, templateId, audioMode: 'full'});
+  onLog(`   ID Job: ${job.id} | Slug: ${job.slug} | Template: ${templateId}`);
   onLog(`   Đang chạy pipeline Remotion (Setup -> Acquire -> Audio -> Spec -> Render)...`);
   let finished;
   try {
@@ -449,7 +514,9 @@ export async function runAutoNewsBatch(options = {}) {
     onLog = console.log,
     now = () => new Date(),
     lockFile = DEFAULT_LOCK_FILE,
-    preflight = () => checkOpenAiProxy({onLog}),
+    preflight = () => (process.env.ALLOW_LLM_API === 'true'
+      ? (process.env.GEMINI_API_KEY ? checkGeminiPreflight({onLog}) : checkOpenAiProxy({onLog}))
+      : checkAgyPreflight({onLog})),
     ranker = rankArticles,
     notify = sendTelegram,
     jobTimeoutMs = 20 * 60_000,
@@ -474,7 +541,7 @@ export async function runAutoNewsBatch(options = {}) {
   onLog(`📺 Chế độ YouTube: ${privacy.toUpperCase()}`);
   onLog(`======================================================\n`);
 
-  if (!dryRun) {
+  if (!dryRun && lockFile) {
     const lock = acquireLock(lockFile, {now: startedAt});
     if (!lock.ok) {
       onLog(`⏳ ${lock.reason}. Bỏ qua đợt này.`);
@@ -485,7 +552,7 @@ export async function runAutoNewsBatch(options = {}) {
 
   try {
     if (!dryRun && !(await preflight())) {
-      const message = `🔌 Proxy OpenAI không phản hồi sau 3 lần thử, bỏ qua đợt ${slotLabel}. Lịch sử bài viết không thay đổi.`;
+      const message = `🔌 Proxy OpenAI / Gemini API không phản hồi, bỏ qua đợt ${slotLabel}. Lịch sử bài viết không thay đổi.`;
       onLog(message);
       await safeNotify(message);
       return {processed: [], failed: [], total: 0, backlog: {uploaded: 0, pending: 0}, aborted: 'proxy'};
@@ -579,14 +646,27 @@ export async function runAutoNewsBatch(options = {}) {
     }
 
     // 3. Render + upload
-    const manager = productionManager || createProductionManager({rootDir, maxConcurrent: 1});
+    const manager = productionManager || createProductionManager({
+      rootDir,
+      maxConcurrent: 1,
+      useAgy: process.env.ALLOW_LLM_API !== 'true',
+    });
+    const recentTemplates = historyList.map((item) => item.templateId).filter(Boolean);
     for (let i = 0; i < chosenArticles.length; i += 1) {
       const article = chosenArticles[i];
+      article.templateId = article.templateId || selectShortTemplate(article, {index: i, recentTemplates});
+      recentTemplates.push(article.templateId);
       onLog(`\n------------------------------------------------------`);
       onLog(`🎬 [${i + 1}/${chosenArticles.length}] [${article.source}] ${article.title}`);
-      onLog(`   Link: ${article.link}`);
+      onLog(`   Link: ${article.link} | Template: ${article.templateId}`);
 
-      const base = {title: article.title, url: article.link, source: article.source, reason: article.reason};
+      const base = {
+        title: article.title,
+        url: article.link,
+        source: article.source,
+        reason: article.reason,
+        templateId: article.templateId,
+      };
       let job;
       try {
         job = await renderWithRetry(manager, article, jobTimeoutMs, onLog);
@@ -643,7 +723,7 @@ export async function runAutoNewsBatch(options = {}) {
     await safeNotify(formatBatchSummary({slotLabel, processed, failed, backlogPending: pending, notes}));
     return {processed, failed, total: chosenArticles.length, backlog: {uploaded: backlogUploaded, pending}};
   } finally {
-    if (!dryRun) releaseLock(lockFile);
+    if (!dryRun && lockFile) releaseLock(lockFile);
   }
 }
 

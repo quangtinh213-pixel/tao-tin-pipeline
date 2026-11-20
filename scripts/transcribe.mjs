@@ -371,15 +371,19 @@ async function transcribe() {
     }
   }
 
+  if (geminiApiKey) {
+    try {
+      return await transcribeWithGemini();
+    } catch (err) {
+      console.error(`\n⚠️  Gemini STT failed: ${err.message}`);
+    }
+  }
+
   // Try local faster-whisper
   try {
     return await transcribeWithLocalWhisper();
   } catch (err) {
     console.error(`\n⚠️  Local Whisper failed: ${err.message}`);
-  }
-
-  if (geminiApiKey) {
-    return transcribeWithGemini();
   }
 
   throw new Error('No STT provider available');
